@@ -110,7 +110,6 @@
     wf-recorder
     wget
     wgetpaste
-    wireguard-tools
     wl-clipboard
     wlsunset
     wthrr
@@ -123,6 +122,7 @@
     zip
     unzip
     zathura
+    bore-cli
   ];
 
   home.file = {};

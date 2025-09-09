@@ -127,8 +127,9 @@
   system.autoUpgrade.enable = true;
   environment.systemPackages = with pkgs; [
     monero-cli
-    xmrig
     p2pool
+    wireguard-tools
+    xmrig
     zellij
   ];
 
