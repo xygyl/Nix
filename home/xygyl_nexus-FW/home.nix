@@ -122,6 +122,7 @@
     tor-browser
     zip
     unzip
+    zathura
   ];
 
   home.file = {};
