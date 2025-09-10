@@ -42,8 +42,6 @@
         ./home
       ];
     };
-
-
   in {
     nixosConfigurations = builtins.listToAttrs (map (host: {
       name = host.hostname;
