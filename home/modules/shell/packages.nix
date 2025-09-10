@@ -22,7 +22,6 @@
     fend
     fzf
     gping
-    helix
     jjui 
     jujutsu
     just

@@ -4,7 +4,7 @@
   home ={
     username = "xygyl";
     homeDirectory = "/home/xygyl";
-    stateVersion = "24.05";
+    stateVersion = "25.05";
   };
 
   home.file = {};
