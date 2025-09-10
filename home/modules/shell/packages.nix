@@ -1,0 +1,61 @@
+{ pkgs, ... }:
+
+{
+  home.packages = with pkgs; [
+    aria2
+    ascii-image-converter
+    aspell
+    aspellDicts.en
+    astroterm
+    atuin
+    bandwhich
+    bat
+    bottom
+    cbonsai
+    chess-tui
+    croc
+    difftastic
+    dua
+    dysk
+    eza
+    fd
+    fend
+    fzf
+    gping
+    helix
+    jjui 
+    jujutsu
+    just
+    kalker
+    kdlfmt
+    keepass-diff
+    macchina
+    neovim
+    nh
+    nil
+    nushell
+    ouch
+    pastel
+    pipes-rs
+    pngcheck
+    pngcrush
+    protonup
+    ripgrep
+    rmpc
+    rqbit
+    sd
+    speedtest-cli
+    spotify-player
+    starship
+    tokei
+    weechat
+    wget
+    wgetpaste
+    wthrr
+    yazi
+    yt-dlp
+    zoxide
+    zip
+    unzip
+  ];
+}
