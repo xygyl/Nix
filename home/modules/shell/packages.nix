@@ -32,7 +32,6 @@
     neovim
     nh
     nil
-    nushell
     ouch
     pastel
     pipes-rs
