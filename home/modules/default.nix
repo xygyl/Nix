@@ -1,5 +1,6 @@
 {
   imports = [
     ./shell
+    ./rust-clang
   ];
 }

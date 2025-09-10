@@ -3,11 +3,7 @@
 {
   home.packages = with pkgs; [
     brightnessctl
-    cargo
     cava
-    clang
-    clang-tools
-    clippy
     ffmpeg
     firefox
     fuzzel
@@ -38,10 +34,6 @@
     qbittorrent
     rio
     ruff
-    rust-analyzer
-    rustc
-    rustfmt
-    rustlings
     stockfish
     swww
     syncthing
