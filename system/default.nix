@@ -1,5 +1,6 @@
 {
   imports = [
+    ./keyd.nix
     ./boot.nix
     ./env.nix
     ./firewall.nix
