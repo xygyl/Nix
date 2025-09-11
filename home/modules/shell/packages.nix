@@ -22,9 +22,7 @@
     fend
     fzf
     gping
-    jjui 
     jujutsu
-    just
     kalker
     kdlfmt
     keepass-diff
