@@ -20,7 +20,7 @@
   };
 
   services.xserver.videoDrivers = [ "amdgpu" ];
-  
+
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
@@ -29,7 +29,4 @@
 
   services.openssh.enable = true;
   services.fwupd.enable = true;
-
 }
-
-
