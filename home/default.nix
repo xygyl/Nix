@@ -3,5 +3,6 @@
     ./home.nix
     ./modules
     ./packages.nix
+    ./theme
   ];
 }
