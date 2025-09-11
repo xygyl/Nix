@@ -15,13 +15,11 @@
     username = "xygyl";
     homeStateVersion = "25.05";
 
-    # --------- Host Declarations --------- #
     hosts = [
       { hostname = "nexus-FW"; stateVersion = "25.05"; }
       { hostname = "nexus"; stateVersion = "25.05"; }
     ];
 
-    # ---------- System Function ---------- #
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
       system = system;
       specialArgs = {
@@ -32,7 +30,6 @@
       ];
     };
 
-    # ---------- Home Function ---------- #
     makeHome = { hostname }: home-manager.lib.homeManagerConfiguration {
       pkgs = import nixpkgs { inherit system; };
       extraSpecialArgs = {
