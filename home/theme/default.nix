@@ -1,7 +1,6 @@
 {
   imports = [
-    # ./cursor.nix
-    # ./fonts.nix
-    ./xygyl.nix
+    ./cursor.nix
+    ./fonts.nix
   ];
 }
