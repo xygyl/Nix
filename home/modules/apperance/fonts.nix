@@ -1,11 +1,14 @@
-{ pkgs, ...}:
-
+{ pkgs, ... }:
 {
+  home.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
   fonts = {
-    enableDefaultPackages = true;
-    packages = with pkgs; [
-      nerd-fonts.jetbrains-mono
-    ];
-    fontconfig.enable = true;
+    fontconfig = {
+      enable = true;
+      defaultFonts.monospace = [
+        "JetBrainsMono Nerd Font"
+      ];
+    };
   };
 }

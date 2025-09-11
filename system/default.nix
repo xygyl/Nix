@@ -3,7 +3,6 @@
     ./boot.nix
     ./env.nix
     ./firewall.nix
-    ./fonts.nix
     ./greetd.nix
     ./network.nix
     ./nh.nix
