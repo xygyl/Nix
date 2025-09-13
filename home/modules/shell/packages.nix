@@ -2,7 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    # fractal
+    fractal
+    framework-tool
     kdePackages.neochat
     nheko
     iamb
