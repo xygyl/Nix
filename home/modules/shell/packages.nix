@@ -2,6 +2,10 @@
 
 {
   home.packages = with pkgs; [
+    # fractal
+    kdePackages.neochat
+    nheko
+    iamb
     aria2
     ascii-image-converter
     aspell
