@@ -5,18 +5,32 @@
     username = "${username}";
     homeDirectory = "/home/${username}";
     stateVersion = "25.05";
-  };
-
-  home.file = {};
-
-  home.sessionVariables = {
-    EDITOR = "hx";
+    sessionVariables = {
+      EDITOR = "hx";
+    };
   };
 
   # programs.git = {
   #   enable = true;
-  #   userName = "xygyl";
-  #   userEmail = "xygyl@proton.me";
+  #   userName = "Global Name";
+  #   userEmail = "global@example.com";
+
+  #   includes = [
+  #     {
+  #       condition = "gitdir:~/work/";
+  #       contents.user = {
+  #         name = "Work Name";
+  #         email = "work@example.com";
+  #       };
+  #     }
+  #     {
+  #       condition = "gitdir:~/personal/";
+  #       contents.user = {
+  #         name = "Personal Name";
+  #         email = "personal@example.com";
+  #       };
+  #     }
+  #   ];
   # };
 
   news.display = "silent";

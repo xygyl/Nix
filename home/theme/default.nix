@@ -1,5 +1,5 @@
 {
   imports = [
-    ./xygyl.nix
+    ./theme.nix
   ];
 }
