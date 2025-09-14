@@ -2,6 +2,8 @@
 
 {
   home.packages = with pkgs; [
+    kdePackages.neochat
+    hw-probe
     brightnessctl
     cava
     ffmpeg
