@@ -2,6 +2,8 @@
 
 {
   home.packages = with pkgs; [
+    floorp-bin
+    veloren
     kdePackages.neochat
     hw-probe
     brightnessctl
