@@ -2,10 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    fractal
-    kdePackages.neochat
-    nheko
     iamb
+    kdePackages.neochat
     aria2
     ascii-image-converter
     aspell
@@ -34,6 +32,7 @@
     neovim
     nh
     nil
+    onefetch
     ouch
     pastel
     pipes-rs
@@ -48,14 +47,14 @@
     spotify-player
     starship
     tokei
+    unzip
     weechat
     wget
     wgetpaste
     wthrr
     yazi
     yt-dlp
-    zoxide
     zip
-    unzip
+    zoxide
   ];
 }
