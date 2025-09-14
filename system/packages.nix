@@ -5,6 +5,7 @@
     helix
     monero-cli
     p2pool
+    tuigreet
     wireguard-tools
     xmrig
     zellij

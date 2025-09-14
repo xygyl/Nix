@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    carapace
     iamb
     kdePackages.neochat
     aria2
