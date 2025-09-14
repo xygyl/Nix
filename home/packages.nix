@@ -2,14 +2,15 @@
 
 {
   home.packages = with pkgs; [
-    git-filter-repo
     brightnessctl
     cava
     ffmpeg
     firefox
+    flatpak
     fuzzel
     gimp
     git
+    git-filter-repo
     gitui
     gnome-themes-extra
     gnupg
@@ -40,6 +41,7 @@
     syncthing
     thunderbird
     tinymist
+    tor-browser
     typst
     unrar-free
     vesktop
@@ -51,8 +53,6 @@
     wl-clipboard
     wlsunset
     xwayland-satellite
-    flatpak
-    tor-browser
     zathura
   ];
 }
