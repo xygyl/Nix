@@ -1,6 +1,5 @@
 {
   imports = [
-    ./shell
-    ./apps
+    ./factorio.nix
   ];
 }
