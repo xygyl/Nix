@@ -10,29 +10,6 @@
     };
   };
 
-  # programs.git = {
-  #   enable = true;
-  #   userName = "Global Name";
-  #   userEmail = "global@example.com";
-
-  #   includes = [
-  #     {
-  #       condition = "gitdir:~/work/";
-  #       contents.user = {
-  #         name = "Work Name";
-  #         email = "work@example.com";
-  #       };
-  #     }
-  #     {
-  #       condition = "gitdir:~/personal/";
-  #       contents.user = {
-  #         name = "Personal Name";
-  #         email = "personal@example.com";
-  #       };
-  #     }
-  #   ];
-  # };
-
   news.display = "silent";
   nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
