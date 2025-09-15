@@ -2,9 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    # quantframe
     # floorp-bin
-    # veloren
     himalaya
     binsider
     kdePackages.neochat

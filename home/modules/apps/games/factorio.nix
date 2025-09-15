@@ -1,10 +1,4 @@
-{ pkgs, ...}:
-
 {
-  home.packages = with pkgs; [
-    # factorio
-    # factorio-space-age
-  ];
   nixpkgs.config.packageOverrides = pkgs: {
     factorio = pkgs.factorio.override {
         username = "xygyl";
