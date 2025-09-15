@@ -41,18 +41,15 @@
     prismlauncher
     qbittorrent
     rio
-    ruff
     stockfish
     swww
     syncthing
     thunderbird
-    tinymist
     tor-browser
     typst
     unrar-free
     vesktop
     video-trimmer
-    vscode-css-languageserver
     waybar
     wev
     wf-recorder

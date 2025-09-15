@@ -26,12 +26,10 @@
     gping
     jujutsu
     kalker
-    kdlfmt
     keepass-diff
     macchina
     neovim
     nh
-    nil
     onefetch
     ouch
     pastel
