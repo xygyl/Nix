@@ -36,7 +36,7 @@
         inherit inputs username homeStateVersion hostname;
       };
       modules = [
-        ./home
+        ./home/${hostname}
       ];
     };
   in {
