@@ -34,6 +34,6 @@
   # };
 
   news.display = "silent";
-
+  nixpkgs.config.allowUnfree = true;
   programs.home-manager.enable = true;
 }

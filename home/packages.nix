@@ -2,6 +2,8 @@
 
 {
   home.packages = with pkgs; [
+    himalaya
+    binsider
     floorp-bin
     veloren
     kdePackages.neochat

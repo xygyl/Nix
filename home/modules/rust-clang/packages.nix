@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     cargo
+    cargo-seek
     clang
     clang-tools
     clippy
