@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    # quantframe
     # floorp-bin
     # veloren
     himalaya
