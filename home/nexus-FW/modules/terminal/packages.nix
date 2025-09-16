@@ -14,7 +14,6 @@
     bat
     bottom
     cbonsai
-    chess-tui
     croc
     difftastic
     dua
