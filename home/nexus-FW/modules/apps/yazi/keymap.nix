@@ -6,23 +6,12 @@
     { on = "D"; run = "remove"; }
   	{ on = "d"; run = "remove --permanently"; }
 
+    { on = [ "g" "r" ]; run = ''shell -- ya emit cd "$(git rev-parse --show-toplevel)"''; desc = "Go to root of git repo"; }
     { on = [ "g" "c" ]; run = "plugin vcs-files"; desc = "Show git file changes"; }
 
     # toggle preview
     { on = "<C-t>"; run = "plugin toggle-pane min-preview"; }
     { on = "T"; run = "plugin toggle-pane max-preview"; }
-
-    # file navigation wraparound  
-    { on  = "k"; run = "plugin arrow -1"; }
-    { on  = "j"; run = "plugin arrow 1"; }
-    { on  = "<Up>"; run = "plugin arrow -1"; }
-    { on  = "<Down>"; run = "plugin arrow 1"; }
-
-    # parent directory navigation
-    { on = "K"; run = "plugin parent-arrow -1"; }
-    { on = "J"; run = "plugin parent-arrow 1"; }
-    { on = "<S-Up>"; run = "plugin parent-arrow -1"; }
-    { on = "<S-Down>"; run = "plugin parent-arrow 1"; }
 
     # creating files and directories
     { on = "a"; run = "create --force"; }
