@@ -1,6 +1,7 @@
 {
   imports = [
     ./helix
+    ./yazi
     ./games
   ];
 }
