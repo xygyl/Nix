@@ -1,29 +1,15 @@
 {
   programs.git = {
     enable = true;
-    userName = "Jaden Kai Rangel";
-    userEmail = "jadenkrangel@gmail.com";
+    userName = "xygyl";
+    userEmail = "xygyl@proton.me";
 
     includes = [
       {
-        condition = "gitdir:~/Documents/projects/misc";
+        condition = "gitdir:~/Documents/projects/rmpr";
         contents.user = {
-          name = "xygyl";
-          email = "xygyl@proton.me";
-        };
-      }
-      {
-        condition = "gitdir:~/Documents/projects/rustlings";
-        contents.user = {
-          name = "xygyl";
-          email = "xygyl@proton.me";
-        };
-      }
-      {
-        condition = "gitdir:~/Nix";
-        contents.user = {
-          name = "xygyl";
-          email = "xygyl@proton.me";
+          name = "Jaden Kai Rangel";
+          email = "jadenkrangel@gmail.com";
         };
       }
     ];
