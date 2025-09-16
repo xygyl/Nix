@@ -2,14 +2,22 @@
 
 {
   home.packages = with pkgs; [
-    kdlfmt
-    nil
-    ruff
-    tinymist
+    lldb
+    lua-language-server
     vscode-css-languageserver
+    vscode-json-languageserver
 
+    # KDL
+    kdlfmt
+    # Nix
+    nil
+    nixd
+    # Python
+    ruff
     # TOML
     taplo
     tombi
+    # Typst
+    tinymist
   ];
 }

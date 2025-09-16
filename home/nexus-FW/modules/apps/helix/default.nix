@@ -2,6 +2,6 @@
   imports = [
     ./packages.nix
     ./helix.nix
-    ./xygyl.nix
+    ./xygyl-theme.nix
   ];
 }
