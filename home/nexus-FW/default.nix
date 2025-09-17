@@ -1,9 +1,9 @@
 {
   imports = [
-    ./permittedInsecurePackages.nix
     ./home.nix
     ./modules
     ./packages.nix
+    ./permittedInsecurePackages.nix
     ./theme
   ];
 }

@@ -6,8 +6,6 @@ in {
   home = {
     packages = with pkgs; [
       nerd-fonts.jetbrains-mono
-      noto-fonts-color-emoji
-      noto-fonts-cjk-sans
     ];
     pointerCursor = with pkgs; {
       package = phinger-cursors;

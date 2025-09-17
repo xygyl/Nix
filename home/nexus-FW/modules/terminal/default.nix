@@ -1,7 +1,8 @@
 {
   imports = [
-    ./packages.nix
+    ./emulators
     ./git.nix
+    ./packages.nix
     ./rust-clang
   ];
 }

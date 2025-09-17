@@ -1,9 +1,7 @@
 {
   imports = [
-    ./terminals
-    ./helix
-    ./yazi
     ./games
-    ./bottom
+    ./wm
+    ./tui
   ];
 }
