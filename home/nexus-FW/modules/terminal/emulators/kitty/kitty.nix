@@ -2,6 +2,7 @@ let
   background = "#000000";
   foreground = "#ffffff";
   black = "#000000";
+  light_black = "#777777";
   red = "#ff0000";
   yellow = "#e5e825";
   green = "#00ff55";
@@ -27,13 +28,11 @@ in {
 
       background            = background;
       foreground            = foreground;
-      selection_background  = background;
-      selection_foreground  = foreground;
       url_color             = magenta;
       cursor                = cursor;
       cursor_text_color     = cursor_text_color;
       color0                = black;
-      color8                = black;
+      color8                = light_black;
       color1                = red;
       color9                = red;
       color2                = green;
