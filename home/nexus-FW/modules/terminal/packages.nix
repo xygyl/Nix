@@ -12,7 +12,6 @@
     atuin
     bandwhich
     bat
-    bottom
     cbonsai
     croc
     difftastic
@@ -41,8 +40,6 @@
     rqbit
     sd
     speedtest-cli
-    spotify-player
-    starship
     tokei
     unzip
     weechat

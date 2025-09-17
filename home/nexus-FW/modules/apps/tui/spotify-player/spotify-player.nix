@@ -46,23 +46,23 @@
       {
         name = "xygyl";
         component_style = {
-          block_title = { fg = "#00eaff" ;};
-          border = { fg = "#312a50" ;};
-          playback_status = { fg = "#5d92ff"; modifiers = ["Bold"] ;};
-          playback_track = { fg = "#f1ff5d"; modifiers = ["Bold"] ;};
-          playback_artists = { fg = "#f98771"; modifiers = ["Bold"] ;};
-          playback_album = { fg = "#00ffaa" ;};
-          playback_metadata = { fg = "#555555" ;};
-          playback_progress_bar = { fg = "#ff5dd1" ;};
-          playback_progress_bar_unfilled = { fg = "#1f0512";};
-          current_playing = { fg = "#6b5dff"; modifiers = ["Bold"] ;};
-          page_desc = { fg = "#5d92ff"; modifiers = ["Bold"] ;};
-          playlist_desc = { fg = "#555555"; modifiers = ["Dim"] ;};
-          table_header = { fg = "#00eaff" ;};
-          secondary_row = { fg = "#dde1ff";};
-          like = { fg = "#ff006a";};
-          lyrics_played = { modifiers = ["Dim"] ;};
-          lyrics_playing = { fg = "#6b5dff"; modifiers = ["Bold"] ;};
+          block_title = { fg = "#00eaff"; };
+          border = { fg = "#312a50"; };
+          playback_status = { fg = "#5d92ff"; modifiers = ["Bold"]; };
+          playback_track = { fg = "#f1ff5d"; modifiers = ["Bold"]; };
+          playback_artists = { fg = "#f98771"; modifiers = ["Bold"]; };
+          playback_album = { fg = "#00ffaa"; };
+          playback_metadata = { fg = "#555555"; };
+          playback_progress_bar = { fg = "#ff5dd1"; };
+          playback_progress_bar_unfilled = { fg = "#1f0512"; };
+          current_playing = { fg = "#6b5dff"; modifiers = ["Bold"]; };
+          page_desc = { fg = "#5d92ff"; modifiers = ["Bold"]; };
+          playlist_desc = { fg = "#555555"; modifiers = ["Dim"]; };
+          table_header = { fg = "#00eaff"; };
+          secondary_row = { fg = "#dde1ff"; };
+          like = { fg = "#ff006a"; };
+          lyrics_played = { modifiers = ["Dim"]; };
+          lyrics_playing = { fg = "#6b5dff"; modifiers = ["Bold"]; };
         };
       }
     ];

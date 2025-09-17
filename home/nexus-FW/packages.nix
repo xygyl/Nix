@@ -12,7 +12,6 @@
     ffmpeg
     firefox
     flatpak
-    fuzzel
     gimp
     git
     git-filter-repo
@@ -48,7 +47,6 @@
     unrar-free
     vesktop
     video-trimmer
-    waybar
     wev
     wf-recorder
     wl-clipboard
