@@ -49,7 +49,6 @@
     wget
     wgetpaste
     wthrr
-    yazi
     yt-dlp
     zip
     zoxide
