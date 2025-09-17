@@ -19,9 +19,11 @@ in {
   fonts = {
     fontconfig = {
       enable = true;
-      defaultFonts.monospace = [
-        "JetBrainsMono Nerd Font"
-      ];
+      defaultFonts = {
+        monospace = [
+          "JetBrainsMono Nerd Font"
+        ];
+      };
     };
   };
 }

@@ -1,8 +1,9 @@
 {
   imports = [
-    ./rio
+    ./terminals
     ./helix
     ./yazi
     ./games
+    ./bottom
   ];
 }

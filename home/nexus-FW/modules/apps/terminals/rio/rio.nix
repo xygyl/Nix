@@ -5,6 +5,7 @@
     settings = {
       padding-x = 5;
       padding-y = [5 5];
+      line-height = 1.0;
       confirm-before-quit = false;
 
       cursor = {
@@ -36,8 +37,10 @@
       };
 
       fonts = {
-        family = "JetBrainsMono Nerd Font";
         size = 16;
+        use-drawable-chars = false;
+        hinting = true;
+        family = "JetBrainsMono Nerd Font";
 
         regular = {
           family = "JetBrainsMono Nerd Font";
@@ -65,6 +68,10 @@
           style = "Normal";
           width = "Normal";
           weight = 400;
+        };
+
+        emojis = {
+          family = "Noto Color Emoji";
         };
       };
 
