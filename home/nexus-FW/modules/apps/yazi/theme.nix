@@ -92,18 +92,18 @@
         { mime = "image/*"; fg = "#F1FF5D"; }
 
         # media
-        { mime = "{audio;video}/*"; fg = "#F98771"; }
+        { mime = "{audio,video}/*"; fg = "#F98771"; }
 
         # documents
-        { mime = "application/{pdf;doc;rtf;vnd.*}"; fg = "#FF5D85"; }
+        { mime = "application/{pdf,doc,rtf,vnd.*}"; fg = "#FF5D85"; }
   
         # archives
-        { mime = "application/{;g}zip"; fg = "#F971CD"; }
-        { mime = "application/{tar;bzip*;7z-compressed;xz;rar}"; fg = "#F971CD"; }
+        { mime = "application/{,g}zip"; fg = "#F971CD"; }
+        { mime = "application/{tar,bzip*,7z-compressed,xz,rar}"; fg = "#F971CD"; }
         { mime = "application/{zstd}"; fg = "#F971CD"; }
 
         # encryption
-        { name = "*.{gpg;asc}"; fg = "#417BFF"; }
+        { name = "*.{gpg,asc}"; fg = "#417BFF"; }
 
         # fallback
         { name = "*/"; fg = "#6B5DFF"; }
