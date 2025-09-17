@@ -16,10 +16,10 @@
       wrap          = "yes";
     };
     open.prepend_rules = [
-    	{ name = "*.{gpg;asc}"; use = "decrypt"; }
+    	{ name = "*.{gpg,asc}"; use = "decrypt"; }
     	{ name = "*.zst"; use = "extract_zstd"; }
     	{ name = "*.pdf"; use = "pdf"; }
-    	{ name = "*.{png;jpg;gif;jfif;webp}"; use = "view"; }
+    	{ name = "*.{png,jpg,gif,jfif,webp}"; use = "view"; }
     ];
     opener = {
       decrypt = [

@@ -73,6 +73,15 @@
         emojis = {
           family = "Noto Color Emoji";
         };
+
+        extras = [
+          {
+            family = "Noto Color Emoji";
+          }
+          {
+            family = "Noto Sans CJK JP";
+          }
+        ];
       };
 
       colors = {

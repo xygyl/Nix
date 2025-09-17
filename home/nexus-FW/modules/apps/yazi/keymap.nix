@@ -6,6 +6,9 @@
     { on = "D"; run = "remove"; }
   	{ on = "d"; run = "remove --permanently"; }
 
+  	{ on = [ "," "M" ]; run = [ "sort mtime --reverse=no" "linemode mtime" ]; }
+  	{ on = [ "," "m" ]; run = [ "sort mtime --reverse=yes" "linemode mtime" ]; }
+  	
     { on = [ "g" "r" ]; run = ''shell -- ya emit cd "$(git rev-parse --show-toplevel)"''; desc = "Go to root of git repo"; }
     { on = [ "g" "c" ]; run = "plugin vcs-files"; desc = "Show git file changes"; }
 
