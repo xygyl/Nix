@@ -39,7 +39,6 @@
     poppler
     prismlauncher
     qbittorrent
-    rio
     stockfish
     swww
     syncthing
