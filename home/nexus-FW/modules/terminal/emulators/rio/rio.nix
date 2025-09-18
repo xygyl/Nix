@@ -1,6 +1,6 @@
 {
   programs.rio = {
-    enable = false;
+    enable = true;
 
     settings = {
       padding-x = 5;
@@ -73,15 +73,6 @@
         emojis = {
           family = "Noto Color Emoji";
         };
-
-        extras = [
-          {
-            family = "Noto Color Emoji";
-          }
-          {
-            family = "Noto Sans CJK JP";
-          }
-        ];
       };
 
       colors = {

@@ -10,9 +10,9 @@
       image_delay   = 0;
       image_filter  = "nearest";
       image_quality = 50;
-      max_height    = 5000;
-      max_width     = 5000;
-      tab_size      = 2;
+      max_height    = 2000;
+      max_width     = 2000;
+      tab_size      = 1;
       wrap          = "yes";
     };
     open.prepend_rules = [
