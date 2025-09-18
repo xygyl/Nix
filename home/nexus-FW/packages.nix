@@ -3,10 +3,10 @@
 {
   home.packages = with pkgs; [
     # floorp-bin
-    himalaya
     binsider
-    kdePackages.neochat
+    himalaya
     hw-probe
+    kdePackages.neochat
     brightnessctl
     cava
     ffmpeg
