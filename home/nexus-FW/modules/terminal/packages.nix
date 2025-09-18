@@ -9,7 +9,6 @@
     aspell
     aspellDicts.en
     astroterm
-    atuin
     bandwhich
     bat
     cbonsai
@@ -48,6 +47,5 @@
     wthrr
     yt-dlp
     zip
-    zoxide
   ];
 }

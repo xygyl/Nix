@@ -3,8 +3,9 @@
 {
   home.packages = with pkgs; [
     chess-tui
-    # factorio
     # factorio-space-age
+    # mindustry
+    # openttd
     # quantframe
     # veloren
   ];
