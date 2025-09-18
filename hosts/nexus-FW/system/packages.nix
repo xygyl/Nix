@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    framework-tool
     helix
     monero-cli
     p2pool
