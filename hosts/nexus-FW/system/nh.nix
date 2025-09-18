@@ -6,7 +6,7 @@
     clean = {
       enable = true;
       dates = "daily";
-      # extraArgs = "--keep 10";
+      extraArgs = "--keep 3";
     };
 
     flake = "/home/${username}/Nix";
