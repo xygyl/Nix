@@ -3,24 +3,15 @@
 {
   home.packages = with pkgs; [
     # floorp-bin
-    binsider
-    himalaya
-    hw-probe
-    kdePackages.neochat
-    brightnessctl
     cava
     ffmpeg
     firefox
-    flatpak
     gimp
-    git
-    git-filter-repo
-    gitui
     gnome-themes-extra
     gnupg
     kdePackages.kdenlive
+    kdePackages.neochat
     keepassxc
-    kitty
     krita
     libratbag
     libreoffice
@@ -48,7 +39,6 @@
     vesktop
     video-trimmer
     wev
-    wf-recorder
     wl-clipboard
     wlsunset
     xwayland-satellite

@@ -2,8 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    carapace
-    iamb
     aria2
     ascii-image-converter
     aspell
@@ -11,6 +9,9 @@
     astroterm
     bandwhich
     bat
+    binsider
+    brightnessctl
+    carapace
     cbonsai
     croc
     difftastic
@@ -20,7 +21,13 @@
     fd
     fend
     fzf
+    git
+    git-filter-repo
+    gitui
     gping
+    himalaya
+    hw-probe
+    iamb
     jujutsu
     kalker
     keepass-diff
@@ -41,7 +48,9 @@
     speedtest-cli
     tokei
     unzip
+    vhs
     weechat
+    wf-recorder
     wget
     wgetpaste
     wthrr
