@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     # floorp-bin
+    gamescope
     cava
     ffmpeg
     firefox

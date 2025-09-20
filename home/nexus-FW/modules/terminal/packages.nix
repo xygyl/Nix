@@ -41,6 +41,7 @@
     pngcheck
     pngcrush
     protonup
+    protonup-rs
     ripgrep
     rmpc
     rqbit

@@ -12,7 +12,6 @@
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
-      alsa-lib
     ];
   };
 
