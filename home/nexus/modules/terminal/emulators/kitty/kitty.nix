@@ -50,7 +50,7 @@ in {
     };
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 12;
+      size = 15;
     };
   };
 }
