@@ -2,9 +2,9 @@
 
 {
   environment.systemPackages = with pkgs; [
-    framework-tool
     helix
     monero-cli
+    openrgb-with-all-plugins
     p2pool
     tuigreet
     wireguard-tools
