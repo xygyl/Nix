@@ -3,10 +3,10 @@
 {
   home.packages = with pkgs; [
     btop
-    gamescope
     cava
     ffmpeg
     firefox
+    gamescope
     gimp
     gnome-themes-extra
     gnupg
@@ -29,6 +29,7 @@
     pkg-config
     poppler
     prismlauncher
+    python314
     qbittorrent
     stockfish
     swww
