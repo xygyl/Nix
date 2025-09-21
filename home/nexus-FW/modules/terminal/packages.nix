@@ -13,7 +13,6 @@
     brightnessctl
     carapace
     cbonsai
-    croc
     difftastic
     dua
     dysk

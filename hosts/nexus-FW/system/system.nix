@@ -9,13 +9,14 @@
   system.stateVersion = stateVersion;
   nixpkgs.config.allowUnfree = true;
   security.sudo.wheelNeedsPassword = false;
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-    ];
-  };
 
   programs = {
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+      ];
+    };
+
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
