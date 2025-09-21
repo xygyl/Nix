@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    # floorp-bin
+    btop
     gamescope
     cava
     ffmpeg
