@@ -13,11 +13,11 @@
   let
     system = "x86_64-linux";
     username = "xygyl";
-    homeStateVersion = "25.05";
+    homeStateVersion = "25.11";
 
     hosts = [
-      { hostname = "nexus-FW"; stateVersion = "25.05"; }
-      { hostname = "nexus"; stateVersion = "25.05"; }
+      { hostname = "nexus-FW"; stateVersion = "25.11"; }
+      { hostname = "nexus"; stateVersion = "25.11"; }
     ];
 
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
