@@ -31,7 +31,6 @@
     keepass-diff
     macchina
     neovim
-    nh
     onefetch
     ouch
     pastel

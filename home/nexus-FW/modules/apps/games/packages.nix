@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     chess-tui
-    # osu-lazer
+    osu-lazer
     # factorio-space-age
     # mindustry
     # openttd
