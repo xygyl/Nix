@@ -11,7 +11,6 @@
     bat
     binsider
     brightnessctl
-    carapace
     cbonsai
     difftastic
     dua

@@ -20,7 +20,7 @@
     mpv
     networkmanagerapplet
     nicotine-plus
-  	niri
+    niri
     nomacs
     nwg-look
     obs-studio
