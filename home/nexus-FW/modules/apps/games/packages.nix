@@ -6,7 +6,7 @@
     # factorio-space-age
     # mindustry
     # openttd
-    osu-lazer
+    # osu-lazer
     # quantframe
     # veloren
   ];
