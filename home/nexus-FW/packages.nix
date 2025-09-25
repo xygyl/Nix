@@ -3,10 +3,10 @@
 {
   home.packages = with pkgs; [
     # floorp-bin
-    gamescope
     cava
     ffmpeg
     firefox
+    gamescope
     gimp
     gnome-themes-extra
     gnupg
