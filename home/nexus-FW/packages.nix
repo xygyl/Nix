@@ -35,6 +35,7 @@
     syncthing
     thunderbird
     tor-browser
+    typstPackages.syntree
     typst
     unrar-free
     vesktop
