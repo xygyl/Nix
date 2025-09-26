@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    # floorp-bin
     cava
     ffmpeg
     firefox
@@ -25,6 +24,7 @@
     nwg-look
     obs-studio
     pavucontrol
+    pdftk
     piper
     pkg-config
     poppler
@@ -35,8 +35,8 @@
     syncthing
     thunderbird
     tor-browser
-    typstPackages.syntree
     typst
+    typstPackages.syntree
     unrar-free
     vesktop
     video-trimmer
