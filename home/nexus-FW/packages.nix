@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    jre_minimal
     cava
     ffmpeg
     firefox
