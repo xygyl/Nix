@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    jre_minimal
     cava
     ffmpeg
     firefox
@@ -10,6 +9,7 @@
     gimp
     gnome-themes-extra
     gnupg
+    jre_minimal
     kdePackages.kdenlive
     kdePackages.neochat
     keepassxc
