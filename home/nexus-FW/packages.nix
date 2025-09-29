@@ -45,6 +45,5 @@
     wl-clipboard
     wlsunset
     xwayland-satellite
-    zathura
   ];
 }

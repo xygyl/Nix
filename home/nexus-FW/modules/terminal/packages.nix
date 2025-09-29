@@ -9,7 +9,6 @@
     astroterm
     bandwhich
     bat
-    binsider
     brightnessctl
     cbonsai
     difftastic
@@ -23,7 +22,6 @@
     git-filter-repo
     gitui
     gping
-    himalaya
     hw-probe
     iamb
     jujutsu
@@ -31,13 +29,11 @@
     keepass-diff
     macchina
     neovim
-    onefetch
     ouch
     pastel
     pipes-rs
     pngcheck
     pngcrush
-    protonup
     protonup-rs
     ripgrep
     rmpc

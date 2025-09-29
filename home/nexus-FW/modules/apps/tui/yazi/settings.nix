@@ -44,7 +44,7 @@
         { run = ''nomacs -f "$@"''; }
       ];
       pdf = [
-        { run = ''zathura "$@"''; }
+        { run = ''firefox "$@"''; }
       ];
     };
     tasks = {
