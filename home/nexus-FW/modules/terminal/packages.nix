@@ -10,6 +10,7 @@
     bandwhich
     bat
     brightnessctl
+    btop-rocm
     cbonsai
     difftastic
     dua

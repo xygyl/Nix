@@ -90,6 +90,7 @@
           child = [
             { ratio = 4; type = "cpu"; }
             { type = "battery"; }
+            { ratio = 2; type = "temp"; }
           ];
         }
         {

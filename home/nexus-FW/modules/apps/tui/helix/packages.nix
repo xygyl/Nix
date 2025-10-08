@@ -9,6 +9,9 @@
 
     # KDL
     kdlfmt
+    # Markdown
+    markdown-oxide
+    marksman
     # Nix
     nil
     nixd

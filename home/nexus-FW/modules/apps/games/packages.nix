@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    # aisleriot
     chess-tui
     # factorio-space-age
     # mindustry
