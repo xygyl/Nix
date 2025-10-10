@@ -19,11 +19,11 @@
 
       processes = {
         columns = [
-          "PID"            
+          "PID"
           "Name"
           "CPU%"
           "Mem%"
-          "GMem%"            
+          "GMem%"
           "GPU%"
           "User"
         ];
@@ -76,7 +76,7 @@
 
         widgets = {
           border_color = "#312A50";
-          selected_border_color = "#312A50";
+          selected_border_color = "#DDE1FF";
           widget_title = {color = "#6B5DFF"; };
           text = {color = "#DDE1FF"; };
           selected_text = {color = "black"; bg_color = "#6B5DFF"; };
