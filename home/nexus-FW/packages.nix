@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     cava
+    chatgpt-cli
     ffmpeg
     firefox
     gamescope
@@ -41,6 +42,7 @@
     unrar-free
     vesktop
     video-trimmer
+    vivaldi
     wev
     wl-clipboard
     wlsunset
