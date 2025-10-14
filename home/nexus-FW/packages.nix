@@ -17,6 +17,7 @@
     krita
     libratbag
     libreoffice
+    mcomix
     mpd
     mpv
     networkmanagerapplet
@@ -39,7 +40,7 @@
     tor-browser
     typst
     typstPackages.syntree
-    unrar-free
+    unrar
     vesktop
     video-trimmer
     vivaldi
