@@ -16,7 +16,6 @@
         memory_legend = "top-left";
         network_legend = "top-left";
       };
-
       processes = {
         columns = [
           "PID"
@@ -28,11 +27,9 @@
           "User"
         ];
       };
-
       cpu = {
         default = "all";
       };
-
       styles = {
         cpu = {
           all_entry_color = "#DDE1FF";
@@ -47,33 +44,27 @@
             "#6B5DFF"
           ];
         };
-
         memory = {
           ram_color = "#FF006A";
           swap_color = "#00EAFF";
           gpu_colors = ["#00FFAA" "#6B5DFF"];
         };
-        
         network = {
           rx_color = "#00FFAA";
           tx_color = "#6B5DFF";
         };
-
         battery = {
           high_battery_color = "#00FFAA";
           medium_battery_color = "#F1FF5D";
           low_battery_color = "#FF006A";
         };
-
         tables = {
           headers = {color = "#5D92FF"; bold = true; };
         };
-
         graphs = {
           graph_color = "#DDE1FF";
           legend_text = {color = "#DDE1FF"; };
         };
-
         widgets = {
           border_color = "#312A50";
           selected_border_color = "#DDE1FF";
@@ -83,7 +74,6 @@
           disabled_text = {color = "dark gray"; };
         };
       };
-
       row = [
         {
           ratio = 30;

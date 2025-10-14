@@ -16,10 +16,22 @@
       wrap          = "yes";
     };
     open.prepend_rules = [
-    	{ name = "*.{gpg,asc}"; use = "decrypt"; }
-    	{ name = "*.zst"; use = "extract_zstd"; }
-    	{ name = "*.pdf"; use = "pdf"; }
-    	{ name = "*.{png,jpg,gif,jfif,webp}"; use = "view"; }
+    	{
+    	  name = "*.{gpg,asc}";
+    	  use = "decrypt";
+    	}
+    	{
+    	  name = "*.zst";
+    	  use = "extract_zstd";
+    	}
+    	{
+    	  name = "*.pdf";
+    	  use = "pdf";
+    	}
+    	{
+    	  name = "*.{png,jpg,gif,jfif,webp}";
+    	  use = "view";
+    	}
     ];
     opener = {
       decrypt = [
@@ -52,8 +64,16 @@
       image_bound = [0 0];
     };
     plugin.prepend_fetchers = [
-    	{ id = "git"; name = "*"; run = "git"; }
-    	{ id = "git"; name = "*/"; run = "git"; }
+    	{
+    	  id = "git";
+    	  name = "*";
+    	  run = "git";
+    	}
+    	{
+    	  id = "git";
+    	  name = "*/";
+    	  run = "git";
+    	}
     ];
   };
 }

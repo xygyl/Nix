@@ -10,16 +10,13 @@
       margin-bottom = 0;
       spacing = 1;
       reload_style_on_change = true;
-
       modules-left = ["clock"];
-
       modules-right = [
         "wireplumber#sink"
         "backlight"
         "battery"
         "custom/separator"
       ];
-
       clock = {
         interval = 1;
         format = "{:%A, %B %d, %Y | %R} ";

@@ -27,12 +27,10 @@
       enable_cover_image_cache = true;
       default_device = "spotify-player";
       notify_streaming_only = false;
-
       notify_format = {
         summary = "{artists} {track}";
         body = "{album}";
       };
-
       device = {
         name = "spotify-player";
         device_type = "computer";

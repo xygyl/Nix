@@ -2,32 +2,25 @@
   programs.yazi.theme = {
     mgr = {
       cwd             = { fg = "#00FFAA"; };
-
       hovered         = { fg = "#00EAFF"; bold = true; italic = true; };
       preview_hovered = {};
-
       find_keyword    = { fg = "#F1FF5D"; bold = true; reversed = true; };
       find_position   = { fg = "#AE5DFF"; bg = "reset"; bold = true; };
-
       marker_copied   = { fg = "#00FFAA"; };
       marker_cut      = { fg = "#FF006A"; };
       marker_marked   = { fg = "#00EAFF"; };
       marker_selected = { fg = "#F1FF5D"; };
-
       tab_active      = { fg = "#00FFAA"; bg = "black";reversed = true; };
       tab_inactive    = {};
       tab_width       = 20;
-
       count_copied    = { fg = "black"; bg = "#00FFAA"; };
       count_cut       = { fg = "black"; bg = "#FF006A"; };
       count_selected  = { fg = "black"; bg = "#F1FF5D"; };
-
       border_style    = { fg = "#312A50"; };
     };
     tabs = {
       active          = { fg = "#00FFAA"; bg = "black"; };
       inactive        = { fg = "#DDE1FF"; bg = "black"; };
-
       sep_inner       = { open = ""; close = ""; };
       sep_outer       = { open = ""; close = ""; };
     };
@@ -43,11 +36,9 @@
       separator_open  = "";
       separator_close = "";
       separator_style = { fg = "black"; bg = "black"; };
-
       progress_label  = { bold = true; };
       progress_normal = { fg = "black"; bg = "#00EAFF"; };
       progress_error  = { fg = "black"; bg = "#FF006A"; };
-
       permissions_t   = { fg = "#00FFAA"; };
       permissions_r   = { fg = "#F1FF5D"; };
       permissions_w   = { fg = "#FF006A"; };
@@ -90,21 +81,16 @@
       rules = [
         # images
         { mime = "image/*"; fg = "#F1FF5D"; }
-
         # media
         { mime = "{audio,video}/*"; fg = "#F98771"; }
-
         # documents
         { mime = "application/{pdf,doc,rtf,vnd.*}"; fg = "#FF5D85"; }
-  
         # archives
         { mime = "application/{,g}zip"; fg = "#F971CD"; }
         { mime = "application/{tar,bzip*,7z-compressed,xz,rar}"; fg = "#F971CD"; }
         { mime = "application/{zstd}"; fg = "#F971CD"; }
-
         # encryption
         { name = "*.{gpg,asc}"; fg = "#417BFF"; }
-
         # fallback
         { name = "*/"; fg = "#6B5DFF"; }
         { name = "*"; fg = "#DDE1FF"; }
@@ -139,7 +125,6 @@
         { name = "lock"; text = ""; }
         { name = "pdf"; text = ""; }
         { name = "txt"; text = ""; }
-
         # code
         { name = "cpp"; text = ""; }
         { name = "css"; text = ""; }
@@ -160,18 +145,15 @@
         { name = "toml"; text = ""; }
         { name = "typ"; text = ""; }
         { name = "yaml"; text = "󰰳"; }
-
         # images
         { name = "gif"; text = "󰵸"; }
         { name = "jpg"; text = "󰈥"; }
         { name = "png"; text = "󰸭"; }
-
         # videos
         { name = "avi"; text = ""; }
         { name = "m4v"; text = ""; }
         { name = "mkv"; text = ""; }
         { name = "mp4"; text = ""; }
-
         # archives
         { name = "7z"; text = ""; }
         { name = "br"; text = ""; }
@@ -188,7 +170,6 @@
         { name = "zip"; text = ""; }
         { name = "zpaq"; text = ""; }
         { name = "zst"; text = ""; }
-
         # encryption
         { name = "asc"; text = "󰳍"; }
         { name = "gpg"; text = ""; }
