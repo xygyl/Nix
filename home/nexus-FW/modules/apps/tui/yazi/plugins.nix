@@ -9,6 +9,7 @@
     "smart-enter"  = yaziPlugins.smart-enter;
     "smart-filter" = yaziPlugins.smart-filter;
     "smart-paste"  = yaziPlugins.smart-paste;
+    "starship"     = yaziPlugins.starship;
     "toggle-pane"  = yaziPlugins.toggle-pane;
     "vcs-files"    = yaziPlugins.vcs-files;
   };
