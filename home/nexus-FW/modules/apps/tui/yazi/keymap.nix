@@ -6,6 +6,14 @@
       desc = "Mount drives";
     }
     {
+      on = "<S-Up>";
+      run = "plugin parent-arrow -1";
+    }
+    {
+      on = "<S-Down>";
+      run = "plugin parent-arrow 1";
+    }
+    {
       on = "D";
       run = "remove";
     }
