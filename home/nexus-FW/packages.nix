@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    binsider
     cava
     chatgpt-cli
     ffmpeg
@@ -33,6 +34,7 @@
     poppler
     prismlauncher
     qbittorrent
+    scope-tui
     stockfish
     swww
     syncthing
@@ -40,10 +42,10 @@
     tor-browser
     typst
     typstPackages.syntree
+    ungoogled-chromium
     unrar
     vesktop
     video-trimmer
-    vivaldi
     wev
     wl-clipboard
     wlsunset
