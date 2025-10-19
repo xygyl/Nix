@@ -1,5 +1,6 @@
 {
   imports = [
+    ./mpt.nix
     ./boot.nix
     ./env.nix
     ./firewall.nix

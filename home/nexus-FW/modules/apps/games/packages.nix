@@ -3,13 +3,13 @@
 {
   home.packages = with pkgs; [
     # aisleriot
-    asciiquarium-transparent
+    # asciiquarium-transparent
     chess-tui
     # factorio-space-age
     # mindustry
     # openttd
     # osu-lazer
-    ponysay
+    # ponysay
     # quantframe
     # veloren
   ];

@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    git-lfs
     binsider
     cava
     chatgpt-cli

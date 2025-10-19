@@ -1,8 +1,8 @@
 {
   programs.git = {
     enable = true;
-    userName = "xygyl";
-    userEmail = "xygyl@proton.me";
+    settings.user.name = "xygyl";
+    settings.user.email = "xygyl@proton.me";
 
     includes = [
       {
