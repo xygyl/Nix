@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    git-lfs
     binsider
     cava
     chatgpt-cli
@@ -10,6 +9,7 @@
     firefox
     gamescope
     gimp
+    git-lfs
     gnome-themes-extra
     gnupg
     jre_minimal
