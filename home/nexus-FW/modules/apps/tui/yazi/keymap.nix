@@ -30,14 +30,19 @@
       run = [ "sort mtime --reverse=yes" "linemode mtime" ];
     }
     {
-      on = [ "g" "r" ];
-      run = ''shell -- ya emit cd "$(git rev-parse --show-toplevel)"'';
-      desc = "Go to root of git repo";
-    }
-    {
       on = [ "g" "c" ];
       run = "plugin vcs-files";
       desc = "Show git file changes";
+    }
+    {
+      on = [ "g" "p" ];
+      run = "cd ~/Ram";
+      desc = "Go to tmpfs";
+    }
+    {
+      on = [ "g" "r" ];
+      run = ''shell -- ya emit cd "$(git rev-parse --show-toplevel)"'';
+      desc = "Go to root of git repo";
     }
     {
       on = "<C-t>";
