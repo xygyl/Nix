@@ -6,7 +6,7 @@
     (final: prev: {
       argtable = prev.argtable.overrideAttrs (old: {
         cmakeFlags = (old.cmakeFlags or []) ++ [
-          "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+          # "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
         ];
       });
     })

@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     cargo
+    cargo-generate
     cargo-seek
     clang
     clang-tools

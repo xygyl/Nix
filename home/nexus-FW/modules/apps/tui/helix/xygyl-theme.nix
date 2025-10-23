@@ -28,7 +28,7 @@
       "diagnostic.hint"        = { bg = "dark-cyan"; };
       "diagnostic.info"        = { bg = "dark-white"; };
       "diagnostic.unnecessary" = { modifiers = [ "dim" ]; };
-      "diagnostic.warning"     = { bg = "dark-yellow"; };
+      "diagnostic.warning"     = { underline = { color = "yellow"; style = "dashed"; }; };
 
       error   = { fg = "red"; };
       hint    = { fg = "cyan"; bg = "dark-cyan"; };
