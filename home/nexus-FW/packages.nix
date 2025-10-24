@@ -13,8 +13,6 @@
     gnome-themes-extra
     gnupg
     jre_minimal
-    kdePackages.kdenlive
-    kdePackages.neochat
     keepassxc
     krita
     libratbag
