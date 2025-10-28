@@ -2,6 +2,9 @@
 
 {
   home.packages = with pkgs; [
+    zed-editor
+    teehee
+    hexyl
     binsider
     cava
     chatgpt-cli
