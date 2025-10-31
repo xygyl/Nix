@@ -2,19 +2,18 @@
 
 {
   home.packages = with pkgs; [
-    zed-editor
-    teehee
-    hexyl
     binsider
     cava
     chatgpt-cli
     ffmpeg
     firefox
+    flac
     gamescope
     gimp
     git-lfs
     gnome-themes-extra
     gnupg
+    hexyl
     jre_minimal
     keepassxc
     krita
@@ -40,6 +39,7 @@
     stockfish
     swww
     syncthing
+    teehee
     thunderbird
     tor-browser
     typst
@@ -52,5 +52,6 @@
     wl-clipboard
     wlsunset
     xwayland-satellite
+    zed-editor
   ];
 }
