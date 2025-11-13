@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     binsider
+    calibre
     cava
     chatgpt-cli
     ffmpeg

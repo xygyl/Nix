@@ -1,6 +1,7 @@
 {
   programs.helix.themes = {
-    xygyl = {
+    xygyl  = {
+      # inherits = "default";
       "ui.bufferline.active"    = { fg = "light-magenta"; bg = "dark-magenta"; };
       "ui.bufferline"           = { bg = "black"; };
       "ui.cursor"               = { fg = "green"; modifiers = [ "reversed" ]; };
@@ -35,19 +36,24 @@
       info    = { fg = "default"; bg = "dark-white"; };
       warning = { fg = "yellow"; bg = "dark-yellow"; };
 
-      "comment.documentation"     = "magenta";
-      comment                     = "light-black";
-      constant                    = "blue";
-      "constant.character.escape" = "magenta";
-      constructor                 = "light-cyan";
-      function                    = "cyan";
-      "function.macro"            = "magenta";
-      "keyword.directive"         = "magenta";
-      keyword                     = "orange";
-      label                       = "green";
-      special                     = "light-cyan";
-      string                      = "red";
-      type                        = "green";
+      comment                       = "light-black";
+      # "comment.line"                = "light-black";
+      # "comment.line.documentation"  = "light-black";
+      # "comment.block"               = "magenta";
+      # "comment.block.documentation" = "magenta";
+
+      constant                      = "blue";
+      "constant.builtin"            = "blue";
+      "constant.character.escape"   = "magenta";
+      constructor                   = "light-cyan";
+      function                      = "cyan";
+      "function.macro"              = "magenta";
+      "keyword.directive"           = "magenta";
+      keyword                       = "orange";
+      label                         = "green";
+      special                       = "light-cyan";
+      string                        = "red";
+      type                          = "green";
 
       "diff.delta" = "yellow";
       "diff.minus" = "red";
