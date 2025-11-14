@@ -20,7 +20,7 @@
     krita
     libratbag
     libreoffice
-    mcomix
+    # mcomix
     mpd
     mpv
     networkmanagerapplet
@@ -53,6 +53,7 @@
     wl-clipboard
     wlsunset
     xwayland-satellite
+    zathura
     zed-editor
   ];
 }
