@@ -22,11 +22,7 @@
       enableSSHSupport = true;
       pinentryPackage = pkgs.pinentry-curses;
     };
-
-    niri = {
-      enable = true;
-    };
-
+    niri.enable = true;
     steam = {
       enable = true;
       remotePlay.openFirewall = true;

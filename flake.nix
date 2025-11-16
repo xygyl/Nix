@@ -7,9 +7,10 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    niri.url = "github:sodiboo/niri-flake";
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }:
+  outputs = inputs@{ nixpkgs, home-manager, niri, ... }:
   let
     system = "x86_64-linux";
     username = "xygyl";
@@ -26,6 +27,7 @@
         inherit inputs hostname username stateVersion;
       };
       modules = [
+        niri.nixosModules.niri
         ./hosts/${hostname}
       ];
     };
@@ -36,6 +38,7 @@
         inherit inputs username homeStateVersion hostname;
       };
       modules = [
+        niri.homeModules.niri
         ./home/${hostname}
       ];
     };
@@ -46,7 +49,7 @@
         inherit (host) hostname stateVersion;
       };
     }) hosts);
-
+    
     homeConfigurations = builtins.listToAttrs (map (host: {
       name = "${username}@${host.hostname}";
       value = makeHome {
