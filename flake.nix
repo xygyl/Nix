@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/master";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     niri.url = "github:sodiboo/niri-flake";
@@ -14,11 +14,11 @@
   let
     system = "x86_64-linux";
     username = "xygyl";
-    homeStateVersion = "25.11";
+    homeStateVersion = "26.05";
 
     hosts = [
-      { hostname = "nexus-FW"; stateVersion = "25.11"; }
-      { hostname = "nexus"; stateVersion = "25.11"; }
+      { hostname = "nexus-FW"; stateVersion = "26.05"; }
+      { hostname = "nexus"; stateVersion = "26.05"; }
     ];
 
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {

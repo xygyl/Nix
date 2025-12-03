@@ -2,6 +2,8 @@
 
 {
   home.packages = with pkgs; [
+    cachix
+    pwvucontrol
     binsider
     calibre
     cava
