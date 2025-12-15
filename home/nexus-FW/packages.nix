@@ -2,9 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    cachix
-    pwvucontrol
     binsider
+    cachix
     calibre
     cava
     chatgpt-cli
@@ -37,7 +36,9 @@
     pkg-config
     poppler
     prismlauncher
+    pwvucontrol
     qbittorrent
+    radicle-tui
     scope-tui
     stockfish
     swww
