@@ -16,6 +16,7 @@
 
     # Go
     delve
+    golangci-lint
     golangci-lint-langserver
     gopls
     # KDL
