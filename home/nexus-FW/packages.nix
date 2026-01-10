@@ -7,6 +7,7 @@
     calibre
     cava
     chatgpt-cli
+    claude-code
     ffmpeg
     firefox
     flac
@@ -57,6 +58,5 @@
     wlsunset
     xwayland-satellite
     zathura
-    zed-editor
   ];
 }

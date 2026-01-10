@@ -90,10 +90,10 @@
         { mime = "application/{tar,bzip*,7z-compressed,xz,rar}"; fg = "#F971CD"; }
         { mime = "application/{zstd}"; fg = "#F971CD"; }
         # encryption
-        { name = "*.{gpg,asc}"; fg = "#417BFF"; }
+        { url = "*.{gpg,asc}"; fg = "#417BFF"; }
         # fallback
-        { name = "*/"; fg = "#6B5DFF"; }
-        { name = "*"; fg = "#DDE1FF"; }
+        { url = "*/"; fg = "#6B5DFF"; }
+        { url = "*"; fg = "#DDE1FF"; }
       ];
     };
     icon = {

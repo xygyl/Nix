@@ -14,6 +14,7 @@
     # pioneer
     # ponysay
     # quantframe
+    rebels-in-the-sky
     # veloren
   ];
 }
