@@ -14,7 +14,6 @@
     go
     # Python
     python3
-    uv
     # Rust
     cargo
     cargo-generate

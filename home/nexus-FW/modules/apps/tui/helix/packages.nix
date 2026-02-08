@@ -1,26 +1,37 @@
 { pkgs, ...}:
+
+    # CSS
     # Go
+    # HTML
+    # Javascript
     # KDL
+    # Lua
     # Markdown
     # Nix
     # Python
     # TOML
+    # Typescript
     # Typst
-
+    # Zig
 {
   home.packages = with pkgs; [
     lldb
-    lua-language-server
-    vscode-css-languageserver
-    vscode-json-languageserver
+    vscode-langservers-extracted
 
     # Go
     delve
     golangci-lint
     golangci-lint-langserver
     gopls
+    # HTML
+    superhtml
+    # Javascript
+    typescript-language-server
+    nodejs
     # KDL
     kdlfmt
+    # Lua
+    lua-language-server
     # Markdown
     markdown-oxide
     marksman
@@ -30,9 +41,12 @@
     # Python
     ruff
     ty
+    uv
     # TOML
     taplo
     tombi
+    # Typescript
+    nodePackages.typescript
     # Typst
     tinymist
     # Zig

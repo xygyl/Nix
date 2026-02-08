@@ -1,6 +1,6 @@
 {
   programs.rio = {
-    enable = false;
+    enable = true;
 
     settings = {
       padding-x = 5;

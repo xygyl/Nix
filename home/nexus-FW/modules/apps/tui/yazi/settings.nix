@@ -16,10 +16,11 @@
       wrap          = "yes";
     };
     open.prepend_rules = [
-    	{ name = "*.{gpg,asc}"; use = "decrypt"; }
-    	{ name = "*.zst"; use = "extract_zstd"; }
-    	{ name = "*.pdf"; use = "pdf"; }
-    	{ name = "*.{png,jpg,gif,jfif,webp}"; use = "view"; }
+    	{ url = "*.{gpg,asc}"; use = "decrypt"; }
+    	{ url = "*.zst"; use = "extract_zstd"; }
+    	{ url = "*.pdf"; use = "pdf"; }
+    	{ url = "*.{cbr,cbz}"; use = "comic"; }
+    	{ url = "*.{png,jpg,gif,jfif,webp}"; use = "view"; }
     ];
     opener = {
       decrypt = [ { run = ''gpg -o "$${1%.*}" -d "$1"''; } ];
@@ -28,7 +29,9 @@
       extract_zstd = [ { run = ''zstd -d --long=31 "$@"''; } ];
       open = [ { run = ''xdg-open "$@"''; } ];
       play = [ { run = ''mpv --force-window=yes --loop "$@"''; orphan = true; } ];
+      # view = [ { run = ''mcomix -f "$@"''; } ];
       view = [ { run = ''nomacs -f "$@"''; } ];
+      comic = [ { run = ''mcomix -fd "$@"''; } ];
       pdf = [ { run = ''firefox "$@"''; } ];
     };
     tasks = {

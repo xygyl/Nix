@@ -2,12 +2,14 @@
 
 {
   home.packages = with pkgs; [
+    brave
     binsider
     cachix
     calibre
     cava
     chatgpt-cli
     claude-code
+    discordo
     ffmpeg
     firefox
     flac
@@ -17,8 +19,10 @@
     gnome-themes-extra
     gnupg
     hexyl
+    instaloader
     jre_minimal
     keepassxc
+    kid3
     krita
     libratbag
     libreoffice
@@ -31,6 +35,7 @@
     nomacs
     nwg-look
     obs-studio
+    ollama-rocm
     pavucontrol
     pdftk
     piper
