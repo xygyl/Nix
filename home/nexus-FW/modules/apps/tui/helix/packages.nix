@@ -1,18 +1,17 @@
 { pkgs, ...}:
-
-    # CSS
-    # Go
-    # HTML
-    # Javascript
-    # KDL
-    # Lua
-    # Markdown
-    # Nix
-    # Python
-    # TOML
-    # Typescript
-    # Typst
-    # Zig
+# CSS
+# Go
+# HTML
+# Javascript
+# KDL
+# Lua
+# Markdown
+# Nix
+# Python
+# TOML
+# Typescript
+# Typst
+# Zig
 {
   home.packages = with pkgs; [
     lldb

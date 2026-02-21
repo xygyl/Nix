@@ -1,15 +1,16 @@
 { pkgs, ... }:
 
-# Clang
+# C
 # Go
 # Python
 # Rust
 # Zig
 {
   home.packages = with pkgs; [
-    # Clang
+    # C
     clang
     clang-tools
+    # gcc
     # Go
     go
     # Python
@@ -18,6 +19,7 @@
     cargo
     cargo-generate
     cargo-seek
+    cargo-tauri
     clippy
     rust-analyzer
     rustc

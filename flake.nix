@@ -3,11 +3,9 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    home-manager.url = "github:nix-community/home-manager";
     niri.url = "github:sodiboo/niri-flake";
+    dms.url = "github:AvengeMedia/DankMaterialShell";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, niri, ... }:

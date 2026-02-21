@@ -127,6 +127,7 @@
         { name = "txt"; text = ""; }
         # code
         { name = "cpp"; text = ""; }
+        { name = "ts"; text = ""; }
         { name = "css"; text = ""; }
         { name = "cs"; text = ""; }
         { name = "c"; text = ""; }

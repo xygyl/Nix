@@ -2,6 +2,12 @@
 
 {
   home.packages = with pkgs; [
+    fluffychat
+    element
+    appimage-run
+    stoat-desktop
+    deno
+    blender
     brave
     binsider
     cachix
@@ -35,7 +41,7 @@
     nomacs
     nwg-look
     obs-studio
-    ollama-rocm
+    # ollama-rocm
     pavucontrol
     pdftk
     piper
@@ -63,5 +69,6 @@
     wlsunset
     xwayland-satellite
     zathura
+    zed-editor
   ];
 }
