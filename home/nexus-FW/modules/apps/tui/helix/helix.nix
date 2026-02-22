@@ -2,7 +2,7 @@
   programs.helix = {
     enable = true;
     settings = {
-      # theme = "xygyl";
+      # theme = "xygyl-2";
       # theme = "anon";
       theme = "modus_vivendi";
       editor = {

@@ -89,8 +89,8 @@ layout {
         length total-proportion=1.0
         position "left"
         place-within-column
-        active-color "6b5dff"
-        inactive-color "000000"
+        active-color "#6b5dff"
+        inactive-color "#000000"
     }
 }
 
