@@ -2,7 +2,7 @@
   imports = [
     ./anyrun
     ./fuzzel
-    ./niri.nix
+    ./niri
     ./starship
     ./waybar
   ];
