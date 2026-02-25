@@ -3,7 +3,12 @@ screenshot-path "~/Pictures/%Y-%m-%d_%H:%M:%S.png"
 
 window-rule {
     match title="nomacs"
-    open-fullscreen true    
+    open-fullscreen true
+}
+
+window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
 }
 
 gestures {

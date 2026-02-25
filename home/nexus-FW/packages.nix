@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    zpaq
     fluffychat
     element
     appimage-run
@@ -11,7 +12,7 @@
     brave
     binsider
     cachix
-    calibre
+    # calibre
     cava
     chatgpt-cli
     claude-code
@@ -29,7 +30,7 @@
     jre_minimal
     keepassxc
     kid3
-    krita
+    # krita  # Temporarily disabled - build failure with lager/boost
     libratbag
     libreoffice
     # mcomix
