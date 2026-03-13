@@ -12,7 +12,7 @@
     brave
     binsider
     cachix
-    # calibre
+    calibre
     cava
     chatgpt-cli
     claude-code
@@ -30,7 +30,7 @@
     jre_minimal
     keepassxc
     kid3
-    # krita  # Temporarily disabled - build failure with lager/boost
+    krita
     libratbag
     libreoffice
     # mcomix

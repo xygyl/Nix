@@ -16,6 +16,8 @@
   home.packages = with pkgs; [
     lldb
     vscode-langservers-extracted
+    mysql84
+    bun
 
     # Go
     delve
