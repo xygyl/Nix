@@ -2,7 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    zpaq
     fluffychat
     element
     appimage-run
@@ -33,7 +32,7 @@
     krita
     libratbag
     libreoffice
-    # mcomix
+    mcomix
     mpd
     mpv
     networkmanagerapplet
