@@ -1,5 +1,6 @@
 {
   nixpkgs.config.permittedInsecurePackages = [
+    "electron-38.8.4"
     "olm-3.2.16"
   ];
 

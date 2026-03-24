@@ -7,6 +7,27 @@ window-rule {
 }
 
 window-rule {
+    match title="kitty"
+    background-effect {
+        blur true
+    }
+}
+
+layer-rule {
+    match namespace="^launcher$"
+    background-effect {
+        blur true
+    }
+}
+
+blur {
+    passes 3
+    offset 3
+    noise 0.02
+    saturation 1.0
+}
+
+window-rule {
     geometry-corner-radius 0
     clip-to-geometry true
 }
@@ -18,7 +39,7 @@ gestures {
 }
 
 layer-rule {
-    match namespace="swww-daemon"
+    match namespace="awww-daemon"
     place-within-backdrop true
 }
 
@@ -34,7 +55,7 @@ cursor {
 
 spawn-at-startup "brightnessctl" "set" "50%";
 spawn-at-startup "mpd";
-spawn-at-startup "swww-daemon";
+spawn-at-startup "awww-daemon";
 spawn-at-startup "waybar";
 spawn-at-startup "wlsunset" "-l" "29.4" "-L" "-98.4";
 spawn-at-startup "xwayland-satellite";

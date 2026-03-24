@@ -1,38 +1,39 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.packages = with pkgs; [
-    fluffychat
-    element
-    appimage-run
-    stoat-desktop
-    deno
+    inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    # fluffychat
+    # element
+    # appimage-run
+    # stoat-desktop
+    # deno
     blender
     brave
     binsider
-    cachix
+    # cachix
     calibre
     cava
-    chatgpt-cli
+    # chatgpt-cli
     claude-code
     discordo
     ffmpeg
     firefox
     flac
-    gamescope
+    # gamescope
     gimp
     git-lfs
     gnome-themes-extra
     gnupg
-    hexyl
+    # hexyl
     instaloader
     jre_minimal
     keepassxc
-    kid3
+    # kid3
     krita
-    libratbag
+    # libratbag
     libreoffice
-    mcomix
+    # mcomix
     mpd
     mpv
     networkmanagerapplet
@@ -43,24 +44,23 @@
     obs-studio
     # ollama-rocm
     pavucontrol
-    pdftk
-    piper
+    # pdftk
+    # piper
     pkg-config
     poppler
     prismlauncher
     pwvucontrol
     qbittorrent
     radicle-tui
-    scope-tui
+    # scope-tui
     stockfish
-    swww
     syncthing
-    teehee
+    # teehee
     thunderbird
     tor-browser
     typst
-    typstPackages.syntree
-    ungoogled-chromium
+    # typstPackages.syntree
+    # ungoogled-chromium
     unrar
     vesktop
     video-trimmer
@@ -68,7 +68,7 @@
     wl-clipboard
     wlsunset
     xwayland-satellite
-    zathura
+    # zathura
     zed-editor
   ];
 }

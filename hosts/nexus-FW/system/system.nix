@@ -1,6 +1,9 @@
 { stateVersion, pkgs, ... }:
 
 {
+  virtualisation.docker.enable = true;
+  users.users.xygyl.extraGroups = [ "docker" ];
+
   nix.settings.experimental-features = [ 
     "nix-command" 
     "flakes" 

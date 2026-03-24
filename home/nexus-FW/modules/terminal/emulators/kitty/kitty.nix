@@ -21,7 +21,8 @@ in {
       enable_audio_bell = "no";
       text_composition_strategy = "legacy";
       scrollback_lines = "5000";
-      background_opacity = 0.9;
+      background_opacity = 0.8;
+      background_blur = 1;
       bold_font = "auto";
       italic_font = "auto";
       bold_italic_font = "auto";

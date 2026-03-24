@@ -3,11 +3,12 @@
     enable = true;
     settings = {
       colors = {
-        background = "000000dd";
+        background = "000000CC";
+        border = "312A50FF";
       };
       border = {
-        width = 0;
-        radius = 5;
+        width = 1;
+        radius = 0;
       };
     };
   };

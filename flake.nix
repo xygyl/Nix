@@ -5,6 +5,7 @@
     nixpkgs.url = "nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     niri.url = "github:sodiboo/niri-flake";
+    awww.url = "git+https://codeberg.org/LGFae/awww";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, niri, ... }:

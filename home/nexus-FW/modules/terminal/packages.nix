@@ -15,7 +15,7 @@
     difftastic
     dua
     dysk
-    eza
+    # eza
     fd
     fend
     fzf
@@ -24,7 +24,7 @@
     gitui
     gping
     hw-probe
-    iamb
+    # iamb
     jujutsu
     kalker
     keepass-diff
@@ -38,12 +38,12 @@
     protonup-rs
     ripgrep
     rmpc
-    rqbit
+    # rqbit
     sd
-    speedtest-cli
+    # speedtest-cli
     tokei
     unzip
-    vhs
+    # vhs
     weechat
     wf-recorder
     wget
