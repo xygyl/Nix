@@ -1,9 +1,6 @@
-{ inputs, username, ... }:
-
+{ username, ... }:
 
 {
-  imports = [
-  ];
   home ={
     username = "${username}";
     homeDirectory = "/home/${username}";

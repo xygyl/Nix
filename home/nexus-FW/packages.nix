@@ -15,6 +15,8 @@
     calibre
     cava
     # chatgpt-cli
+    oterm
+    codex
     claude-code
     discordo
     ffmpeg
@@ -42,7 +44,7 @@
     nomacs
     nwg-look
     obs-studio
-    # ollama-rocm
+    ollama-rocm
     pavucontrol
     # pdftk
     # piper
