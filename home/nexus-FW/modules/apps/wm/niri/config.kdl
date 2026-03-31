@@ -17,6 +17,7 @@ layer-rule {
     match namespace="^launcher$"
     background-effect {
         blur true
+        xray false
     }
 }
 
@@ -65,6 +66,7 @@ input {
         xkb {
             layout  "us";
             variant "";
+            // variant "intl";
             options "";
         }
         numlock

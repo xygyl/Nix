@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       colors = {
-        background = "000000CC";
+        background = "000000AA";
         border = "312A50FF";
       };
       border = {

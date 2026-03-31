@@ -15,8 +15,6 @@
     calibre
     cava
     # chatgpt-cli
-    oterm
-    codex
     claude-code
     discordo
     ffmpeg
