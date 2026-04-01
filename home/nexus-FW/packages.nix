@@ -43,6 +43,7 @@
     nwg-look
     obs-studio
     ollama-rocm
+    llama-cpp-rocm
     pavucontrol
     # pdftk
     # piper

@@ -17,7 +17,6 @@ layer-rule {
     match namespace="^launcher$"
     background-effect {
         blur true
-        xray false
     }
 }
 
@@ -25,7 +24,7 @@ blur {
     passes 3
     offset 3
     noise 0.02
-    saturation 1.0
+    saturation 1.25
 }
 
 window-rule {
