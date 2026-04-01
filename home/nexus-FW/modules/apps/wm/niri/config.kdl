@@ -53,7 +53,6 @@ spawn-at-startup "mpd";
 spawn-at-startup "awww-daemon";
 spawn-at-startup "waybar";
 spawn-at-startup "wlsunset" "-l" "29.4" "-L" "-98.4";
-spawn-at-startup "xwayland-satellite";
 
 input {
     keyboard {
