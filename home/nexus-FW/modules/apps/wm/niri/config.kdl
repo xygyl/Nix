@@ -1,35 +1,11 @@
 prefer-no-csd
 screenshot-path "~/Pictures/%Y-%m-%d_%H:%M:%S.png"
 
-window-rule {
-    match title="nomacs"
-    open-fullscreen true
-}
-
-window-rule {
-    match title="kitty"
-    background-effect {
-        blur true
-    }
-}
-
-layer-rule {
-    match namespace="^launcher$"
-    background-effect {
-        blur true
-    }
-}
-
 blur {
     passes 3
     offset 3
     noise 0.02
     saturation 1.25
-}
-
-window-rule {
-    geometry-corner-radius 0
-    clip-to-geometry true
 }
 
 gestures {
@@ -38,13 +14,32 @@ gestures {
     }
 }
 
+window-rule {
+    match title="nomacs"
+    open-fullscreen true
+}
+
+window-rule {
+    geometry-corner-radius 0
+    clip-to-geometry true
+    background-effect {
+        blur true
+    }
+}
+
 layer-rule {
     match namespace="awww-daemon"
     place-within-backdrop true
 }
 
+layer-rule {
+    background-effect {
+        blur true
+    }
+}
+
 overview {
-    zoom 0.6
+    zoom 0.8
 }
 
 cursor {
@@ -111,7 +106,7 @@ layout {
     }
     tab-indicator {
         hide-when-single-tab
-        width 2
+        width 1
         gap 0
         length total-proportion=1.0
         position "left"
@@ -193,15 +188,16 @@ recent-windows {
 binds {
     Mod+D { spawn "vesktop"; }
     Mod+E { spawn "firefox"; }
-    Mod+Q { spawn "kitty" "zellij"; }
-    Mod+Shift+Q { spawn "kitty"; }
+    // Mod+Q { spawn "kitty" "zellij"; }
+    // Mod+Shift+Q { spawn "kitty"; }
+    Mod+Shift+Q { spawn "kitty" "zellij"; }
+    Mod+Q { spawn "kitty"; }
     Mod+R { spawn "fuzzel"; }
     Mod+S { spawn "steam"; }
 
     Mod+C { close-window; }
     XF86Tools { close-window; }
     Ctrl+Alt+Delete { quit skip-confirmation=true; }
-
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
