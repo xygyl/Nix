@@ -3,7 +3,7 @@
 {
   users.users.${username} = {
     isNormalUser = true;
-    extraGroups = [ "audio" "networkmanager" "wheel" "video" ];
+    extraGroups = [ "audio" "networkmanager" "wheel" "video" "docker" ];
     shell = pkgs.nushell;
   };
 
