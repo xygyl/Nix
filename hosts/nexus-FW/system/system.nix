@@ -1,6 +1,10 @@
 { stateVersion, pkgs, ... }:
 
 {
+  networking.interfaces.eth0.ipv4.addresses = [{
+    address = "10.0.0.1";
+    prefixLength = 24;
+  }];
   nix.settings.experimental-features = [ 
     "nix-command" 
     "flakes" 
