@@ -47,7 +47,6 @@
     taplo
     tombi
     # Typescript
-    nodePackages.typescript
     # Typst
     tinymist
     # Zig

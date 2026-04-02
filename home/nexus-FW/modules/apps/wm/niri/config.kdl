@@ -26,6 +26,14 @@ window-rule {
 }
 
 window-rule {
+    match is-floating=true
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+window-rule {
     geometry-corner-radius 0
     clip-to-geometry true
     background-effect { blur true; }
@@ -34,6 +42,14 @@ window-rule {
 layer-rule {
     match namespace="awww-daemon"
     place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^launcher$"
+    background-effect {
+        blur true
+        xray false
+    }
 }
 
 layer-rule {
