@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       theme = "xygyl";
-      client_id = "65b708073fc0480ea92a077233ca87bd";
+      enable_audio_visualization = true;
       client_port = 8080;
       playback_format = ''
       {artists} {track}
