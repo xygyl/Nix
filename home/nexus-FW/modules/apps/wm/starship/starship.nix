@@ -5,13 +5,22 @@
     settings = {
       format =
         "$directory"
-        + "$git_branch"
-        + "$git_state"
-        + "$git_status"
+        + "$custom"
+        # + "$git_branch"
+        # + "$git_state"
+        # + "$git_status"
         + "$cmd_duration"
         + "$line_break"
         + "$character";
       add_newline = false;
+      custom = {
+        jj = {
+          when = "jj-starship detect";
+          shell = ["jj-starship"];
+          format = "[$output]($style) ";
+          style = "#777777";
+        };
+      };
       directory = {
         fish_style_pwd_dir_length = 1000;
         style = "#00FFAA";

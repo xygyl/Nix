@@ -4,7 +4,7 @@
 
     settings = {
       padding-x = 5;
-      padding-y = [5 5];
+      padding-y = [0 0];
       line-height = 1.0;
       confirm-before-quit = false;
 

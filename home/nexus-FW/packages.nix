@@ -15,7 +15,8 @@
     calibre
     cava
     # chatgpt-cli
-    # claude-code
+    claude-code
+    codex
     discordo
     ffmpeg
     firefox

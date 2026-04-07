@@ -8,9 +8,9 @@
 {
   home.packages = with pkgs; [
     # C
-    clang
-    clang-tools
-    # gcc
+    # clang
+    # clang-tools
+    gcc
     # Go
     go
     # Python
