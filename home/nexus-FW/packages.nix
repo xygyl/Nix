@@ -57,7 +57,7 @@
     # scope-tui
     stockfish
     syncthing
-    teehee
+    # teehee
     thunderbird
     tor-browser
     typst
