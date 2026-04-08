@@ -15,7 +15,7 @@
     difftastic
     dua
     dysk
-    # eza
+    eza
     fd
     fend
     fzf
