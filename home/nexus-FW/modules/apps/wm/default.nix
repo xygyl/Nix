@@ -3,7 +3,6 @@
     ./anyrun
     ./fuzzel
     ./niri
-    ./starship
     ./waybar
   ];
 }

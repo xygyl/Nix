@@ -25,7 +25,6 @@
     gping
     hw-probe
     # iamb
-    jujutsu
     kalker
     keepass-diff
     macchina

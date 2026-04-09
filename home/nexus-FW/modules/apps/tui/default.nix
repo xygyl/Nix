@@ -5,6 +5,7 @@
     ./helix
     ./jujutsu
     ./spotify-player
+    ./starship
     ./yazi
     ./zoxide
   ];
