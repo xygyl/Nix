@@ -1,4 +1,5 @@
 { pkgs, ...}:
+# c-sharp
 # CSS
 # Go
 # HTML
@@ -19,6 +20,9 @@
     mysql84
     bun
 
+    #c-sharp
+    omnisharp-roslyn
+    netcoredbg
     # Go
     delve
     golangci-lint
