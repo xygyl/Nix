@@ -12,7 +12,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     awww.url = "git+https://codeberg.org/LGFae/awww";
-    jujutsu.url = "github:jj-vcs/jj";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, niri, ... }:
