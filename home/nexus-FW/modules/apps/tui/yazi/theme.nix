@@ -127,10 +127,10 @@
         { name = "txt"; text = ""; }
         # code
         { name = "cpp"; text = ""; }
-        { name = "ts"; text = ""; }
         { name = "css"; text = ""; }
         { name = "cs"; text = ""; }
         { name = "c"; text = ""; }
+        { name = "ejs"; text = ""; }
         { name = "go"; text = ""; }
         { name = "hs"; text = ""; }
         { name = "html"; text = ""; }
@@ -144,6 +144,7 @@
         { name = "py"; text = ""; }
         { name = "rs"; text = "󱘗"; }
         { name = "toml"; text = ""; }
+        { name = "ts"; text = ""; }
         { name = "typ"; text = ""; }
         { name = "yaml"; text = "󰰳"; }
         # images
