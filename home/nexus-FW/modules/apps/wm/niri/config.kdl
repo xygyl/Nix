@@ -189,7 +189,8 @@ binds {
     Mod+Shift+Q         { spawn "kitty" "zellij"; }
     Mod+Q               { spawn "kitty"; }
     Mod+R               { spawn "fuzzel"; }
-    Mod+S               { spawn "steam"; }
+    // Mod+S               { spawn "steam"; }
+    Mod+S               { spawn "gamescope" "-W" "2560" "-H" "1600" "-f" "--" "steam" "-tenfoot"; }
 
     Mod+C               { close-window; }
     XF86Tools           { close-window; }

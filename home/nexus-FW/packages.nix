@@ -10,18 +10,13 @@
     # deno
     blender
     brave
-    binsider
     # cachix
     calibre
     cava
-    # chatgpt-cli
-    claude-code
-    codex
-    discordo
     ffmpeg
     firefox
     flac
-    # gamescope
+    gamescope
     gimp
     git-lfs
     gnome-themes-extra
@@ -53,14 +48,13 @@
     prismlauncher
     pwvucontrol
     qbittorrent
-    radicle-tui
-    # scope-tui
     stockfish
     syncthing
     # teehee
     thunderbird
     tor-browser
     typst
+    typst-live
     # typstPackages.syntree
     # ungoogled-chromium
     unrar

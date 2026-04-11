@@ -2,6 +2,15 @@
 
 {
   home.packages = with pkgs; [
+    vhs
+    crush
+    glow
+    claude-code
+    codex
+    scope-tui
+    discordo
+    binsider
+    radicle-tui
     aria2
     ascii-image-converter
     aspell
@@ -42,7 +51,6 @@
     # speedtest-cli
     tokei
     unzip
-    # vhs
     weechat
     wf-recorder
     wget
