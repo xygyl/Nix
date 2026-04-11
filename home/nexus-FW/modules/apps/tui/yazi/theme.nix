@@ -147,6 +147,8 @@
         { name = "ts"; text = ""; }
         { name = "typ"; text = ""; }
         { name = "yaml"; text = "󰰳"; }
+        # database
+        { name = "sql"; text = ""; }
         # images
         { name = "gif"; text = "󰵸"; }
         { name = "jpg"; text = "󰈥"; }
