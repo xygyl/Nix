@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    gum
     vhs
     crush
     glow

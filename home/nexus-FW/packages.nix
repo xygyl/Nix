@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    opus-tools
     # fluffychat
     # element
     # appimage-run
