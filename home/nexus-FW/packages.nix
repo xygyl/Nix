@@ -4,19 +4,18 @@
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     opus-tools
-    # fluffychat
-    # element
     # appimage-run
-    # stoat-desktop
-    # deno
     blender
     brave
     # cachix
     calibre
     cava
+    # deno
+    # element
     ffmpeg
     firefox
     flac
+    # fluffychat
     gamescope
     gimp
     git-lfs
@@ -30,6 +29,7 @@
     krita
     # libratbag
     libreoffice
+    llama-cpp-rocm
     # mcomix
     mpd
     mpv
@@ -40,7 +40,6 @@
     nwg-look
     obs-studio
     ollama-rocm
-    llama-cpp-rocm
     pavucontrol
     # pdftk
     # piper
@@ -49,6 +48,7 @@
     prismlauncher
     pwvucontrol
     qbittorrent
+    # stoat-desktop
     stockfish
     syncthing
     # teehee
