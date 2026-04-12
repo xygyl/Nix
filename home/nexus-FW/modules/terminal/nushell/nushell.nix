@@ -27,7 +27,6 @@
     "config/archives/zstd.nu"
     "nu/completions-jj.nu"
     "nu/starship/init.nu"
-    "nu/.zoxide.nu"
-    "nu/carapace/init.nu"
+    "nu/zoxide.nu"
   ]);
 }

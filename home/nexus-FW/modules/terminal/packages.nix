@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     sqlit-tui
+    lazysql
     crush
     glow
     gum
