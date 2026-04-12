@@ -1,41 +1,3 @@
-# alias check = fd -e flac -x nu -c '
-#     let f = "{}";
-#     let result = (^flac --test --silent $f | complete);
-#     if $result.exit_code != 0 {
-#         if ($result.stderr | str contains "cannot check MD5") {
-#             # ignore
-#         } else if ($result.stderr | str contains "MD5 signature mismatch") {
-#             print $"MD5 MISMATCH: ($f)"
-#         } else {
-#             print $"DECODE ERROR: ($f)"
-#             print $result.stderr
-#         }
-#     }
-# '
-# alias strip = fd -e flac -x nu -c '
-#     let f = "{}";
-#     let tmp = ($f + ".tmp.flac");
-#     ^ffmpeg -v error -i $f -vn -c:a copy -map 0:a -map_metadata 0 -ignore_unknown $tmp;
-#     if $env.LAST_EXIT_CODE == 0 {
-#         mv $tmp $f;
-#         ^id3v2 --delete-all $f
-#     } else {
-#         rm -f $tmp;
-#         print ("Failed: " + $f)
-#     }
-# '
-
-# alias fix = strip; check
-
-# alias remove = fd -e flac -x nu -c '
-#     let f = "{}";
-#     let result = (^flac --test --silent $f | complete);
-#     if $result.exit_code != 0 and not ($result.stderr | str contains "cannot check MD5") {
-#         print $"Removing: ($f)";
-#         rm $f
-#     }
-# '
-
 def fw [
     --battery (-b): int
     --fan (-f): int
@@ -103,17 +65,5 @@ def lvfs [] {
     ## Critical files
 
 alias nuc = hx ~/.config/nushell/config.nu
-
-    ## Yazi cd functionality
-
-def --env y [...args] {
-    let tmp = (mktemp -t "yazi-cwd.XXXXXX")
-    yazi ...$args --cwd-file $tmp
-    let cwd = (open $tmp)
-    if $cwd != "" and $cwd != $env.PWD {
-        cd $cwd
-    }
-    rm -fp $tmp
-}
 
 source ./mod.nu
