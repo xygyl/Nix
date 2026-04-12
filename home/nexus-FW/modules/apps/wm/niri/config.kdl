@@ -9,6 +9,8 @@ spawn-at-startup "wlsunset" "-l" "29.4" "-L" "-98.4";
 
 overview { zoom 0.8; }
 
+hotkey-overlay { skip-at-startup; }
+
 gestures {
     hot-corners { off; }
 }
@@ -153,8 +155,6 @@ animations {
         spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
     }
 }
-
-hotkey-overlay { skip-at-startup; }
 
 recent-windows {
     debounce-ms   750

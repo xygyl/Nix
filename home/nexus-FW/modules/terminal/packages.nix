@@ -2,10 +2,15 @@
 
 {
   home.packages = with pkgs; [
-    gum
-    vhs
+    sqlit-tui
     crush
     glow
+    gum
+    pop
+    skate
+    soft-serve
+    vhs
+    wishlist
     claude-code
     codex
     scope-tui
