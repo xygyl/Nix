@@ -55,8 +55,3 @@ def jje [] {
   jj git push
   rm /tmp/jj-current-branch
 }
-
-def jjd [] {
-    let message = gum input
-    jj describe -m $message
-}
