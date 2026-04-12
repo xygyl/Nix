@@ -25,7 +25,6 @@
     "config/archives/xz.nu"
     "config/archives/zip.nu"
     "config/archives/zstd.nu"
-    "nu/atuin/init.nu"
     "nu/completions-jj.nu"
     "nu/starship/init.nu"
     "nu/.zoxide.nu"
