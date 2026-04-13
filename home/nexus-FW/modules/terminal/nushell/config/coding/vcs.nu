@@ -32,9 +32,9 @@ def --env gitc [
         cd $dir
     }
 }
-def jjs [] {
-    jj git fetch
-    let branch = jj bookmark list
+
+def jj_gum_select_bookmark [] {
+    jj bookmark list
         | lines
         | each {
             |line| $line
@@ -44,6 +44,11 @@ def jjs [] {
             }
         | str join "\n"
         | gum filter --placeholder "Pick a bookmark..."
+}
+
+def jjs [] {
+    jj git fetch
+    let branch = jj_gum_select_bookmark 
     jj new $branch
     $branch | save -f /tmp/jj-current-branch
 }
@@ -54,4 +59,11 @@ def jje [] {
   jj bookmark set $branch -r "@"
   jj git push
   rm /tmp/jj-current-branch
+}
+
+def jjn [
+    --same (-s)
+] {
+    let branch = jj_gum_select_bookmark 
+    jj new $branch
 }
