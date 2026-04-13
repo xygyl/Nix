@@ -1,20 +1,21 @@
+def project_dir [lang:string, name: string] {
+    if ($name == null) {
+        $'($env.HOME)/Ram/($lang)_misc'
+    } else {
+        $'($env.HOME)/Ram/($name)'
+    }
+}
+
 def --env np [
     --name (-n)
 ] {
     let lang = gum choose rust go python
     let name = if ($name) { gum input --placeholder="Enter project name" } else { null }
 
-    def project_dir [] {
-        if ($name == null) {
-            $'($env.HOME)/Ram/($lang)_misc'
-        } else {
-            $'($env.HOME)/Ram/($name)'
-        }
-    }
 
     match $lang {
         'rust' => {
-            let dir = project_dir()
+            let dir = project_dir $lang $name
             if not ($dir | path exists) {
                 cargo new -q $dir
             }
@@ -22,7 +23,7 @@ def --env np [
             hx main.rs
         }
         'go' => {
-            let dir = project_dir()
+            let dir = project_dir $lang $name
             if not ($dir | path exists) {
                 mkdir $dir
                 cd $dir
@@ -33,7 +34,7 @@ def --env np [
             hx main.go
         }
         'python' => {
-            let dir = project_dir()
+            let dir = project_dir $lang $name
             if not ($dir | path exists) {
                 uv init $dir
             }
