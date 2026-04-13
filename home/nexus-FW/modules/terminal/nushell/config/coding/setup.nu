@@ -1,4 +1,4 @@
-def project_dir [lang:string, name: string] {
+def project_dir [lang: string, name?: string] {
     if ($name == null) {
         $'($env.HOME)/Ram/($lang)_misc'
     } else {
@@ -11,7 +11,6 @@ def --env np [
 ] {
     let lang = gum choose rust go python
     let name = if ($name) { gum input --placeholder="Enter project name" } else { null }
-
 
     match $lang {
         'rust' => {
