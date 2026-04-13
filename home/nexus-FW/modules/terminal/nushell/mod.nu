@@ -18,4 +18,4 @@ source ./config/archives/arch.nu
 # add-ons
 source ./nu/completions-jj.nu
 source ./nu/starship/init.nu
-source ./nu/.zoxide.nu
+source ./nu/zoxide.nu
