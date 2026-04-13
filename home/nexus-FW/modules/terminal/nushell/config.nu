@@ -23,10 +23,12 @@ def fw [
         print $"Charge limit set to ($battery)%"
     }
 }
+
 def --env proton [] {
     cd ~/.steam/root/compatibilitytools.d
     protonup-rs -q
 }
+
 def psn [
     input: string
     --kill (-k)
@@ -39,6 +41,7 @@ def psn [
         $procs
     }
 }
+
 def ksteam [
     --exit (-e)
 ] {
@@ -47,6 +50,7 @@ def ksteam [
         exit
     }
 }
+
 def s [
     ...args: string
 ] {
