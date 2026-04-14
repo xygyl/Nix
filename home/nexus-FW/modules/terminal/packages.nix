@@ -14,6 +14,7 @@
     wishlist
     claude-code
     codex
+    opencode
     aria2
     ascii-image-converter
     aspell
