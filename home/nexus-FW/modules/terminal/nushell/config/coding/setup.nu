@@ -16,7 +16,7 @@ def --env np [
         'rust' => {
             let dir = project_dir $lang $name
             if not ($dir | path exists) {
-                cargo new -q $dir
+                cargo new -q --vcs none $dir
             }
             cd $'($dir)/src'
             hx main.rs
