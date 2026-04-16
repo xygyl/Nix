@@ -25,6 +25,6 @@ def uage [
     if (not $keep) { rm $input }
 }
 
-def vgpg [file:string] {
-    gpg -v --list-packets $file
+def vage [input: string] {
+    age-inspect --json $input | from json
 }

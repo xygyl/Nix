@@ -19,6 +19,7 @@
     "config/coding/vcs.nu"
     "config/sudo/aliases.nu"
     "config/sudo/vpn.nu"
+    "config/archives/age.nu"
     "config/archives/arch.nu"
     "config/archives/gpg.nu"
     "config/archives/tar.nu"
