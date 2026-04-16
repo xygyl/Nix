@@ -4,8 +4,9 @@ def carch [
     --keep (-k) #Keeps the input folder.
     --compression-method (-m): string #Sets compression method to either zstd or xz. Defaults to zstd.
 ] {
+    let pub_key = $'($env.HOME)/Sync/age/anon.pub'
+    let now     = (date now | format date %F)
     for $input in $inputs {
-        let now        = (date now | format date %F)
         let base       = ($input | path basename)
         let tarball    = $'($base).tar'
         let compressed = match $compression_method {
@@ -17,7 +18,7 @@ def carch [
             'dir' => {
                 if $no_compress {
                     if $keep { ctar -k $base } else { ctar $base }
-                    gpg -esr 'anon' -z0 --output $'($now)_($tarball).gpg' $tarball
+                    age -R $pub_key $tarball | save $'($now)_($tarball).gpg'
                     rm $tarball
                 } else {
                     match $compression_method {
@@ -25,12 +26,12 @@ def carch [
                         'xz' => { if $keep { cxz -k $base } else { cxz $base } }
                         _ => {}
                     }
-                    gpg -esr 'anon' -z0 --output $'($now)_($compressed).gpg' $compressed
+                    age -R $pub_key $compressed | save $'($now)_($compressed).gpg'
                     rm $compressed
                 }
             }
             'file' => {
-                gpg -esr 'anon' -z0 --output $'($now)_($base).gpg' $base
+                age -R $pub_key $base | save $'($now)_($base).gpg'
                 if (not $keep) { rm $base }
             }
         }
@@ -41,11 +42,12 @@ def uarch [
     ...inputs: path #The input to unarchive.
     --keep (-k) #Keeps the input input.
 ] {
+    let priv_key = $'($env.HOME)/Sync/age/anon.age'
     for $input in $inputs {
         let base      = ($input | str replace -r '^[^_]+_' '')
         let decrypted = ($base | path parse | get stem)
         let tarball   = ($decrypted | path parse | get stem)
-        gpg -d $input | save -fp $decrypted
+        age -d -i $priv_key -o $decrypted $input
         match ($decrypted | path parse | get extension) {
             'zst' => { uzst $decrypted }
             'xz' => { uxz $decrypted }
