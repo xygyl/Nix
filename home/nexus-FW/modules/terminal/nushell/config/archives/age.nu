@@ -30,9 +30,7 @@ def uage [
 }
 
 def vage [
-    ...inputs: string
+    input: string
 ] {
-    for $input in $inputs {
-        age-inspect --json $input | from json
-    }
+    age-inspect --json $input | from json
 }
