@@ -7,7 +7,7 @@ def cage [
     let pub_key = $'($env.HOME)/Sync/age/anon.pub'
     for $input in $inputs {
         mut flags = if $symmetric {
-            ['-d']
+            ['-p']
         } else {
             ['-R' $'($pub_key)' $'($input)']
         }
