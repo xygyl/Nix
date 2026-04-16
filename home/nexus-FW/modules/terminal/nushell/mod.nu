@@ -14,6 +14,7 @@ source ./config/archives/tar.nu
 source ./config/archives/xz.nu
 source ./config/archives/zip.nu
 source ./config/archives/arch.nu
+source ./config/archives/age.nu
 
 # add-ons
 source ./nu/completions-jj.nu

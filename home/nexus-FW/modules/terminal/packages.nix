@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    age
     sqlit-tui
     lazysql
     crush
