@@ -18,7 +18,7 @@ def carch [
             'dir' => {
                 if $no_compress {
                     if $keep { ctar -k $base } else { ctar $base }
-                    age -R $pub_key $tarball | save $'($now)_($tarball).gpg'
+                    age -R $pub_key $tarball | save $'($now)_($tarball).age'
                     rm $tarball
                 } else {
                     match $compression_method {
@@ -26,12 +26,12 @@ def carch [
                         'xz' => { if $keep { cxz -k $base } else { cxz $base } }
                         _ => {}
                     }
-                    age -R $pub_key $compressed | save $'($now)_($compressed).gpg'
+                    age -R $pub_key $compressed | save $'($now)_($compressed).age'
                     rm $compressed
                 }
             }
             'file' => {
-                age -R $pub_key $base | save $'($now)_($base).gpg'
+                age -R $pub_key $base | save $'($now)_($base).age'
                 if (not $keep) { rm $base }
             }
         }
