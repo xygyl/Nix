@@ -6,7 +6,7 @@
     config = {
       x = { fraction = 0.5; };
       y = { fraction = 0.3; };
-      width = { fraction = 0.3; };
+      width = { fraction = 0.2; };
       hideIcons = false;
       ignoreExclusiveZones = false;
       layer = "overlay";
@@ -20,8 +20,12 @@
       ];
     };
 
-    # Inline comments are supported for language injection into
-    # multi-line strings with Treesitter! (Depends on your editor)
+    extraConfigFiles."applications.ron".text = ''
+      Config(
+        hide_description: true,
+      )
+    '';
+
     extraCss = /*css */ ''
       window {
         background: transparent;
@@ -29,43 +33,25 @@
 
       box.main {
         padding: 5px;
-        margin: 10px;
-        border-radius: 10px;
-        border: 2px solid @theme_selected_bg_color;
-        background-color: @theme_bg_color;
-        box-shadow: 0 0 5px black;
-      }
-
-
-      text {
-        min-height: 30px;
-        padding: 5px;
-        border-radius: 5px;
+        margin: 0px;
+        border-radius: 0;
+        border: 1px solid #312A50;
+        background-color: rgba(0, 0, 0, 0.8);
       }
 
       .matches {
-        background-color: rgba(0, 0, 0, 0);
-        border-radius: 10px;
-      }
-
-      box.plugin:first-child {
-        margin-top: 5px;
-      }
-
-      box.plugin.info {
-        min-width: 200px;
+        background-color: transparent;
       }
 
       list.plugin {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: transparent;
       }
 
-      label.match.description {
-        font-size: 10px;
-      }
-
-      label.plugin.info {
-        font-size: 14px;
+      .match.description {
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+        min-height: 0;
       }
 
       .match {
@@ -73,26 +59,8 @@
       }
 
       .match:selected {
-        border-left: 4px solid @theme_selected_bg_color;
-        background: transparent;
+        background: #312A50;
       }
-
-      @keyframes fade {
-        0% {
-          opacity: 0;
-        }
-
-        100% {
-          opacity: 1;
-        }
-      }'';
-
-    extraConfigFiles."some-plugin.ron".text = ''
-      Config(
-        // for any other plugin
-        // this file will be put in ~/.config/anyrun/some-plugin.ron
-        // refer to docs of xdg.configFile for available options
-      )
     '';
   };
 }

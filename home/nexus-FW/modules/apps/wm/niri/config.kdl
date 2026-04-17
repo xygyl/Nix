@@ -55,6 +55,14 @@ layer-rule {
 }
 
 layer-rule {
+    match namespace="^anyrun$"
+    background-effect {
+        blur true;
+        xray false;
+    }
+}
+
+layer-rule {
     background-effect { blur true; }
 }
 
@@ -188,9 +196,8 @@ binds {
     Mod+E               { spawn "firefox"; }
     Mod+Shift+Q         { spawn "kitty" "zellij"; }
     Mod+Q               { spawn "kitty"; }
-    Mod+R               { spawn "fuzzel"; }
+    Mod+R               { spawn "anyrun"; }
     Mod+S               { spawn "steam"; }
-    // Mod+S               { spawn "gamescope" "-W" "2560" "-H" "1600" "-f" "--" "steam" "-tenfoot"; }
 
     Mod+C               { close-window; }
     XF86Tools           { close-window; }
