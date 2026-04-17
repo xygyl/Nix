@@ -29,6 +29,21 @@
       )
     '';
 
+    extraConfigFiles."translate.ron".text = ''
+      Config(
+        prefix: ":",
+        language_delimiter: ">",
+        max_entries: 3,
+      )
+    '';
+  
+    extraConfigFiles."dictionary.ron".text = ''
+      Config(
+        prefix: ":def",
+        max_entries: 5,
+      )
+    '';
+
     extraCss = /*css */ ''
       window {
         background: transparent;
