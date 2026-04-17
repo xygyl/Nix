@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    texliveFull
     opus-tools
     # appimage-run
     blender
