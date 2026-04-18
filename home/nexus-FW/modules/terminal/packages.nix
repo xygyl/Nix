@@ -2,9 +2,9 @@
 
 {
   home.packages = with pkgs; [
-    age
     sqlit-tui
     lazysql
+
     crush
     glow
     gum
@@ -13,9 +13,12 @@
     soft-serve
     vhs
     wishlist
+
     claude-code
     codex
     opencode
+
+    age
     aria2
     ascii-image-converter
     aspell
@@ -40,6 +43,7 @@
     gitui
     gping
     hw-probe
+    hyperfine
     # iamb
     kalker
     keepass-diff
