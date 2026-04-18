@@ -1,3 +1,11 @@
+def nirib [] {
+    cd ~/Documents/niri/ 
+    jj git fetch
+    nix develop -c cargo b --release
+    cd
+    ./Documents/niri/target/release/niri
+}
+
 def fw [
     --battery (-b): int
     --fan (-f): int
