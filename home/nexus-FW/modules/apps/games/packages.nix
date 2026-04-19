@@ -15,6 +15,7 @@
     # ponysay
     # quantframe
     # rebels-in-the-sky
+    stockfish
     # veloren
   ];
 }

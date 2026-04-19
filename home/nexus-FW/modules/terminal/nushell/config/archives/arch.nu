@@ -4,7 +4,7 @@ def carch [
     --keep (-k) #Keeps the input folder.
     --compression-method (-m): string #Sets compression method to either zstd or xz. Defaults to zstd.
 ] {
-    let pub_key = $'($env.HOME)/Sync/age/anon.pub'
+    let pub_key = $'($env.HOME)/Sync/crypt/age/anon.pub'
     let now     = (date now | format date %F)
     for $input in $inputs {
         let base       = ($input | path basename)
@@ -42,7 +42,7 @@ def uarch [
     ...inputs: path #The input to unarchive.
     --keep (-k) #Keeps the input input.
 ] {
-    let priv_key = $'($env.HOME)/Sync/age/anon.age'
+    let priv_key = $'($env.HOME)/Sync/crypt/age/anon.age'
     for $input in $inputs {
         let base      = ($input | str replace -r '^[^_]+_' '')
         let decrypted = ($base | path parse | get stem)

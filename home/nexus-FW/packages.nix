@@ -4,35 +4,25 @@
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
-    # geogebra6
-    # gnuplot
-    # kdePackages.kmplot
 
-    # opus-tools
-    # appimage-run
     blender
     brave
-    # cachix
     calibre
     cava
-    # deno
     # element
     ffmpeg
     firefox
     flac
-    # fluffychat
     gamescope
     gimp
     git-lfs
     gnome-themes-extra
-    gnupg
-    # hexyl
+    # gnupg
     instaloader
-    jre_minimal
+    # jre_minimal
     keepassxc
     # kid3
     krita
-    # libratbag
     libreoffice
     llama-cpp-rocm
     # mcomix
@@ -44,24 +34,17 @@
     nomacs
     nwg-look
     obs-studio
-    ollama-rocm
+    # ollama-rocm
     pavucontrol
-    # pdftk
-    # piper
     pkg-config
     poppler
     prismlauncher
     pwvucontrol
     qbittorrent
-    # stoat-desktop
-    stockfish
     syncthing
-    # teehee
     thunderbird
     tor-browser
     typst
-    typst-live
-    # typstPackages.syntree
     # ungoogled-chromium
     unrar
     vesktop
@@ -70,7 +53,6 @@
     wl-clipboard
     wlsunset
     xwayland-satellite
-    # zathura
-    zed-editor
+    # zed-editor
   ];
 }

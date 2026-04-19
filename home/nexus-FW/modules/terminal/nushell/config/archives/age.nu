@@ -4,7 +4,7 @@ def cage [
     --keep (-k)
     --symmetric (-s)
 ] {
-    let pub_key = $'($env.HOME)/Sync/age/anon.pub'
+    let pub_key = $'($env.HOME)/Sync/crypt/age/anon.pub'
     for $input in $inputs {
         let encrypted = $'($input).age'
         mut flags = if $symmetric {
@@ -23,7 +23,7 @@ def uage [
     --keep (-k)
     --symmetric (-s)
 ] {
-    let priv_key = $'($env.HOME)/Sync/age/anon.age'
+    let priv_key = $'($env.HOME)/Sync/crypt/age/anon.age'
     for $input in $inputs {
         let decrypted = ($input | path parse | get stem)
         if $symmetric {

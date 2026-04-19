@@ -5,18 +5,13 @@
     # sqlit-tui
     # lazysql
 
-    crush
     glow
     gum
-    pop
-    skate
-    soft-serve
     vhs
-    wishlist
 
     claude-code
-    codex
-    opencode
+    # codex
+    # opencode
 
     age
     aria2
@@ -26,12 +21,12 @@
     astroterm
     bandwhich
     bat
-    binsider
+    # binsider
     brightnessctl
     btop-rocm
     cbonsai
     difftastic
-    discordo
+    # discordo
     dua
     dysk
     eza
@@ -42,13 +37,14 @@
     git-filter-repo
     gitui
     gping
-    hw-probe
+    # hw-probe
     hyperfine
     # iamb
     kalker
-    keepass-diff
+    # keepass-diff
     macchina
     neovim
+    openssl
     ouch
     pastel
     pipes-rs
@@ -59,14 +55,14 @@
     ripgrep
     rmpc
     # rqbit
-    scope-tui
+    # scope-tui
     sd
     # speedtest-cli
     tokei
     unzip
-    weathr
+    # weathr
     weechat
-    wf-recorder
+    # wf-recorder
     wget
     wgetpaste
     wthrr
