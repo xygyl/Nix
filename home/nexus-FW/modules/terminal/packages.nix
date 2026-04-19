@@ -2,8 +2,8 @@
 
 {
   home.packages = with pkgs; [
-    sqlit-tui
-    lazysql
+    # sqlit-tui
+    # lazysql
 
     crush
     glow

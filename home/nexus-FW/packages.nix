@@ -3,8 +3,12 @@
 {
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
-    texliveFull
-    opus-tools
+    # texliveFull
+    # geogebra6
+    # gnuplot
+    # kdePackages.kmplot
+
+    # opus-tools
     # appimage-run
     blender
     brave
