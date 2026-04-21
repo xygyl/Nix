@@ -1,5 +1,5 @@
 def sfile [
-    ...inputs: path,
+    ...inputs: string,
 ] {
     $inputs | par-each { |input|
         let key = $'($env.HOME)/Sync/crypt/openssl/anon_ML-DSA.pem'
