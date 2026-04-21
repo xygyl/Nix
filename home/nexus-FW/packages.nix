@@ -5,6 +5,9 @@
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
+    wayback
+    rhash
+    cryptsetup
     blender
     brave
     calibre

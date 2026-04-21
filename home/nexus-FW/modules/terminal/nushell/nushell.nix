@@ -10,6 +10,7 @@
     value = { source = ./${f}; };
   }) [
     "config/aliases.nu"
+    "config/mounting.nu"
     "config/archives/age.nu"
     "config/archives/arch.nu"
     "config/archives/gpg.nu"

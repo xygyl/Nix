@@ -1,5 +1,6 @@
 # imports
 source ./config/aliases.nu
+source ./config/mounting.nu
 source ./config/archives/age.nu
 source ./config/archives/gpg.nu
 source ./config/archives/sign.nu
