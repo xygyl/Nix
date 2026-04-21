@@ -22,7 +22,7 @@ def uzst [
     ...inputs: string
     --keep (-k)
 ] {
-    for $input in $inputs {
+    $inputs | par-each { |input|
         zstd -d --long=31 $input
         let archive = ($input | path parse | get stem)
         if ($archive | path parse | get extension) == 'tar' {
@@ -30,5 +30,5 @@ def uzst [
             rm $archive
         }
         if (not $keep) { rm $input }
-    }
+    } | ignore
 }

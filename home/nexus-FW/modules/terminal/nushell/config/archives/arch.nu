@@ -1,12 +1,12 @@
 def carch [
-    ...inputs: path #The directory to archive.
+    ...inputs: string #The directory to archive.
     --no-compress (-n) #Skips compression.
     --keep (-k) #Keeps the input folder.
     --compression-method (-m): string #Sets compression method to either zstd or xz. Defaults to zstd.
 ] {
     let pub_key = $'($env.HOME)/Sync/crypt/age/anon.pub'
     let now     = (date now | format date %F)
-    for $input in $inputs {
+    $inputs | par-each { |input|
         let base       = ($input | path basename)
         let tarball    = $'($base).tar'
         let compressed = match $compression_method {
@@ -35,15 +35,15 @@ def carch [
                 if (not $keep) { rm $base }
             }
         }
-    }
+    } | ignore 
 }
 
 def uarch [
-    ...inputs: path #The input to unarchive.
+    ...inputs: string #The input to unarchive.
     --keep (-k) #Keeps the input input.
 ] {
     let priv_key = $'($env.HOME)/Sync/crypt/age/anon.age'
-    for $input in $inputs {
+    $inputs | par-each { |input|
         let base      = ($input | str replace -r '^[^_]+_' '')
         let decrypted = ($base | path parse | get stem)
         let tarball   = ($decrypted | path parse | get stem)
@@ -55,5 +55,5 @@ def uarch [
             _ => {}
         }
         if (not $keep) { rm $input }
-    }
+    } | ignore 
 }

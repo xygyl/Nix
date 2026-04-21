@@ -1,13 +1,13 @@
 # imports
 source ./config/aliases.nu
 source ./config/archives/age.nu
-source ./config/archives/arch.nu
 source ./config/archives/gpg.nu
 source ./config/archives/sign.nu
 source ./config/archives/tar.nu
 source ./config/archives/xz.nu
 source ./config/archives/zip.nu
 source ./config/archives/zstd.nu
+source ./config/archives/arch.nu
 source ./config/coding/setup.nu
 source ./config/coding/vcs.nu
 source ./config/files.nu

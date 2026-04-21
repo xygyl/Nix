@@ -5,7 +5,7 @@ def cage [
     --symmetric (-s)
 ] {
     let pub_key = $'($env.HOME)/Sync/crypt/age/anon.pub'
-    for $input in $inputs {
+    $inputs | par-each { |input|
         let encrypted = $'($input).age'
         mut flags = if $symmetric {
             ['-p' -o $encrypted $input]
@@ -15,7 +15,7 @@ def cage [
         if $armor { $flags = ($flags | prepend '-a') }
         age ...$flags
         if (not $keep) { rm $input }
-    }
+    } | ignore
 }
 
 def uage [
@@ -24,7 +24,7 @@ def uage [
     --symmetric (-s)
 ] {
     let priv_key = $'($env.HOME)/Sync/crypt/age/anon.age'
-    for $input in $inputs {
+    $inputs | par-each { |input|
         let decrypted = ($input | path parse | get stem)
         if $symmetric {
             age -d -o $decrypted $input
@@ -32,7 +32,7 @@ def uage [
             age -d -i $priv_key -o $decrypted $input
         }
         if (not $keep) { rm $input }
-    }
+    } | ignore
 }
 
 def vage [

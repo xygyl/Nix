@@ -11,7 +11,7 @@ def sfile [
         openssl pkeyutl -sign -inkey $key -rawin -in $hash_file -out $sig_file
 
         rm $hash_file
-    }
+    } | ignore
 }
 
 def vfile [
@@ -32,5 +32,5 @@ def vfile [
         } else {
           print $'✗ Signature INVALID for ($input)'
         }
-    }
+    } | ignore
 }

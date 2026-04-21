@@ -22,7 +22,7 @@ def uxz [
     ...inputs: string
     --keep (-k)
 ] {
-    for $input in $inputs {
+    $inputs | par-each { |input|
         unxz -k $input
         let archive = ($input | path parse | get stem)
         if ($archive | path parse | get extension) == 'tar' {
@@ -30,5 +30,5 @@ def uxz [
             rm $archive
         }
         if (not $keep) { rm $input }
-    }
+    } | ignore
 }
