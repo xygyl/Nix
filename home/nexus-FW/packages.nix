@@ -5,12 +5,11 @@
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
-    rhash
-    cryptsetup
     blender
     brave
     calibre
     cava
+    cryptsetup
     # element
     ffmpeg
     firefox
@@ -43,6 +42,8 @@
     prismlauncher
     pwvucontrol
     qbittorrent
+    rhash
+    sunsetr
     syncthing
     thunderbird
     tor-browser
@@ -53,7 +54,6 @@
     video-trimmer
     wev
     wl-clipboard
-    wlsunset
     xwayland-satellite
     # zed-editor
   ];
