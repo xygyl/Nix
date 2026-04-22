@@ -17,19 +17,28 @@ def --env gitc [
 
     let depth_args = if ($depth != null) { [--depth $depth] } else { [] }
 
-    $inputs | par-each { |input|
-        let args = ["git" "clone" "--quiet" ...$depth_args $input]
-        run-external "jj" ...$args
-    }
+    match ($inputs | length) {
+        0 => {
+           error make { msg: "Please provide a link" } 
+        }
+        1 => {
+            let args = ["git" "clone" ...$depth_args $inputs]
+            run-external "jj" ...$args
 
-    if ($inputs | length) == 1 {
-        let dir = $inputs.0
-            | url parse
-            | get path
-            | path basename
-            | path parse
-            | get stem
-        cd $dir
+            let dir = $inputs.0
+                | url parse
+                | get path
+                | path basename
+                | path parse
+                | get stem
+            cd $dir
+        }
+        _ => {
+            $inputs | par-each { |input|
+                let args = ["git" "clone" "--quiet" ...$depth_args $input]
+                run-external "jj" ...$args
+            }
+        }
     }
 }
 
