@@ -3,6 +3,7 @@
     ./boot.nix
     ./env.nix
     ./firewall.nix
+    ./fs.nix
     ./greetd.nix
     ./mpt.nix
     ./network.nix
