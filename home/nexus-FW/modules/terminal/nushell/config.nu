@@ -1,4 +1,4 @@
-def nirib [] {
+def bniri [] {
     cd ~/Documents/niri/ 
     jj git fetch
     nix develop -c cargo b --release
@@ -19,8 +19,7 @@ def fw [
         return
     }
     if ($battery == null and $fan == null) {
-        print "Please supply arguments"
-        return
+        error make { msg: "Please supply arguments" }
     }
     if ($fan != null) {
         sudo su -c $"framework_tool --fansetduty ($fan)"
@@ -62,7 +61,7 @@ def ksteam [
 def s [
     ...args: string
 ] {
-    let cmd = ($args | str join ' ')
+    let cmd = ($args | str join " ")
     job spawn { nu -c $cmd }
 }
 

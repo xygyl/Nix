@@ -3,7 +3,7 @@ def ctar [
     --keep (-k)
 ] {
     $inputs | par-each { |input|
-        tar -cpf $'($input | path basename).tar' $input
+        tar -cpf $"($input | path basename).tar" $input
         if (not $keep) { rm -r $input }
     } | ignore
 }

@@ -11,5 +11,5 @@ alias rc   = rustc
 alias rm   = rm -r
 alias r    = rsync -ah --delete --inplace --no-whole-file --info=progress2
 alias rv   = rsync -avh --delete --inplace --no-whole-file --info=progress2
-alias wifi = sudo su -c 'systemctl restart NetworkManager.service'
+alias wifi = sudo su -c "systemctl restart NetworkManager.service"
 alias yt   = yt-dlp --cookies-from-browser firefox --merge-output-format mp4

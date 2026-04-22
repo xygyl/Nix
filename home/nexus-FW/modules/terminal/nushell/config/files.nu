@@ -105,11 +105,11 @@ def --env note [
     input?: string
 ] {
     let result = if ($input == null) {
-        let now = date now | format date '%F'
-        { file: $'($now).typ', dir: $now }
+        let now = date now | format date "%F"
+        { file: $"($now).typ", dir: $now }
     } else {
         let parsed = $input | path basename
-        { file: $'($parsed).typ', dir: $'($parsed)' }
+        { file: $"($parsed).typ", dir: $"($parsed)" }
     }
     mkdir $result.dir
     cd $result.dir

@@ -12,7 +12,7 @@ def --env gitc [
     ...inputs: string
 ] {
     if $temp {
-        cd $'($env.HOME)/Ram/'
+        cd $"($env.HOME)/Ram/"
     }
 
     let depth_args = if ($depth != null) { [--depth $depth] } else { [] }
