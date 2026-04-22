@@ -22,10 +22,12 @@ def --env gitc [
            error make { msg: "Please provide a link" } 
         }
         1 => {
-            let args = ["git" "clone" ...$depth_args $inputs]
+            let input = $inputs.0
+
+            let args = ["git" "clone" ...$depth_args $input]
             run-external "jj" ...$args
 
-            let dir = $inputs.0
+            let dir = $input
                 | url parse
                 | get path
                 | path basename

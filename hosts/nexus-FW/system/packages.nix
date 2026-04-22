@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     atuin
+    compsize
     croc
     framework-tool
     helix
