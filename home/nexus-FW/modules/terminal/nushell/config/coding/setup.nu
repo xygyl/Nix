@@ -11,10 +11,10 @@ def --env np [
 ] {
     let lang = gum choose rust go python
     let name = if ($name) { gum input --placeholder="Enter project name" } else { null }
+    let dir = project_dir $lang $name
 
     match $lang {
         'rust' => {
-            let dir = project_dir $lang $name
             if not ($dir | path exists) {
                 cargo new -q --vcs none $dir
             }
@@ -22,7 +22,6 @@ def --env np [
             hx main.rs
         }
         'go' => {
-            let dir = project_dir $lang $name
             if not ($dir | path exists) {
                 mkdir $dir
                 cd $dir
@@ -33,7 +32,6 @@ def --env np [
             hx main.go
         }
         'python' => {
-            let dir = project_dir $lang $name
             if not ($dir | path exists) {
                 uv init $dir
             }

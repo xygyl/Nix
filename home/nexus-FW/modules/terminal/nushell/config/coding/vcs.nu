@@ -46,24 +46,21 @@ def jj_gum_select_bookmark [] {
         | gum filter --placeholder "Pick a bookmark..."
 }
 
-def jjs [] {
-    jj git fetch
-    let branch = jj_gum_select_bookmark 
-    jj new $branch
-    $branch | save -f /tmp/jj-current-branch
-}
-
-def jje [] {
-  let branch = (open /tmp/jj-current-branch | str trim)
-  jj describe --editor
-  jj bookmark set $branch -r "@"
-  jj git push
-  rm /tmp/jj-current-branch
-}
-
 def jjn [
     --same (-s)
 ] {
     let branch = jj_gum_select_bookmark 
     jj new $branch
+}
+
+def jjs [] {
+    jj git fetch
+    jjn
+}
+
+def jje [] {
+    let branch = jj_gum_select_bookmark 
+    jj describe --editor
+    jj bookmark set $branch -r "@"
+    jj git push
 }
