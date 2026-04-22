@@ -73,8 +73,4 @@ def lvfs [] {
     fwupdmgr update
 }
 
-    ## Critical files
-
-alias nuc = hx ~/.config/nushell/config.nu
-
 source ./mod.nu
