@@ -1,9 +1,9 @@
 {
   imports = [
-    ./home.nix
+    ../common/home.nix
+    ../common/package_conf.nix
+    ../common/theme
     ./modules
-    ./package_conf.nix
     ./packages.nix
-    ./theme
   ];
 }

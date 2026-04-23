@@ -1,9 +1,10 @@
 {
   imports = [
-    ./emulators
-    ./git.nix
-    ./language-tools
-    ./nushell
+    ../../../common/modules/terminal/git.nix
+    ../../../common/modules/terminal/language-tools
+    ../../../common/modules/terminal/nushell
+    ../../../common/modules/terminal/emulators
+    ./nushell/config.nix
     ./packages.nix
   ];
 }
