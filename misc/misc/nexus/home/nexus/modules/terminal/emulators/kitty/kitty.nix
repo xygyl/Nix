@@ -1,4 +1,3 @@
-{ lib, ... }:
 let
   background = "#000000";
   foreground = "#ffffff";
@@ -52,7 +51,7 @@ in {
     };
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = lib.mkDefault 15;
+      size = 15;
     };
   };
 }

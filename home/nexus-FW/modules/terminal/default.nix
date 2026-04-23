@@ -6,5 +6,6 @@
     ../../../common/modules/terminal/emulators
     ./nushell/config.nix
     ./packages.nix
+    ./kitty.nix
   ];
 }
