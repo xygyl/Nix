@@ -11,7 +11,7 @@
         auto-track-bookmarks = "*";
       };
       user = {
-        name = "Kai Rangel";
+        name  = "Kai Rangel";
         email = "jadenkrangel@gmail.com";
       };
     };

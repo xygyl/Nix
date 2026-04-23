@@ -5,7 +5,6 @@
     ./firewall.nix
     ./fs.nix
     ./greetd.nix
-    ./mpt.nix
     ./network.nix
     ./nh.nix
     ./packages.nix

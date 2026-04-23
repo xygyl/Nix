@@ -8,8 +8,8 @@
       {
         condition = "gitdir:~/Documents/projects/rmpr";
         contents.user = {
-          name = "Jaden Kai Rangel";
-          email = "jadenkrangel@gmail.com";
+          name = "xygyl";
+          email = "xygyl@proton.me";
         };
       }
     ];

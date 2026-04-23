@@ -1,57 +1,59 @@
 def carch [
-    ...inputs: path #The directory to archive.
+    ...inputs: string #The directory to archive.
     --no-compress (-n) #Skips compression.
     --keep (-k) #Keeps the input folder.
     --compression-method (-m): string #Sets compression method to either zstd or xz. Defaults to zstd.
 ] {
-    for $input in $inputs {
-        let now        = (date now | format date %F)
+    let pub_key = $"($env.HOME)/Sync/crypt/age/anon.pub"
+    let now     = (date now | format date %F)
+    $inputs | par-each { |input|
         let base       = ($input | path basename)
-        let tarball    = $'($base).tar'
+        let tarball    = $"($base).tar"
         let compressed = match $compression_method {
-            null | 'zst' => { $'($tarball).zst' }
-            'xz' => { $'($tarball).xz' }
-            _ => { print $'Unsupported compression method: ($compression_method)' }
+            null | "zst" => { $"($tarball).zst" }
+            "xz" => { $"($tarball).xz" }
+            _ => { error make { msg: $"Unsupported compression method: ($compression_method)" } }
         }
         match ($input | path type) {
-            'dir' => {
+            "dir" => {
                 if $no_compress {
                     if $keep { ctar -k $base } else { ctar $base }
-                    gpg -esr 'anon' -z0 --output $'($now)_($tarball).gpg' $tarball
+                    age -R $pub_key -o $"($now)_($tarball).age" $tarball
                     rm $tarball
                 } else {
                     match $compression_method {
-                        null | 'zst' => { if $keep { czst -k $base } else { czst $base } }
-                        'xz' => { if $keep { cxz -k $base } else { cxz $base } }
+                        null | "zst" => { if $keep { czst -k $base } else { czst $base } }
+                        "xz" => { if $keep { cxz -k $base } else { cxz $base } }
                         _ => {}
                     }
-                    gpg -esr 'anon' -z0 --output $'($now)_($compressed).gpg' $compressed
+                    age -R $pub_key -o $"($now)_($compressed).age" $compressed
                     rm $compressed
                 }
             }
-            'file' => {
-                gpg -esr 'anon' -z0 --output $'($now)_($base).gpg' $base
+            "file" => {
+                age -R $pub_key -o $"($now)_($base).age" $base
                 if (not $keep) { rm $base }
             }
         }
-    }
+    } | ignore 
 }
 
 def uarch [
-    ...inputs: path #The input to unarchive.
+    ...inputs: string #The input to unarchive.
     --keep (-k) #Keeps the input input.
 ] {
-    for $input in $inputs {
-        let base      = ($input | str replace -r '^[^_]+_' '')
+    let priv_key = $"($env.HOME)/Sync/crypt/age/anon.age"
+    $inputs | par-each { |input|
+        let base      = ($input | str replace -r "^[^_]+_" "")
         let decrypted = ($base | path parse | get stem)
         let tarball   = ($decrypted | path parse | get stem)
-        gpg -d $input | save -fp $decrypted
+        age -d -i $priv_key -o $decrypted $input
         match ($decrypted | path parse | get extension) {
-            'zst' => { uzst $decrypted }
-            'xz' => { uxz $decrypted }
-            'tar' => { utar $decrypted }
+            "zst" => { uzst $decrypted }
+            "xz" => { uxz $decrypted }
+            "tar" => { utar $decrypted }
             _ => {}
         }
         if (not $keep) { rm $input }
-    }
+    } | ignore 
 }

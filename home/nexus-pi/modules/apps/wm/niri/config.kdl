@@ -188,7 +188,7 @@ binds {
     // Mod+Q { spawn "kitty" "zellij"; }
     // Mod+Shift+Q { spawn "kitty"; }
     Mod+Q { spawn "kitty"; }
-    Mod+R { spawn "fuzzel"; }
+    Mod+R { spawn "anyrun"; }
     // Mod+S { spawn "steam"; }
 
     Mod+C { close-window; }

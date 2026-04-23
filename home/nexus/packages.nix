@@ -3,30 +3,27 @@
 {
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
-    # appimage-run
+    # texliveFull
+
     blender
     brave
-    # cachix
     calibre
     cava
-    # deno
+    cryptsetup
     # element
     ffmpeg
     firefox
     flac
-    # fluffychat
     gamescope
     gimp
     git-lfs
     gnome-themes-extra
-    gnupg
-    # hexyl
+    # gnupg
     instaloader
-    jre_minimal
+    # jre_minimal
     keepassxc
     # kid3
     krita
-    # libratbag
     libreoffice
     llama-cpp-rocm
     # mcomix
@@ -38,34 +35,26 @@
     nomacs
     nwg-look
     obs-studio
-    ollama-rocm
-    opus-tools
+    # ollama-rocm
     pavucontrol
-    # pdftk
-    # piper
     pkg-config
     poppler
     prismlauncher
     pwvucontrol
     qbittorrent
-    # stoat-desktop
-    stockfish
+    rhash
+    sunsetr
     syncthing
-    # teehee
     thunderbird
     tor-browser
     typst
-    typst-live
-    # typstPackages.syntree
     # ungoogled-chromium
     unrar
     vesktop
     video-trimmer
     wev
     wl-clipboard
-    wlsunset
     xwayland-satellite
-    # zathura
-    zed-editor
+    # zed-editor
   ];
 }

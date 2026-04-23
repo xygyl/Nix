@@ -2,13 +2,18 @@
 
 {
   home.packages = with pkgs; [
+    # sqlit-tui
+    # lazysql
+
+    glow
     gum
     vhs
-    crush
-    glow
+
     claude-code
-    codex
-    opencode
+    # codex
+    # opencode
+
+    age
     aria2
     ascii-image-converter
     aspell
@@ -16,12 +21,12 @@
     astroterm
     bandwhich
     bat
-    binsider
+    # binsider
     brightnessctl
     btop-rocm
     cbonsai
     difftastic
-    discordo
+    # discordo
     dua
     dysk
     eza
@@ -32,12 +37,14 @@
     git-filter-repo
     gitui
     gping
-    hw-probe
+    # hw-probe
+    hyperfine
     # iamb
     kalker
-    keepass-diff
+    # keepass-diff
     macchina
     neovim
+    openssl
     ouch
     pastel
     pipes-rs
@@ -48,13 +55,14 @@
     ripgrep
     rmpc
     # rqbit
-    scope-tui
+    # scope-tui
     sd
     # speedtest-cli
     tokei
     unzip
+    # weathr
     weechat
-    wf-recorder
+    # wf-recorder
     wget
     wgetpaste
     wthrr

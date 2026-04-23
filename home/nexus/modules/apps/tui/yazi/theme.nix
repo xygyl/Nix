@@ -90,7 +90,7 @@
         { mime = "application/{tar,bzip*,7z-compressed,xz,rar}"; fg = "#F971CD"; }
         { mime = "application/{zstd}"; fg = "#F971CD"; }
         # encryption
-        { url = "*.{gpg,asc}"; fg = "#417BFF"; }
+        { url = "*.{gpg,asc,age}"; fg = "#417BFF"; }
         # fallback
         { url = "*/"; fg = "#6B5DFF"; }
         { url = "*"; fg = "#DDE1FF"; }
@@ -119,11 +119,12 @@
       	{ name = "Videos"; text = ""; }
       ];
       exts = [
-        { name = "kdl"; text = "󰄛"; }
-        { name = "pug"; text = ""; }
+        { name = "age"; text = ""; }
         { name = "avi"; text = ""; }
         { name = "crate"; text = ""; }
         { name = "gpg"; text = ""; }
+        { name = "kdl"; text = "󰄛"; }
+        { name = "pug"; text = ""; }
       	{ name = "3gp"; text = ""; fg = "#fd971f"; }
       	{ name = "3mf"; text = "󰆧"; fg = "#888888"; }
       	{ name = "7z"; text = ""; fg = "#eca517"; }

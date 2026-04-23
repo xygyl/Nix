@@ -2,8 +2,8 @@
   imports = [
     ./boot.nix
     ./env.nix
-    ./filesystems.nix
     ./firewall.nix
+    ./fs.nix
     ./greetd.nix
     ./network.nix
     ./nh.nix
@@ -13,6 +13,5 @@
     ./system.nix
     ./timezone.nix
     ./user.nix
-    ./xdg-desktop-portal.nix
   ];
 }

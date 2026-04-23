@@ -1,6 +1,6 @@
 {
   programs.fuzzel = {
-    enable = true;
+    enable = false;
     settings = {
       colors = {
         background = "000000CC";

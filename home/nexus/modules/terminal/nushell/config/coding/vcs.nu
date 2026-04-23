@@ -12,24 +12,35 @@ def --env gitc [
     ...inputs: string
 ] {
     if $temp {
-        cd $'($env.HOME)/Ram/'
+        cd $"($env.HOME)/Ram/"
     }
 
     let depth_args = if ($depth != null) { [--depth $depth] } else { [] }
 
-    $inputs | par-each { |input|
-        let args = ["git" "clone" "--quiet" ...$depth_args $input]
-        run-external "jj" ...$args
-    }
+    match ($inputs | length) {
+        0 => {
+           error make { msg: "Please provide a link" } 
+        }
+        1 => {
+            let input = $inputs.0
 
-    if ($inputs | length) == 1 {
-        let dir = $inputs.0
-            | url parse
-            | get path
-            | path basename
-            | path parse
-            | get stem
-        cd $dir
+            let args = ["git" "clone" ...$depth_args $input]
+            run-external "jj" ...$args
+
+            let dir = $input
+                | url parse
+                | get path
+                | path basename
+                | path parse
+                | get stem
+            cd $dir
+        }
+        _ => {
+            $inputs | par-each { |input|
+                let args = ["git" "clone" "--quiet" ...$depth_args $input]
+                run-external "jj" ...$args
+            }
+        }
     }
 }
 
@@ -46,24 +57,21 @@ def jj_gum_select_bookmark [] {
         | gum filter --placeholder "Pick a bookmark..."
 }
 
-def jjs [] {
-    jj git fetch
-    let branch = jj_gum_select_bookmark 
-    jj new $branch
-    $branch | save -f /tmp/jj-current-branch
-}
-
-def jje [] {
-  let branch = (open /tmp/jj-current-branch | str trim)
-  jj describe --editor
-  jj bookmark set $branch -r "@"
-  jj git push
-  rm /tmp/jj-current-branch
-}
-
 def jjn [
     --same (-s)
 ] {
     let branch = jj_gum_select_bookmark 
     jj new $branch
+}
+
+def jjs [] {
+    jj git fetch
+    jjn
+}
+
+def jje [] {
+    let branch = jj_gum_select_bookmark 
+    jj describe --editor
+    jj bookmark set $branch -r "@"
+    jj git push
 }

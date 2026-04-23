@@ -3,18 +3,18 @@
     enable = true;
     settings = {
       flags = {
-        battery = true;
-        cpu_left_legend = true;
-        default_time_value = "30s";
-        disable_advanced_kill = true;
-        enable_gpu = true;
-        hide_time = true;
-        memory_legend = "top-left";
-        network_legend = "top-left";
-        network_use_bytes = false;
+        battery                 = true;
+        cpu_left_legend         = true;
+        default_time_value      = "30s";
+        disable_advanced_kill   = true;
+        enable_gpu              = true;
+        hide_time               = true;
+        memory_legend           = "top-left";
+        network_legend          = "top-left";
+        network_use_bytes       = false;
         process_memory_as_value = true;
-        rate = "250ms";
-        unnormalized_cpu = true;
+        rate                    = "250ms";
+        unnormalized_cpu        = true;
       };
       processes = {
         columns = [
@@ -48,7 +48,7 @@
         };
         memory = {
           gpu_colors = ["#00FFAA" "#6B5DFF"];
-          ram_color = "#FF006A";
+          ram_color  = "#FF006A";
           swap_color = "#00EAFF";
         };
         network = {
@@ -56,8 +56,8 @@
           tx_color = "#6B5DFF";
         };
         battery = {
-          high_battery_color = "#00FFAA";
-          low_battery_color = "#FF006A";
+          high_battery_color   = "#00FFAA";
+          low_battery_color    = "#FF006A";
           medium_battery_color = "#F1FF5D";
         };
         tables = {
@@ -68,12 +68,12 @@
           legend_text = { color = "#DDE1FF"; };
         };
         widgets = {
-          border_color = "#312A50";
+          border_color          = "#312A50";
           selected_border_color = "#DDE1FF";
-          widget_title = {color = "#6B5DFF"; };
-          text = { color = "#DDE1FF"; };
-          selected_text = { color = "black"; bg_color = "#6B5DFF"; };
-          disabled_text = { color = "dark gray"; };
+          widget_title          = {color = "#6B5DFF"; };
+          text                  = { color = "#DDE1FF"; };
+          selected_text         = { color = "black"; bg_color = "#6B5DFF"; };
+          disabled_text         = { color = "dark gray"; };
         };
       };
       row = [

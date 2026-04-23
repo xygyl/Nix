@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    age
     # aria2
     # ascii-image-converter
     # aspell

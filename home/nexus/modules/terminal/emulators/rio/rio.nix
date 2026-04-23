@@ -1,10 +1,10 @@
 {
   programs.rio = {
-    enable = true;
+    enable = false;
 
     settings = {
       padding-x = 5;
-      padding-y = [5 5];
+      padding-y = [0 0];
       line-height = 1.0;
       confirm-before-quit = false;
 
@@ -23,6 +23,10 @@
         colorspace = "srgb";
       };
 
+      graphics = {
+        backend = "automatic";
+      };
+
       renderer = {
         performance = "high";
         backend = "automatic";
@@ -38,7 +42,7 @@
 
       fonts = {
         size = 16;
-        use-drawable-chars = false;
+        use-drawable-chars = true;
         hinting = true;
         family = "JetBrainsMono Nerd Font";
 
@@ -79,14 +83,22 @@
         background = "#000000";
         foreground = "#ffffff";
         cursor = "#ffffff";
-        red = "#ff0000";
-        yellow = "#e5e825";
-        green = "#00ff55";
-        cyan = "#00eaff";
-        magenta = "#bf00ff";
-        blue = "#007fff";
         black = "#000000";
+        red = "#ff0000";
+        green = "#00ff55";
+        yellow = "#e5e825";
+        blue = "#007fff";
+        magenta = "#bf00ff";
+        cyan = "#00eaff";
         white = "#ffffff";
+        light-black = "#777777";
+        light-red = "#ff0000";
+        light-green = "#00ff55";
+        light-yellow = "#e5e825";
+        light-blue = "#007fff";
+        light-magenta = "#bf00ff";
+        light-cyan = "#00eaff";
+        light-white = "#ffffff";
       };
     };
   };

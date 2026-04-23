@@ -17,6 +17,7 @@
     python3
     # Rust
     cargo
+    cargo-update
     cargo-generate
     cargo-seek
     cargo-tauri

@@ -9,5 +9,7 @@ alias ouch = ouch -q
 alias rco  = rustc -C opt-level=3 -C strip=symbols -C lto=true -C codegen-units=1 -C target-cpu=native
 alias rc   = rustc
 alias rm   = rm -r
-alias wifi = sudo su -c 'systemctl restart NetworkManager.service'
+alias r    = rsync -ah --delete --inplace --no-whole-file --info=progress2
+alias rv   = rsync -avh --delete --inplace --no-whole-file --info=progress2
+alias wifi = sudo su -c "systemctl restart NetworkManager.service"
 alias yt   = yt-dlp --cookies-from-browser firefox --merge-output-format mp4

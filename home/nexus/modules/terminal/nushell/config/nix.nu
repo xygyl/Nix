@@ -5,7 +5,7 @@ def --env ns [
     --update (-u)
 ] {
     if $conf {
-        let nix_dir = $'/home/($env.USER)/Nix'
+        let nix_dir = $"/home/($env.USER)/Nix"
         if not ($env.PWD | str starts-with $nix_dir) {
             cd $nix_dir
         }
@@ -50,12 +50,12 @@ def --env pack [] {
     cd ~/Nix/
     let file = gum choose home term lang helix games system
     match $file {
-        'home' => { hx './home/nexus/packages.nix' }
-        'term' => { hx './home/nexus/modules/terminal/packages.nix' }
-        'lang' => { hx './home/nexus/modules/terminal/language-tools/packages.nix' }
-        'helix' => { hx './home/nexus/modules/apps/tui/helix/packages.nix' }
-        'games' => { hx './home/nexus/modules/apps/games/packages.nix' }
-        'system' => { hx './hosts/nexus/system/packages.nix' }
+        "home" => { hx "./home/nexus-FW/packages.nix" }
+        "term" => { hx "./home/nexus-FW/modules/terminal/packages.nix" }
+        "lang" => { hx "./home/nexus-FW/modules/terminal/language-tools/packages.nix" }
+        "helix" => { hx "./home/nexus-FW/modules/apps/tui/helix/packages.nix" }
+        "games" => { hx "./home/nexus-FW/modules/apps/games/packages.nix" }
+        "system" => { hx "./hosts/nexus-FW/system/packages.nix" }
         _ => {}
     }
     clear

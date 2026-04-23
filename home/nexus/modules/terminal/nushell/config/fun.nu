@@ -2,7 +2,7 @@ def model [
     input: string
 ] {
     let name = $input | path basename
-    $'FROM ($input)' | save -f Modelfile
+    $"FROM ($input)" | save -f Modelfile
     ollama create $name -f Modelfile
     rm Modelfile
     ollama run $name
@@ -22,8 +22,8 @@ def --env d [
     input?: string
 ] {
     if $download {
-        cd $'($env.HOME)/Downloads/'
-        if not ($'($env.HOME)/Downloads/($input)' | path exists) {
+        cd $"($env.HOME)/Downloads/"
+        if not ($"($env.HOME)/Downloads/($input)" | path exists) {
             mkdir $input
         }
         mv *.torrent $input

@@ -5,7 +5,7 @@ spawn-at-startup "brightnessctl" "set" "50%";
 spawn-at-startup "mpd";
 spawn-at-startup "awww-daemon";
 spawn-at-startup "waybar";
-spawn-at-startup "wlsunset" "-l" "29.4" "-L" "-98.4";
+spawn-at-startup "sunsetr";
 
 overview { zoom 0.8; }
 
@@ -51,6 +51,14 @@ layer-rule {
     background-effect {
         blur true
         xray false
+    }
+}
+
+layer-rule {
+    match namespace="^anyrun$"
+    background-effect {
+        blur true;
+        xray false;
     }
 }
 
@@ -185,9 +193,8 @@ binds {
     Mod+E               { spawn "firefox"; }
     Mod+Shift+Q         { spawn "kitty" "zellij"; }
     Mod+Q               { spawn "kitty"; }
-    Mod+R               { spawn "fuzzel"; }
+    Mod+R               { spawn "anyrun"; }
     Mod+S               { spawn "steam"; }
-    // Mod+S               { spawn "gamescope" "-W" "3440" "-H" "1440" "-f" "--" "steam" "-tenfoot"; }
 
     Mod+C               { close-window; }
     Ctrl+Alt+Delete     { quit skip-confirmation=true; }
