@@ -35,7 +35,7 @@
     nomacs
     nwg-look
     obs-studio
-    # ollama-rocm
+    ollama-cuda
     pavucontrol
     pkg-config
     poppler
