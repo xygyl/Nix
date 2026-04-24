@@ -14,10 +14,9 @@
       allowedUDPPorts = [ config.services.tailscale.port ];
       checkReversePath = "loose";
     };
-
-    services.tailscale = {
-      enable = true;
-      useRoutingFeatures = "client";
-    };
+  };
+  services.tailscale = {
+    enable = true;
+    useRoutingFeatures = "client";
   };
 }
