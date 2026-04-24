@@ -5,6 +5,9 @@
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
+    remmina
+    freerdp
+    x2goclient
     blender
     brave
     calibre
