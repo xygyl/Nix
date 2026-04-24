@@ -22,6 +22,12 @@
 
     hosts = [
       {
+        hostname = "europa";
+        stateVersion = "26.05";
+        system = "x86_64-linux";
+        extraModules = [];
+      }
+      {
         hostname = "nexus-FW";
         stateVersion = "26.05";
         system = "x86_64-linux";

@@ -1,0 +1,1 @@
+{ programs.kitty.font.size = 12; }
