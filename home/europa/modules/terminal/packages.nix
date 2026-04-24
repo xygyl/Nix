@@ -23,7 +23,7 @@
     bat
     # binsider
     brightnessctl
-    btop-rocm
+    btop-cuda
     cbonsai
     difftastic
     # discordo
