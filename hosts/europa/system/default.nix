@@ -1,6 +1,7 @@
 {
   imports = [
     ./boot.nix
+    ./nvidia.nix
     ./env.nix
     ./fs.nix
     ./greetd.nix
