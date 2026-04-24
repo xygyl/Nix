@@ -5,7 +5,6 @@
     ../../../common/modules/terminal/language-tools
     ./kitty.nix
     ./nushell
-    ./nushell/config.nix
     ./packages.nix
   ];
 }
