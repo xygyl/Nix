@@ -5,56 +5,57 @@
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
-    blender
-    brave
-    calibre
-    cava
-    cryptsetup
+    vllm
+    # blender
+    # brave
+    # calibre
+    # cava
+    # cryptsetup
     # element
-    ffmpeg
-    firefox
-    flac
-    gamescope
-    gimp
+    # ffmpeg
+    # firefox
+    # flac
+    # gamescope
+    # gimp
     git-lfs
-    gnome-themes-extra
+    # gnome-themes-extra
     # gnupg
-    instaloader
+    # instaloader
     # jre_minimal
-    keepassxc
+    # keepassxc
     # kid3
-    krita
-    libreoffice
-    llama-cpp-rocm
+    # krita
+    # libreoffice
+    llama-cpp
     # mcomix
-    mpd
-    mpv
-    networkmanagerapplet
-    nicotine-plus
-    niri
-    nomacs
-    nwg-look
-    obs-studio
+    # mpd
+    # mpv
+    # networkmanagerapplet
+    # nicotine-plus
+    # niri
+    # nomacs
+    # nwg-look
+    # obs-studio
     ollama-cuda
-    pavucontrol
+    # pavucontrol
     pkg-config
     poppler
-    prismlauncher
-    pwvucontrol
-    qbittorrent
-    rhash
-    sunsetr
-    syncthing
-    thunderbird
-    tor-browser
-    typst
+    # prismlauncher
+    # pwvucontrol
+    # qbittorrent
+    # rhash
+    # sunsetr
+    # syncthing
+    # thunderbird
+    # tor-browser
+    # typst
     # ungoogled-chromium
-    unrar
-    vesktop
-    video-trimmer
-    wev
-    wl-clipboard
-    xwayland-satellite
+    # unrar
+    # vesktop
+    # video-trimmer
+    # wev
+    # wl-clipboard
+    # xwayland-satellite
     # zed-editor
   ];
 }

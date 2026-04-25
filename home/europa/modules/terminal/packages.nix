@@ -13,60 +13,60 @@
     # codex
     # opencode
 
-    age
-    aria2
-    ascii-image-converter
-    aspell
-    aspellDicts.en
-    astroterm
+    # age
+    # aria2
+    # ascii-image-converter
+    # aspell
+    # aspellDicts.en
+    # astroterm
     bandwhich
     bat
     # binsider
-    brightnessctl
+    # brightnessctl
     btop-cuda
-    cbonsai
+    # cbonsai
     difftastic
     # discordo
     dua
     dysk
     eza
     fd
-    fend
+    # fend
     fzf
     git
-    git-filter-repo
+    # git-filter-repo
     gitui
-    gping
+    # gping
     # hw-probe
     hyperfine
     # iamb
-    kalker
+    # kalker
     # keepass-diff
-    macchina
+    # macchina
     neovim
-    openssl
+    # openssl
     ouch
-    pastel
-    pipes-rs
-    pngcheck
-    pngcrush
-    protonup-rs
-    radicle-tui
+    # pastel
+    # pipes-rs
+    # pngcheck
+    # pngcrush
+    # protonup-rs
+    # radicle-tui
     ripgrep
-    rmpc
+    # rmpc
     # rqbit
     # scope-tui
     sd
     # speedtest-cli
-    tokei
+    # tokei
     unzip
     # weathr
-    weechat
+    # weechat
     # wf-recorder
     wget
     wgetpaste
-    wthrr
-    yt-dlp
+    # wthrr
+    # yt-dlp
     zip
   ];
 }
