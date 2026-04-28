@@ -1,11 +1,6 @@
 { stateVersion, pkgs, ... }:
 
 {
-  # networking.interfaces.enp197s0f3u2u3.ipv4.addresses = [{
-  #   address = "10.0.0.2";
-  #   prefixLength = 24;
-  # }];
-
   nix.settings.experimental-features = [ 
     "nix-command" 
     "flakes" 
@@ -15,7 +10,12 @@
 
   system.stateVersion = stateVersion;
   nixpkgs.config.allowUnfree = true;
-  security.sudo.wheelNeedsPassword = false;
+  # security.sudo.wheelNeedsPassword = false;
+  security.sudo-rs = {
+    enable = true;
+    wheelNeedsPassword = false;
+    
+  };
   services.gnome.gcr-ssh-agent.enable = false;
 
   programs = {

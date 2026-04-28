@@ -7,7 +7,6 @@
 
     settings = {
       default_session = {
-        # command = "tuigreet --cmd 'dbus-run-session niri'";
         command = "tuigreet --cmd niri-session";
         user = "${username}";
       };
