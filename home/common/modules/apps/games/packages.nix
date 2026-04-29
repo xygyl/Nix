@@ -7,7 +7,7 @@
     # celestia
     chess-tui
     # endless-sky
-    # factorio-space-age
+    factorio-space-age-experimental
     # mindustry
     # openttd
     # osu-lazer

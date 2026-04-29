@@ -24,7 +24,11 @@
 
   system.stateVersion = stateVersion;
   nixpkgs.config.allowUnfree = true;
-  security.sudo.wheelNeedsPassword = false;
+  # security.sudo.wheelNeedsPassword = false;
+  security.sudo-rs = {
+    enable = true;
+    wheelNeedsPassword = false;
+  };
   services.gnome.gcr-ssh-agent.enable = false;
   programs.niri.enable = true;
 
