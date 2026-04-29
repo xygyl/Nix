@@ -2,12 +2,12 @@
 
 {
   home.packages = with pkgs; [
+    inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+
     jujutsu
     libraspberrypi
     raspberrypifw
     raspberrypi-eeprom
-    # awww — no aarch64 binary in the flake
-    inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # fluffychat
     # element
     # appimage-run
