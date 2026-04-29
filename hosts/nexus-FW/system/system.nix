@@ -14,7 +14,6 @@
   security.sudo-rs = {
     enable = true;
     wheelNeedsPassword = false;
-    
   };
   services.gnome.gcr-ssh-agent.enable = false;
 

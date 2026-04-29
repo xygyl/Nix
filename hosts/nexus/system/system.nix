@@ -1,11 +1,6 @@
 { stateVersion, pkgs, ... }:
 
 {
-  # networking.interfaces.enp6s0.ipv4.addresses = [{
-  #   address = "10.0.0.1";
-  #   prefixLength = 24;
-  # }];
-  
   nix.settings.experimental-features = [ 
     "nix-command" 
     "flakes" 
@@ -13,8 +8,11 @@
 
   system.stateVersion = stateVersion;
   nixpkgs.config.allowUnfree = true;
-  security.sudo.wheelNeedsPassword = false;
-
+  # security.sudo.wheelNeedsPassword = false;
+  security.sudo-rs = {
+    enable = true;
+    wheelNeedsPassword = false;
+  };
   services.hardware.openrgb.enable = true;
 
   programs = {
