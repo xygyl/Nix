@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     # texliveFull
 
     foot

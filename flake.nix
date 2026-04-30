@@ -2,7 +2,7 @@
   description = "xygyl's flake";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    awww.url = "git+https://codeberg.org/LGFae/awww";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,7 +12,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware";
-    awww.url = "git+https://codeberg.org/LGFae/awww";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, niri, nixos-hardware, ... }:
@@ -66,6 +70,7 @@
         extraSpecialArgs = { inherit inputs username homeStateVersion hostname; };
         modules = [
           niri.homeModules.niri
+          inputs.noctalia.homeModules.default
           ./home/${hostname}
         ];
       };
