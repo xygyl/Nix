@@ -5,6 +5,8 @@
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
+    foot
+    termscp
     blender
     brave
     calibre
