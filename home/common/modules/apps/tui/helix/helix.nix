@@ -2,9 +2,8 @@
   programs.helix = {
     enable = true;
     settings = {
-      # theme = "xygyl-2";
-      # theme = "anon";
-      theme = "modus_vivendi";
+      theme = "anon2";
+      # theme = "modus_vivendi";
       editor = {
         auto-pairs = {
           "(" = ")";
