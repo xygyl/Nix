@@ -1,7 +1,3 @@
-{ lib, ... }:
-
 {
-  xdg.configFile."niri/config.kdl" = lib.mkForce {
-    source = ./config.kdl;
-  };
+  xdg.configFile."niri/config.kdl".source = ./config.kdl;
 } 

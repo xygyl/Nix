@@ -136,14 +136,14 @@
                 right: [
                     (kind: Property(Widget(ScanStatus)), style: (fg: "#6B5DFF")),
                     (kind: Text(" ")),
-                    (kind: Property(Widget(Volume)), style: (fg: "#DDE1FF"))
+                    (kind: Property(Widget(Volume)), style: (fg: "#DDE1FF")),
+                    (kind: Text(" "), style: (fg: "#312A50", modifiers: "Bold")),
+                    (kind: Property(Status(StateV2(playing_label: "  ", paused_label: "  ", stopped_label: "  "))), style: (fg: "#417BFF", modifiers: "Bold")),
+                    (kind: Text(""), style: (fg: "#312A50", modifiers: "Bold")),
                 ]
             ),
             (
                 left: [
-                    (kind: Text(""), style: (fg: "#312A50", modifiers: "Bold")),
-                    (kind: Property(Status(StateV2(playing_label: "  ", paused_label: "  ", stopped_label: "  "))), style: (fg: "#417BFF", modifiers: "Bold")),
-                    (kind: Text(" "), style: (fg: "#312A50", modifiers: "Bold")),
                 ],
                 center: [
                     (kind: Property(Song(Album)), style: (fg: "#00FFAA", modifiers: "Bold"),
