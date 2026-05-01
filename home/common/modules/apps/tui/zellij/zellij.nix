@@ -1,6 +1,11 @@
+{ lib, ...}:
+
 {
   programs.zellij = {
     enable = true;
-    extraConfig = builtins.readFile ./config.kdl;
+  };
+
+  xdg.configFile."zellij/config.kdl" = lib.mkForce {
+    source = ./config.kdl;
   };
 }
