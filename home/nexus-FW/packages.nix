@@ -30,7 +30,6 @@
     llama-cpp-rocm
     # mcomix
     mpd
-    mpv
     networkmanagerapplet
     nicotine-plus
     niri
