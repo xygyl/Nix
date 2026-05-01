@@ -117,12 +117,16 @@
         rows: [
             (
                 left: [
-                    (kind: Property(Status(Elapsed)), style: (fg: "#FF006A")),
-                    (kind: Text(" / "), style: (fg: "#FF006A")),
-                    (kind: Property(Status(Duration)), style: (fg: "#FF006A")),
-                    (kind: Text(" ("), style: (fg: "#FF006A")),
-                    (kind: Property(Status(Bitrate)), style: (fg: "#FF006A")),
-                    (kind: Text(" kbps)"), style: (fg: "#FF006A"))
+                    (kind: Text(" "), style: (fg: "#312A50", modifiers: "Bold")),
+                    (kind: Property(Status(Bits())), style: (fg: "#DDE1FF")),
+                    (kind: Text(" bits"),style: (fg: "#DDE1FF")),
+                    (kind: Text(" | "),style: (fg: "#312A50")),
+                    (kind: Property(Status(SampleRate())), style: (fg: "#DDE1FF")),
+                    (kind: Text(" kHz"),style: (fg: "#DDE1FF")),
+                    (kind: Text(" | "),style: (fg: "#312A50")),
+                    (kind: Property(Status(Bitrate)), style: (fg: "#DDE1FF")),
+                    (kind: Text(" kbps"), style: (fg: "#DDE1FF")),
+                    (kind: Text(" "), style: (fg: "#312A50", modifiers: "Bold")),
                 ],
                 center: [
                     (kind: Property(Song(Artist)), style: (fg: "#F98771", modifiers: "Bold"),
@@ -144,6 +148,11 @@
             ),
             (
                 left: [
+                    (kind: Text(" "), style: (fg: "#312A50", modifiers: "Bold")),
+                    (kind: Property(Status(Elapsed)), style: (fg: "#FF5DD1")),
+                    (kind: Text(" | "),style: (fg: "#312A50")),
+                    (kind: Property(Status(Duration)), style: (fg: "#FF5DD1")),
+                    (kind: Text(" "), style: (fg: "#312A50", modifiers: "Bold")),
                 ],
                 center: [
                     (kind: Property(Song(Album)), style: (fg: "#00FFAA", modifiers: "Bold"),
