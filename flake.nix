@@ -13,10 +13,10 @@
     };
     nixos-hardware.url = "github:NixOS/nixos-hardware";
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # noctalia = {
+    #   url = "github:noctalia-dev/noctalia-shell";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = inputs@{ nixpkgs, home-manager, niri, nixos-hardware, ... }:
@@ -70,7 +70,7 @@
         extraSpecialArgs = { inherit inputs username homeStateVersion hostname; };
         modules = [
           niri.homeModules.niri
-          inputs.noctalia.homeModules.default
+          # inputs.noctalia.homeModules.default
           ./home/${hostname}
         ];
       };

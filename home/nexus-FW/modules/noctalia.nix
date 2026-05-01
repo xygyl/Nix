@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }:
 {
   programs.noctalia-shell = {
-    enable = true;
+    enable = false;
     settings = {
       bar = {
         density = "compact";
