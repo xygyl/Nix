@@ -6,7 +6,6 @@
     # texliveFull
 
     wiki-tui
-    foot
     termscp
     blender
     brave
