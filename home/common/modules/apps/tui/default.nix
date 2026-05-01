@@ -4,6 +4,7 @@
     ./bottom
     ./helix
     ./jujutsu
+    ./macchina
     ./rmpc
     ./spotify-player
     ./starship
