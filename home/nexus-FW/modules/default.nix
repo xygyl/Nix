@@ -1,7 +1,7 @@
 {
   imports = [
     ./apps
-    ./noctalia.nix
+    # ./noctalia.nix
     ./terminal
   ];
 }

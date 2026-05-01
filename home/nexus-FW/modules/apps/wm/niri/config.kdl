@@ -194,8 +194,8 @@ recent-windows {
 binds {
     Mod+D               { spawn "vesktop"; }
     Mod+E               { spawn "firefox"; }
-    Mod+Shift+Q         { spawn "foot" "zellij"; }
-    Mod+Q               { spawn "foot"; }
+    Mod+Shift+Q         { spawn "kitty" "zellij"; }
+    Mod+Q               { spawn "kitty"; }
     Mod+R               { spawn "anyrun"; }
     Mod+S               { spawn "steam"; }
 

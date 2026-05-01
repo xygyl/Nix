@@ -15,7 +15,7 @@ let
   cursor_text_color = "dde1ff";
 in {
   programs.foot = {
-    enable = true;
+    enable = false;
     settings = {
       main = {
         font = lib.mkDefault "JetBrainsMono Nerd Font:size=12";

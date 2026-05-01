@@ -1,64 +1,50 @@
 { pkgs, inputs, ... }:
 {
-  home-manager.users.drfoobar = {
-    imports = [
-      inputs.noctalia.homeModules.default
-    ];
-
-    programs.noctalia-shell = {
-      enable = true;
-      settings = {
-        bar = {
-          density = "compact";
-          position = "right";
-          showCapsule = false;
-          widgets = {
-            left = [
-              {
-                id = "ControlCenter";
-                useDistroLogo = true;
-              }
-              {
-                id = "Network";
-              }
-              {
-                id = "Bluetooth";
-              }
-            ];
-            center = [
-              {
-                hideUnoccupied = false;
-                id = "Workspace";
-                labelMode = "none";
-              }
-            ];
-            right = [
-              {
-                alwaysShowPercentage = false;
-                id = "Battery";
-                warningThreshold = 30;
-              }
-              {
-                formatHorizontal = "HH:mm";
-                formatVertical = "HH mm";
-                id = "Clock";
-                useMonospacedFont = true;
-                usePrimaryColor = true;
-              }
-            ];
-          };
-        };
-        colorSchemes.predefinedScheme = "Monochrome";
-        general = {
-          avatarImage = "/home/drfoobar/.face";
-          radiusRatio = 0.2;
-        };
-        location = {
-          monthBeforeDay = true;
-          name = "Marseille, France";
+  programs.noctalia-shell = {
+    enable = true;
+    settings = {
+      bar = {
+        density = "compact";
+        position = "bottom";
+        showCapsule = false;
+        widgets = {
+          left = [
+            {
+              id = "ControlCenter";
+              useDistroLogo = true;
+            }
+            {
+              id = "Network";
+            }
+          ];
+          center = [
+            # {
+            #   hideUnoccupied = false;
+            #   id = "Workspace";
+            #   labelMode = "none";
+            # }
+          ];
+          right = [
+            {
+              alwaysShowPercentage = true;
+              id = "Battery";
+              warningThreshold = 15;
+            }
+            {
+              formatHorizontal = "HH:mm";
+              formatVertical = "HH mm";
+              id = "Clock";
+              useMonospacedFont = true;
+              usePrimaryColor = true;
+            }
+          ];
         };
       };
-      # this may also be a string or a path to a JSON file.
+      colorSchemes.predefinedScheme = "Monochrome";
+      location = {
+        monthBeforeDay = false;
+        name = "San Antonio, ";
+      };
     };
   };
 }
