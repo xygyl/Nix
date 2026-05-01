@@ -1,6 +1,5 @@
 {
   imports = [
-    ./mpd
-    ./mpv
+    ./mpd.nix
   ];
 }
