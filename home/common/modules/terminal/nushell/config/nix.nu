@@ -47,15 +47,15 @@ def --env conf [] {
 }
 
 def --env pack [] {
-    cd ~/Nix/
+    let hostname = sys host | get hostname
     let file = gum choose home term lang helix games system
     match $file {
-        "home" => { hx "./home/nexus-FW/packages.nix" }
-        "term" => { hx "./home/nexus-FW/modules/terminal/packages.nix" }
-        "lang" => { hx "./home/nexus-FW/modules/terminal/language-tools/packages.nix" }
-        "helix" => { hx "./home/nexus-FW/modules/apps/tui/helix/packages.nix" }
-        "games" => { hx "./home/nexus-FW/modules/apps/games/packages.nix" }
-        "system" => { hx "./hosts/nexus-FW/system/packages.nix" }
+        "home" => { hx $"./home/($hostname)/packages.nix" }
+        "term" => { hx $"./home/($hostname)/modules/terminal/packages.nix" }
+        "lang" => { hx $"./home/($hostname)/modules/terminal/language-tools/packages.nix" }
+        "helix" => { hx $"./home/($hostname)/modules/apps/tui/helix/packages.nix" }
+        "games" => { hx $"./home/($hostname)/modules/apps/games/packages.nix" }
+        "system" => { hx $"./hosts/($hostname)/system/packages.nix" }
         _ => {}
     }
     clear
