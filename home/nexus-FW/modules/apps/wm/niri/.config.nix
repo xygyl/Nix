@@ -113,6 +113,7 @@
     ];
 
     animations = {
+      slowdown = 0.75;
       workspace-switch.kind.spring = {
         damping-ratio = 1.0;
         stiffness = 1000;

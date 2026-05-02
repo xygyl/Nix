@@ -5,7 +5,7 @@
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
-    blender
+        blender
     brave
     calibre
     cava
@@ -43,6 +43,7 @@
     pwvucontrol
     qbittorrent
     rhash
+    smartmontools
     sunsetr
     syncthing
     thunderbird

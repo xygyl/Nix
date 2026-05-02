@@ -1,6 +1,8 @@
 { config, ... }:
 
 {
+  services.mpd-mpris.enable = true;
+
   services.mpd = {
     enable           = true;
     musicDirectory   = "~/Music";

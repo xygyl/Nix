@@ -4,7 +4,7 @@ screenshot-path "~/Pictures/%Y-%m-%d_%H:%M:%S.png"
 spawn-at-startup "brightnessctl" "set" "50%";
 spawn-at-startup "mpd";
 spawn-at-startup "awww-daemon";
-spawn-at-startup "waybar";
+// spawn-at-startup "waybar";
 spawn-at-startup "sunsetr";
 
 overview { zoom 0.8; }
@@ -62,9 +62,9 @@ layer-rule {
     }
 }
 
-layer-rule {
-    background-effect { blur true; }
-}
+// layer-rule {
+//     background-effect { blur true; }
+// }
 
 cursor {
     xcursor-theme "phinger-cursors-dark"
@@ -196,7 +196,7 @@ binds {
     Mod+E               { spawn "firefox"; }
     Mod+Shift+Q         { spawn "kitty" "zellij"; }
     Mod+Q               { spawn "kitty"; }
-    Mod+R               { spawn "anyrun"; }
+    Mod+R               { spawn "dms" "ipc" "launcher" "toggle"; }
     Mod+S               { spawn "steam"; }
 
     Mod+C               { close-window; }
@@ -308,3 +308,7 @@ binds {
     Shift+XF86MonBrightnessUp   { spawn "brightnessctl" "set" "100%"; }
     Shift+XF86MonBrightnessDown { spawn "brightnessctl" "set" "0%"; }
 }
+
+// include "dms/alttab.kdl"
+// include "dms/colors.kdl"
+// include "dms/wpblur.kdl"

@@ -12,6 +12,14 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dms = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dms-plugin-registry = {
+      url = "github:AvengeMedia/dms-plugin-registry";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixos-hardware.url = "github:NixOS/nixos-hardware";
     nixpkgs.url = "nixpkgs/nixos-unstable";
   };
@@ -66,7 +74,9 @@
         pkgs = import nixpkgs { inherit system; };
         extraSpecialArgs = { inherit inputs username homeStateVersion hostname; };
         modules = [
-          niri.homeModules.niri
+          inputs.niri.homeModules.niri
+          inputs.dms.homeModules.dank-material-shell
+          inputs.dms.homeModules.niri
           ./home/${hostname}
         ];
       };
