@@ -1,15 +1,17 @@
+{ lib, ...}:
+
 {
   programs.alacritty = {
-    enable = false;
+    enable = true;
     settings = {
+      window = {
+        opacity = 0.8;
+      };
       font = {
-        size = 15;
+        size = lib.mkDefault 15;
         normal = {
           family = "JetBrainsMono Nerd Font";
           style = "Regular";
-        };
-        window = {
-          opacity = 0.9;
         };
       };
       colors = {

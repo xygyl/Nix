@@ -1,12 +1,17 @@
+{ lib, inputs, pkgs, ...}:
+
 {
   programs.rio = {
-    enable = false;
+    enable = true;
+    package = inputs.rio.packages.${pkgs.stdenv.hostPlatform.system}.rio;
 
     settings = {
       padding-x = 5;
       padding-y = [0 0];
       line-height = 1.0;
       confirm-before-quit = false;
+      enable-scroll-bar = false;
+      scrollback-history-limit = 10000;
 
       cursor = {
         shape = "beam";
@@ -17,21 +22,15 @@
       };
 
       window = {
-        opacity = 0.9;
         blur = true;
-        decorations = "enabled";
         colorspace = "srgb";
-      };
-
-      graphics = {
-        backend = "automatic";
+        decorations = "disabled";
+        opacity = 0.8;
+        opacity-cells = true;
       };
 
       renderer = {
-        performance = "high";
-        backend = "automatic";
-        disable-unfocused-render = false;
-        level = 1;
+        backend = "Vulkan";
       };
 
       keyboard = {
@@ -41,7 +40,7 @@
       };
 
       fonts = {
-        size = 16;
+        size = lib.mkDefault 15;
         use-drawable-chars = true;
         hinting = true;
         family = "JetBrainsMono Nerd Font";
@@ -57,21 +56,21 @@
           family = "JetBrainsMono Nerd Font";
           style = "Normal";
           width = "Normal";
-          weight = 400;
+          weight = 800;
         };
 
         italic = {
           family = "JetBrainsMono Nerd Font";
-          style = "Normal";
+          style = "Italic";
           width = "Normal";
           weight = 400;
         };
 
         bold-italic = {
           family = "JetBrainsMono Nerd Font";
-          style = "Normal";
+          style = "Italic";
           width = "Normal";
-          weight = 400;
+          weight = 800;
         };
 
         emojis = {

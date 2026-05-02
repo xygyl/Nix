@@ -7,13 +7,14 @@
       sort_reverse   = false;
     };
     preview = {
-      image_delay   = 0;
-      image_filter  = "nearest";
-      image_quality = 50;
-      max_height    = 2000;
-      max_width     = 2000;
-      tab_size      = 1;
-      wrap          = "yes";
+      image_delay    = 0;
+      image_filter   = "nearest";
+      image_protocol = "kitty";
+      image_quality  = 50;
+      max_height     = 2000;
+      max_width      = 2000;
+      tab_size       = 1;
+      wrap           = "yes";
     };
     open.prepend_rules = [
     	{ url = "*.{gpg,asc}"; use = "decrypt"; }

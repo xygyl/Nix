@@ -4,7 +4,7 @@
     ../../../common/modules/terminal/git.nix
     ../../../common/modules/terminal/language-tools
     ../../../common/modules/terminal/nushell
-    ./kitty.nix
+    ./emulator_override.nix
     ./nushell/config.nix
     ./packages.nix
   ];

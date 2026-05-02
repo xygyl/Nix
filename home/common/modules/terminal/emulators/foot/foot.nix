@@ -15,10 +15,10 @@ let
   cursor_text_color = "dde1ff";
 in {
   programs.foot = {
-    enable = false;
+    enable = true;
     settings = {
       main = {
-        font = lib.mkDefault "JetBrainsMono Nerd Font:size=12";
+        font = lib.mkDefault "JetBrainsMono Nerd Font:size=15";
       };
       scrollback = {
         lines = 5000;

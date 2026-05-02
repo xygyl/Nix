@@ -1,10 +1,11 @@
 { lib, ... }:
+
 {
   programs.ghostty = {
-    enable = false;
+    enable = true;
     settings = {
       font-family            = "JetBrainsMono Nerd Font";
-      font-size              = lib.mkDefault 12;
+      font-size              = lib.mkDefault 15;
       font-style-bold        = false;
       font-style-bold-italic = false;
       font-style-italic      = false;
