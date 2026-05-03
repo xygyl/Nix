@@ -52,9 +52,9 @@ def --env pack [] {
     match $file {
         "home" => { hx $"($env.HOME)/Nix/home/($hostname)/packages.nix" }
         "term" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/terminal/packages.nix" }
-        "lang" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/terminal/language-tools/packages.nix" }
-        "helix" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/apps/tui/helix/packages.nix" }
-        "games" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/apps/games/packages.nix" }
+        "lang" => { hx $"($env.HOME)/Nix/home/common/modules/terminal/language-tools/packages.nix" }
+        "helix" => { hx $"($env.HOME)/Nix/home/common/modules/apps/tui/helix/packages.nix" }
+        "games" => { hx $"($env.HOME)/Nix/home/common/modules/apps/games/packages.nix" }
         "system" => { hx $"($env.HOME)/Nix/hosts/($hostname)/system/packages.nix" }
         _ => {}
     }

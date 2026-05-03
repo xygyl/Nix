@@ -3,7 +3,7 @@ screenshot-path "~/Pictures/%Y-%m-%d_%H:%M:%S.png"
 
 spawn-at-startup "brightnessctl" "set" "50%";
 spawn-at-startup "mpd";
-spawn-at-startup "awww-daemon";
+// spawn-at-startup "awww-daemon";
 // spawn-at-startup "waybar";
 spawn-at-startup "sunsetr";
 
@@ -41,8 +41,13 @@ window-rule {
     background-effect { blur true; }
 }
 
+// layer-rule {
+//     match namespace="awww-daemon"
+//     place-within-backdrop true
+// }
+
 layer-rule {
-    match namespace="awww-daemon"
+    match namespace="^quickshell$"
     place-within-backdrop true
 }
 

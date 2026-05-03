@@ -8,11 +8,11 @@
     framework-tool
     helix
     monero-cli
-    # p2pool
+    p2pool
     starship
     tuigreet
     wireguard-tools
-    # xmrig
+    xmrig
     zellij
   ];
 }
