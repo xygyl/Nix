@@ -50,12 +50,12 @@ def --env pack [] {
     let hostname = sys host | get hostname
     let file = gum choose home term lang helix games system
     match $file {
-        "home" => { hx $"./home/($hostname)/packages.nix" }
-        "term" => { hx $"./home/($hostname)/modules/terminal/packages.nix" }
-        "lang" => { hx $"./home/($hostname)/modules/terminal/language-tools/packages.nix" }
-        "helix" => { hx $"./home/($hostname)/modules/apps/tui/helix/packages.nix" }
-        "games" => { hx $"./home/($hostname)/modules/apps/games/packages.nix" }
-        "system" => { hx $"./hosts/($hostname)/system/packages.nix" }
+        "home" => { hx $"($env.HOME)/Nix/home/($hostname)/packages.nix" }
+        "term" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/terminal/packages.nix" }
+        "lang" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/terminal/language-tools/packages.nix" }
+        "helix" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/apps/tui/helix/packages.nix" }
+        "games" => { hx $"($env.HOME)/Nix/home/($hostname)/modules/apps/games/packages.nix" }
+        "system" => { hx $"($env.HOME)/Nix/hosts/($hostname)/system/packages.nix" }
         _ => {}
     }
     clear
