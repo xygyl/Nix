@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    # inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
     wiki-tui
