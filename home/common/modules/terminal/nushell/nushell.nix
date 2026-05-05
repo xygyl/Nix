@@ -28,6 +28,7 @@
     "config/sudo/vpn.nu"
     "mod.nu"
     "nu/completions-jj.nu"
+    "nu/completions-niri.nu"
     "nu/starship/init.nu"
     "nu/zoxide.nu"
   ]);
