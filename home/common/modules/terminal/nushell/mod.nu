@@ -20,5 +20,6 @@ source ./config/sudo/vpn.nu
 
 # add-ons
 source ./nu/completions-jj.nu
+source ./nu/completions-niri.nu
 source ./nu/starship/init.nu
 source ./nu/zoxide.nu
