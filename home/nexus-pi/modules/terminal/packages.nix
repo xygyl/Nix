@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     age
+    gum
     # aria2
     # ascii-image-converter
     # aspell
