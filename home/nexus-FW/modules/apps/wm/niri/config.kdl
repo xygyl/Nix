@@ -51,21 +51,21 @@ layer-rule {
     place-within-backdrop true
 }
 
-layer-rule {
-    match namespace="^launcher$"
-    background-effect {
-        blur true
-        xray false
-    }
-}
+// layer-rule {
+//     match namespace="^launcher$"
+//     background-effect {
+//         blur true
+//         xray false
+//     }
+// }
 
-layer-rule {
-    match namespace="^anyrun$"
-    background-effect {
-        blur true;
-        xray false;
-    }
-}
+// layer-rule {
+//     match namespace="^anyrun$"
+//     background-effect {
+//         blur true;
+//         xray false;
+//     }
+// }
 
 // layer-rule {
 //     background-effect { blur true; }
