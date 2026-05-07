@@ -3,6 +3,7 @@
 
   inputs = {
     awww.url = "git+https://codeberg.org/LGFae/awww";
+    concord.url = "github:chojs23/concord";
     rio.url = "github:raphamorim/rio";
     home-manager = {
       url = "github:nix-community/home-manager";
