@@ -6,7 +6,6 @@
     inputs.concord.packages.${stdenv.hostPlatform.system}.concord
     # texliveFull
 
-    radicle-desktop
     wiki-tui
     termscp
     blender
