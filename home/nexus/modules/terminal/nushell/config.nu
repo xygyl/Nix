@@ -6,6 +6,7 @@ def back [] {
     rv /home/xygyl/Sync/personal/ /home/xygyl/Archive2/personal/
     rv /home/xygyl/Sync/personal/ /home/xygyl/Archive3/personal/
     rv /home/xygyl/Archive2/porn/ /home/xygyl/Archive3/porn/
+    rv /home/xygyl/Archive2/Music/ /home/xygyl/Archive3/Music/
 }
 
 def --env proton [] {
