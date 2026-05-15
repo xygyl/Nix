@@ -3,9 +3,10 @@
 {
   home.packages = with pkgs; [
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    inputs.concord.packages.${stdenv.hostPlatform.system}.concord
     # texliveFull
 
-        blender
+    blender
     brave
     calibre
     cava
