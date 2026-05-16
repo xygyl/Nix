@@ -13,7 +13,6 @@
     calibre
     cava
     cryptsetup
-    discord
     # element
     ffmpeg
     firefox
