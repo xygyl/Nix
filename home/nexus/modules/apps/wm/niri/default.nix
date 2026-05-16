@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{ pkgs, config, ... }:
 
 {
   imports = [
@@ -6,8 +6,10 @@
   ];
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = "*";
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-gnome
+    ];
+    configPackages = [ config.programs.niri.package ];
   };
-
 }

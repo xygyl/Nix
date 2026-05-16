@@ -33,7 +33,6 @@
     mpd
     networkmanagerapplet
     nicotine-plus
-    niri
     nomacs
     nwg-look
     obs-studio
