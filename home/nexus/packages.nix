@@ -27,7 +27,7 @@
     # kid3
     krita
     libreoffice
-    llama-cpp-rocm
+    # llama-cpp-rocm
     # mcomix
     mpd
     networkmanagerapplet
