@@ -59,8 +59,9 @@
   };
 
   services = {
-    openssh.enable = true;
     fwupd.enable = true;
+    openssh.enable = true;
+    upower.enable = true;
 
     pipewire = {
       enable = true;
