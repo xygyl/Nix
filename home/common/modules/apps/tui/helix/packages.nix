@@ -39,7 +39,7 @@
     lua-language-server
     # Markdown
     markdown-oxide
-    marksman
+    # marksman
     # Nix
     nil
     nixd

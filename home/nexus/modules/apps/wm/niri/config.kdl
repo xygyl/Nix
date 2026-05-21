@@ -22,10 +22,10 @@ blur {
     saturation 1.25
 }
 
-window-rule {
-    match app-id="mpv"
-    open-on-output "Microstep MPG341CX OLED Unknown"
-}
+// window-rule {
+//     match app-id="mpv"
+//     open-on-output "Microstep MPG341CX OLED Unknown"
+// }
 
 window-rule {
     match is-floating=true
