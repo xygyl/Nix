@@ -27,34 +27,34 @@
 
   outputs = inputs@{ nixpkgs, home-manager, niri, nixos-hardware, ... }:
   let
-    homeStateVersion = "26.05";
+    homeStateVersion = "26.11";
 
     hosts = [
       {
         hostname = "europa";
         username = "europa";
-        stateVersion = "26.05";
+        stateVersion = "26.11";
         system = "x86_64-linux";
         extraModules = [];
       }
       {
         hostname = "nexus-FW";
         username = "xygyl";
-        stateVersion = "26.05";
+        stateVersion = "26.11";
         system = "x86_64-linux";
         extraModules = [];
       }
       {
         hostname = "nexus";
         username = "xygyl";
-        stateVersion = "26.05";
+        stateVersion = "26.11";
         system = "x86_64-linux";
         extraModules = [];
       }
       {
         hostname = "nexus-pi";
         username = "xygyl";
-        stateVersion = "26.05";
+        stateVersion = "26.11";
         system = "aarch64-linux";
         extraModules = [ nixos-hardware.nixosModules.raspberry-pi-4 ];
       }
