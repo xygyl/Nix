@@ -6,15 +6,14 @@
     inputs.concord.packages.${stdenv.hostPlatform.system}.concord
     # texliveFull
 
-    wiki-tui
-    termscp
+    ab-av1
     blender
     brave
     calibre
     cava
     cryptsetup
     # element
-    ffmpeg
+    ffmpeg-full
     firefox
     flac
     gamescope
@@ -46,6 +45,7 @@
     rhash
     sunsetr
     syncthing
+    termscp
     thunderbird
     tor-browser
     typst
@@ -54,6 +54,7 @@
     vesktop
     video-trimmer
     wev
+    wiki-tui
     wl-clipboard
     xwayland-satellite
     # zed-editor
