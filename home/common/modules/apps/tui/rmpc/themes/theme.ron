@@ -42,7 +42,7 @@
         song: "󰎇",
         dir: " ",
         playlist: "󰲸 ",
-        marker: "",
+        marker: "󰋑 ",
         ellipsis: "...",
         song_style: (fg: "#FF6B5D"),
         dir_style: (fg: "#6B5DFF"),
