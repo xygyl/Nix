@@ -199,7 +199,7 @@ recent-windows {
 }
 
 binds {
-    Mod+D               { spawn "vesktop"; }
+    Mod+D               { spawn "discord"; }
     Mod+E               { spawn "firefox"; }
     Mod+Shift+Q         { spawn "kitty" "zellij"; }
     Mod+Q               { spawn "kitty"; }
