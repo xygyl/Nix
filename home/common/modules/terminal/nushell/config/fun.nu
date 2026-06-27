@@ -46,6 +46,13 @@ def chess [
     }
 }
 
+def timestamp [
+    input: string
+] {
+    let now = (date now | format date %F_%H:%M:%S)
+    mv $input $"($now)_($input)"
+}
+
 def wth [] {
     clear
     wthrr

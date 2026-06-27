@@ -11,7 +11,8 @@
 
     claude-code
     # codex
-    # opencode
+    opencode
+    crush
 
     age
     aria2
