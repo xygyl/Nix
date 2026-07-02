@@ -8,6 +8,7 @@
     ../../common/system/root.nix
     ../../common/system/timezone.nix
     ../../common/system/user.nix
+    ../../common/system/virtualisation.nix
     ./fs.nix
     ./openrgb.nix
     ./packages.nix

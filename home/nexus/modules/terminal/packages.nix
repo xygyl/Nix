@@ -66,6 +66,7 @@
     # wf-recorder
     wget
     wgetpaste
+    wiremix
     wthrr
     yt-dlp
     zip
