@@ -11,7 +11,7 @@
 
     claude-code
     # codex
-    # opencode
+    opencode
 
     age
     aria2
