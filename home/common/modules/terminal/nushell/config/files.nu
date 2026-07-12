@@ -5,7 +5,7 @@ def transcode-videos [
     let cleaned_exts = (
         $extensions
         | where {|e| $e != null and ($e | str trim) != "" }
-        | each {|e| $e | str trim | str downcase }
+        | each {|e| $e | str trim | str lowercase }
         | uniq
     )
     let eflags = ($cleaned_exts | each {|e| ['-e' $e]} | flatten)
