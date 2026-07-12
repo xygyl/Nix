@@ -8,6 +8,7 @@ in {
       nerd-fonts.jetbrains-mono
     ];
     pointerCursor = with pkgs; {
+      enable = true;
       package = phinger-cursors;
       name = name;
       size = size;
