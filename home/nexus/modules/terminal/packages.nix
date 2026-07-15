@@ -13,6 +13,8 @@
     # codex
     opencode
 
+    wiremix
+
     age
     aria2
     ascii-image-converter
