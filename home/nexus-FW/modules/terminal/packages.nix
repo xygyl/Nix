@@ -11,8 +11,9 @@
 
     claude-code
     # codex
-    # opencode
+    opencode
 
+    wiremix
     age
     aria2
     ascii-image-converter
