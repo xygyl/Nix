@@ -1,8 +1,8 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
-    inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    # inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
     # blender
@@ -12,7 +12,7 @@
     # cryptsetup
     # element
     # ffmpeg
-    firefox
+    # firefox
     # flac
     # gamescope
     # gimp
@@ -20,7 +20,7 @@
     # gnupg
     # instaloader
     # jre_minimal
-    keepassxc
+    # keepassxc
     # kid3
     # krita
     # libreoffice

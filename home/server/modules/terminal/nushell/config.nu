@@ -1,10 +1,3 @@
-def mc [
-    ...cmd: string
-] {
-    let input = ($cmd | str join " ")
-    echo $input | sudo -u minecraft sh -c 'cat > /run/minecraft/mc.stdin'
-}
-
 def psn [
     input: string
     --kill (-k)
