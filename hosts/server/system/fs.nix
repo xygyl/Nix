@@ -1,7 +1,6 @@
 {
   fileSystems = {
     "/".options = [
-      "subvol=@"
       "compress=zstd"
       "ssd"
       "discard=async"

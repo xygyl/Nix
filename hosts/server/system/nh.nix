@@ -8,6 +8,6 @@
       extraArgs = "--keep 2 --optimise";
     };
 
-    flake = "/home/europa/Nix";
+    flake = "/home/server/Nix";
   };
 }

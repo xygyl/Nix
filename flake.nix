@@ -21,6 +21,10 @@
       url = "github:AvengeMedia/dms-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-minecraft = {
+      url = "github:Infinidoge/nix-minecraft";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixos-hardware.url = "github:NixOS/nixos-hardware";
     nixpkgs.url = "nixpkgs/nixos-unstable";
   };
@@ -36,6 +40,16 @@
         stateVersion = "26.11";
         system = "x86_64-linux";
         extraModules = [];
+      }
+      {
+        hostname = "server";
+        username = "server";
+        stateVersion = "26.11";
+        system = "x86_64-linux";
+        extraModules = [
+          inputs.nix-minecraft.nixosModules.minecraft-servers
+          { nixpkgs.overlays = [ inputs.nix-minecraft.overlay ]; }
+        ];
       }
       {
         hostname = "nexus-FW";

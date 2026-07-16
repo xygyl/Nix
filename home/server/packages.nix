@@ -5,7 +5,6 @@
     inputs.awww.packages.${stdenv.hostPlatform.system}.awww
     # texliveFull
 
-    vllm
     # blender
     # brave
     # calibre
@@ -13,20 +12,18 @@
     # cryptsetup
     # element
     # ffmpeg
-    # firefox
+    firefox
     # flac
     # gamescope
     # gimp
-    git-lfs
     # gnome-themes-extra
     # gnupg
     # instaloader
     # jre_minimal
-    # keepassxc
+    keepassxc
     # kid3
     # krita
     # libreoffice
-    llama-cpp
     # mcomix
     # mpd
     # mpv
@@ -36,10 +33,8 @@
     # nomacs
     # nwg-look
     # obs-studio
-    ollama-cuda
     # pavucontrol
     pkg-config
-    poppler
     # prismlauncher
     # pwvucontrol
     # qbittorrent

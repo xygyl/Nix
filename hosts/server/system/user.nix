@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  users.users.europa = {
+  users.users.server = {
     isNormalUser = true;
     extraGroups = [ "audio" "networkmanager" "wheel" "video" ];
     shell = pkgs.nushell;

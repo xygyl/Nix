@@ -13,6 +13,7 @@
     # codex
     # opencode
 
+    starship
     # age
     # aria2
     # ascii-image-converter
