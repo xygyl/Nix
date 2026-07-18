@@ -15,6 +15,7 @@
 
     wiremix
 
+    concord-tui
     age
     aria2
     ascii-image-converter

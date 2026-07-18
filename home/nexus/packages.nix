@@ -1,11 +1,10 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
-    inputs.awww.packages.${stdenv.hostPlatform.system}.awww
-    inputs.concord.packages.${stdenv.hostPlatform.system}.concord
     # texliveFull
 
+    awww
     blender
     brave
     calibre
@@ -54,6 +53,7 @@
     unrar
     vesktop
     video-trimmer
+    vital
     wev
     wl-clipboard
     xwayland-satellite

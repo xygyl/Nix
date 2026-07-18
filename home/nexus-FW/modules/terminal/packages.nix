@@ -13,7 +13,6 @@
     # codex
     opencode
 
-    wiremix
     age
     aria2
     ascii-image-converter
@@ -26,6 +25,7 @@
     brightnessctl
     btop-rocm
     cbonsai
+    concord-tui
     difftastic
     # discordo
     dua
@@ -66,6 +66,7 @@
     # wf-recorder
     wget
     wgetpaste
+    wiremix
     wthrr
     yt-dlp
     zip
