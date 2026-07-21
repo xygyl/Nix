@@ -47,17 +47,18 @@
       operators.Xygyl = "8182cdba-c870-4bcc-bad1-7990e8262362";
 
       whitelist = {
-        Xygyl = "8182cdba-c870-4bcc-bad1-7990e8262362";
-        v1ol3t_ = "9295e586-7c29-4fd6-98dc-e08e628a53f1";
-        Sir_Dan_the_91st = "2e7c85c2-1f98-46a2-b3b0-b9ce2f1fcf08";
         Abnormal_Nox = "b5fa4149-f865-495c-89b9-53fca86a3cbc";
-        Lomerlicous = "ac96070d-e940-4f53-b420-0c1a54c2b3a9";
         Angeryartist = "848fb09f-b3ed-4973-af39-61438db722c5";
-        My_Name_A_Chef = "2b936074-585e-448f-bccb-6b272784e516";
-        mimobox = "ef3f107d-5a99-4871-8bf2-76f9058babad";
+        BaiyutheRainfury = "56737476-2c0a-4978-b29a-a9e1a42a2c15";
         chichi2100 = "68bba1bb-2609-4758-848d-199468c7fe48";
-        NotMilkMan = "ad3bd0c4-6442-48aa-87c1-841e734203c4";
         FishBeetle = "7a9137fd-e106-4705-a0de-e1370a76d76d";
+        Lomerlicous = "ac96070d-e940-4f53-b420-0c1a54c2b3a9";
+        mimobox = "ef3f107d-5a99-4871-8bf2-76f9058babad";
+        My_Name_A_Chef = "2b936074-585e-448f-bccb-6b272784e516";
+        NotMilkMan = "ad3bd0c4-6442-48aa-87c1-841e734203c4";
+        Sir_Dan_the_91st = "2e7c85c2-1f98-46a2-b3b0-b9ce2f1fcf08";
+        v1ol3t_ = "9295e586-7c29-4fd6-98dc-e08e628a53f1";
+        Xygyl = "8182cdba-c870-4bcc-bad1-7990e8262362";
       };
 
       # Add mods here, one fetchurl per jar. For each mod, find the version on
