@@ -44,7 +44,10 @@
         simulation-distance = 10;
       };
 
-      operators.Xygyl = "8182cdba-c870-4bcc-bad1-7990e8262362";
+      operators = {
+        Xygyl = "8182cdba-c870-4bcc-bad1-7990e8262362";
+        chichi2100 = "68bba1bb-2609-4758-848d-199468c7fe48";
+      };
 
       whitelist = {
         Abnormal_Nox = "b5fa4149-f865-495c-89b9-53fca86a3cbc";
@@ -52,6 +55,7 @@
         BaiyutheRainfury = "56737476-2c0a-4978-b29a-a9e1a42a2c15";
         chichi2100 = "68bba1bb-2609-4758-848d-199468c7fe48";
         FishBeetle = "7a9137fd-e106-4705-a0de-e1370a76d76d";
+        izloup = "a4507c82-1171-4d04-8b1c-e4f1f66559fd";
         Lomerlicous = "ac96070d-e940-4f53-b420-0c1a54c2b3a9";
         mimobox = "ef3f107d-5a99-4871-8bf2-76f9058babad";
         My_Name_A_Chef = "2b936074-585e-448f-bccb-6b272784e516";
@@ -104,6 +108,20 @@
           veinminer = pkgs.fetchurl {
             url = "https://cdn.modrinth.com/data/OhduvhIc/versions/QwoUn7GM/veinminer-fabric-2.11.1.jar";
             sha512 = "4b97b416cef3ecdd23d1b5427d82acb841ca208fe76145d736a9d360f641411fc43ec4466bc5bd3b2ed1cedf4c22414b949c77a5712b982f263598b8dd746151";
+          };
+          # Forge Config API Port: required by Puzzles Lib and Mob Lassos.
+          forge-config-api-port = pkgs.fetchurl {
+            url = "https://cdn.modrinth.com/data/ohNO6lps/versions/rSd3GiG8/ForgeConfigAPIPort-v26.2.1-mc26.2.x-Fabric.jar";
+            sha512 = "948b8d83de61a11aad2fc0bb0744a8b4848c9b2f0663c9aa015389d9560b3fa78518e609c44ec90278de0e159a92ebd721ccbdebb453aa455c353e5cd19413bf";
+          };
+          # Puzzles Lib: required by Mob Lassos.
+          puzzles-lib = pkgs.fetchurl {
+            url = "https://cdn.modrinth.com/data/QAGBst4M/versions/HfGQTxSR/PuzzlesLib-v26.2.1-mc26.2.x-Fabric.jar";
+            sha512 = "6af3543197bbacb064e147af9c96af1d4ff35d3b5195f49874098f06e2d14023d75c0a248e0b9f4babf80a946c3519a1deb528293df38653d39def683d389e13";
+          };
+          mob-lassos = pkgs.fetchurl {
+            url = "https://cdn.modrinth.com/data/ftOBbnu8/versions/VoHMVIPb/MobLassos-v26.2.0-mc26.2.x-Fabric.jar";
+            sha512 = "b2760628b3c4da01a1bf4161c44edcb2d05b2429a029df164f04833b809ece22ab9c02459f17b40bd6ec8b91d386931b2d373fae4e7536b87e96175fa876e103";
           };
         }
       );
