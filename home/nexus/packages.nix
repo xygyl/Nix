@@ -11,6 +11,7 @@
     cava
     cryptsetup
     discord
+    easyeffects
     # element
     ffmpeg
     firefox
