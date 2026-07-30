@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    inputs.awww.packages.${stdenv.hostPlatform.system}.awww
+    # inputs.awww.packages.${stdenv.hostPlatform.system}.awww
 
     jujutsu
     libraspberrypi
@@ -23,7 +23,7 @@
     # claude-code
     # discordo
     # ffmpeg
-    firefox
+    # firefox
     # flac
     # gamescope
     # gimp
@@ -33,7 +33,7 @@
     # hexyl
     # instaloader
     # jre_minimal
-    keepassxc
+    # keepassxc
     # kid3
     # krita
     # libratbag
@@ -43,7 +43,7 @@
     # mpv
     # networkmanagerapplet
     # nicotine-plus
-    niri
+    # niri
     # nomacs
     # nwg-look
     # obs-studio
@@ -69,9 +69,9 @@
     # vesktop
     # video-trimmer
     # wev
-    wl-clipboard
-    wlsunset
-    xwayland-satellite
+    # wl-clipboard
+    # wlsunset
+    # xwayland-satellite
     # zathura
     # zed-editor
   ];

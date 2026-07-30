@@ -30,7 +30,7 @@
     wheelNeedsPassword = false;
   };
   services.gnome.gcr-ssh-agent.enable = false;
-  programs.niri.enable = true;
+  # programs.niri.enable = true;
   security.rtkit.enable = true;
 
   xdg.portal = {
