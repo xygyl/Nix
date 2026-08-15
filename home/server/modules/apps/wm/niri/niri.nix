@@ -2,7 +2,7 @@
 
 {
   programs.niri = {
-    enable = true;
+    enable = false;
     package = pkgs.niri;
   };
   xdg.configFile."niri/config.kdl".source = ./config.kdl;

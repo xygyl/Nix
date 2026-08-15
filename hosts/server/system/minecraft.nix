@@ -106,8 +106,8 @@
             sha512 = "ca238ee480dfb237062200fd300be493d022e0837b6998c15807e01488b2a30d5ba4731e5c6d05a5333719c8923a1cb84c06fd6fa45aa88ced492ddb5b40906f";
           };
           veinminer = pkgs.fetchurl {
-            url = "https://cdn.modrinth.com/data/OhduvhIc/versions/QwoUn7GM/veinminer-fabric-2.11.1.jar";
-            sha512 = "4b97b416cef3ecdd23d1b5427d82acb841ca208fe76145d736a9d360f641411fc43ec4466bc5bd3b2ed1cedf4c22414b949c77a5712b982f263598b8dd746151";
+            url = "https://cdn.modrinth.com/data/OhduvhIc/versions/NdMuTUZ7/veinminer-fabric-2.12.0.jar";
+            sha512 = "f966d0e7ab3b538eb632dd0cfbda194489edd72f5075ce788301d00325657e835e95dffd643be06e55c0374f11ae68d919c79c1d2a4e4ee2ecdeb74f73224eff";
           };
           # Forge Config API Port: required by Puzzles Lib and Mob Lassos.
           forge-config-api-port = pkgs.fetchurl {

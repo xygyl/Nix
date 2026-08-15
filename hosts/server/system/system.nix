@@ -31,7 +31,7 @@
       pinentryPackage = pkgs.pinentry-curses;
     };
 
-    niri.enable = true;
+    niri.enable = false;
 
     steam = {
       enable = true;
