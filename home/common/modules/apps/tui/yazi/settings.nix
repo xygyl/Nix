@@ -24,16 +24,16 @@
     	{ url = "*.{png,jpg,gif,jfif,webp}"; use = "view"; }
     ];
     opener = {
-      decrypt      = [ { run = ''gpg -o "$${1%.*}" -d "$1"''; } ];
-      edit         = [ { run = ''hx "$@"''; block = true; } ];
-      extract      = [ { run = ''ouch d -y "$@"''; } ];
-      extract_zstd = [ { run = ''zstd -d --long=31 "$@"''; } ];
-      open         = [ { run = ''xdg-open "$@"''; } ];
-      play         = [ { run = ''mpv --force-window=yes --loop "$@"''; orphan = true; } ];
-      # view         = [ { run = ''mcomix -f "$@"''; } ];
-      view         = [ { run = ''nomacs -f "$@"''; } ];
-      comic        = [ { run = ''mcomix -fd "$@"''; } ];
-      pdf          = [ { run = ''firefox "$@"''; } ];
+      decrypt      = [ { run = ''f=%s; gpg -o "$${f%.*}" -d "$f"''; } ];
+      edit         = [ { run = "hx %s"; block = true; } ];
+      extract      = [ { run = "ouch d -y %s"; } ];
+      extract_zstd = [ { run = "zstd -d --long=31 %s"; } ];
+      open         = [ { run = "xdg-open %s"; } ];
+      play         = [ { run = "mpv --force-window=yes --loop %s"; orphan = true; } ];
+      # view         = [ { run = "mcomix -f %s"; } ];
+      view         = [ { run = "nomacs -f %s"; } ];
+      comic        = [ { run = "mcomix -fd %s"; } ];
+      pdf          = [ { run = "firefox %s"; } ];
     };
     tasks = {
       image_alloc = 0;
