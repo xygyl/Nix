@@ -33,7 +33,23 @@
           args = [ "--stdin-filepath" "foo.jsx" ];
         };
       }
+      {
+        name = "c-sharp";
+        auto-format = true;
+        formatter = {
+          command = "csharpier";
+          args = [ "format" "--write-stdout" "--stdin-path" "/tmp/foo.cs" ];
+        };
+        language-servers = [ "omnisharp" ];
+      }
     ];
+
+    language-server = {
+      omnisharp = {
+        command = "OmniSharp";
+        args = [ "--languageserver" ];
+      };
+    };
   };
 }
 

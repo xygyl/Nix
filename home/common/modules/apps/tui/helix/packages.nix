@@ -21,6 +21,7 @@
     bun
 
     #c-sharp
+    csharpier
     omnisharp-roslyn
     netcoredbg
     # Go
