@@ -51,6 +51,7 @@
     taplo
     tombi
     # Typescript
+    prettierd
     # Typst
     tinymist
     # Zig
