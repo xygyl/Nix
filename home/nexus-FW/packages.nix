@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     # texliveFull
 
+    unityhub
     ab-av1
     blender
     brave
