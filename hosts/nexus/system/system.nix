@@ -57,6 +57,7 @@
   services = {
     openssh.enable = true;
     fwupd.enable = true;
+    udev.packages = [ pkgs.vial ];
 
     pipewire = {
       enable = true;
