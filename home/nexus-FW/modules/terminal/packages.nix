@@ -21,6 +21,7 @@
     astroterm
     bandwhich
     bat
+    usbutils
     # binsider
     brightnessctl
     btop-rocm
@@ -37,6 +38,7 @@
     git
     git-filter-repo
     gitui
+    simple-mtpfs
     gping
     # hw-probe
     hyperfine
