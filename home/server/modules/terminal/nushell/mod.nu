@@ -22,3 +22,4 @@ source ./config/sudo/vpn.nu
 source ./nu/completions-jj.nu
 source ./nu/starship/init.nu
 source ./nu/zoxide.nu
+source ./nu/atuin/init.nu
