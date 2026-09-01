@@ -62,7 +62,10 @@
     fwupd.enable = true;
     openssh.enable = true;
     upower.enable = true;
-    udev.packages = [ pkgs.libmtp ];
+    udev.packages = with pkgs; [
+      libmtp
+      vial
+    ];
 
     pipewire = {
       enable = true;

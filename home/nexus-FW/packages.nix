@@ -4,6 +4,7 @@
   home.packages = with pkgs; [
     # texliveFull
 
+    vial
     unityhub
     ab-av1
     blender
