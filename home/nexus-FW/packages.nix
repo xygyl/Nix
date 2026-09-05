@@ -5,7 +5,6 @@
     # texliveFull
 
     vial
-    unityhub
     ab-av1
     blender
     brave
