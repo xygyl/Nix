@@ -4,7 +4,6 @@
   home.packages = with pkgs; [
     # texliveFull
 
-    vial
     ab-av1
     blender
     brave
@@ -51,6 +50,7 @@
     # ungoogled-chromium
     unrar
     vesktop
+    vial
     video-trimmer
     wev
     wiki-tui
