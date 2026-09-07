@@ -12,7 +12,7 @@
     # cryptsetup
     # element
     # ffmpeg
-    # firefox
+    firefox
     # flac
     # gamescope
     # gimp

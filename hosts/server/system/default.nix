@@ -3,6 +3,7 @@
     ./boot.nix
     ./cloudflare-dyndns.nix
     ./env.nix
+    ./factorio.nix
     ./fs.nix
     ./greetd.nix
     ./minecraft.nix

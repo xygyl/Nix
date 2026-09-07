@@ -9,7 +9,7 @@
     gum
     vhs
 
-    # claude-code
+    claude-code
     # codex
     opencode
 
