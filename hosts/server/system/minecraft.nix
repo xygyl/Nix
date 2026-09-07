@@ -106,8 +106,8 @@
             sha512 = "ca238ee480dfb237062200fd300be493d022e0837b6998c15807e01488b2a30d5ba4731e5c6d05a5333719c8923a1cb84c06fd6fa45aa88ced492ddb5b40906f";
           };
           veinminer = pkgs.fetchurl {
-            url = "https://cdn.modrinth.com/data/OhduvhIc/versions/NdMuTUZ7/veinminer-fabric-2.12.0.jar";
-            sha512 = "f966d0e7ab3b538eb632dd0cfbda194489edd72f5075ce788301d00325657e835e95dffd643be06e55c0374f11ae68d919c79c1d2a4e4ee2ecdeb74f73224eff";
+            url = "https://cdn.modrinth.com/data/OhduvhIc/versions/InpIvPQ1/veinminer-fabric-2.12.1.jar";
+            sha512 = "ddb20ee9f053e288c5912dea9abfe2a4447797ea77e67f80388fed73935b97ab5116603747ce699f8bff965e0965d1099446df1ff90ee3d8527a7fc017585977";
           };
           # Forge Config API Port: required by Puzzles Lib and Mob Lassos.
           forge-config-api-port = pkgs.fetchurl {
@@ -122,6 +122,11 @@
           mob-lassos = pkgs.fetchurl {
             url = "https://cdn.modrinth.com/data/ftOBbnu8/versions/VoHMVIPb/MobLassos-v26.2.0-mc26.2.x-Fabric.jar";
             sha512 = "b2760628b3c4da01a1bf4161c44edcb2d05b2429a029df164f04833b809ece22ab9c02459f17b40bd6ec8b91d386931b2d373fae4e7536b87e96175fa876e103";
+          };
+          # TPS and server profiler: /spark tps, /spark profiler, web dashboard.
+          spark = pkgs.fetchurl {
+            url = "https://cdn.modrinth.com/data/l6YH9Als/versions/iYFOl6lQ/spark-1.10.173-fabric.jar";
+            sha512 = "1dcbf2b76ceacf07523afaeaf63d3625b0318077cc6ce588bb701aea4a494bc2a5179fd2ca5aeda9513c6a2248c2ec590387e8aec6ac9fd8e3d01760bbc3dbfb";
           };
         }
       );
