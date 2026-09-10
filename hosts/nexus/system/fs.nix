@@ -1,6 +1,10 @@
 { username, ...}:
 
 {
+  boot.initrd.luks.devices."archive3" = {
+    device = "/dev/disk/by-uuid/68912f59-4c49-495c-b436-ba5f507b3391";
+  };
+
   systemd.tmpfiles.rules = [
     # "d <path> <mode> <user> <group> <age>"
     "d /home/${username}/Ram 0775 ${username} users -"
@@ -47,7 +51,7 @@
     };
 
     "/home/${username}/Archive3" = {
-      device = "PARTUUID=d19d3c30-c11a-404b-88a6-078afa40c2a7";
+      device = "/dev/mapper/archive3";
       fsType = "btrfs";
       options = [
         "rw"

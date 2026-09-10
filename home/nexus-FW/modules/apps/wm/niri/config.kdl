@@ -278,8 +278,6 @@ binds {
     Mod+Tab             { switch-preset-column-width; }
     Mod+Shift+Tab       { switch-preset-window-height; }
 
-    Mod+BracketLeft     { consume-or-expel-window-left; }
-    Mod+BracketRight    { consume-or-expel-window-right; }
     Mod+Comma           { consume-window-into-column; }
     Mod+Period          { expel-window-from-column; }
 
