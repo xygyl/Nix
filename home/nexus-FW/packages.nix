@@ -10,6 +10,7 @@
     calibre
     cava
     cryptsetup
+    discord
     # element
     ffmpeg-full
     firefox
@@ -49,7 +50,6 @@
     typst
     # ungoogled-chromium
     unrar
-    vesktop
     vial
     video-trimmer
     wev
