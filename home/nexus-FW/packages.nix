@@ -35,7 +35,6 @@
     nwg-look
     obs-studio
     # ollama-rocm
-    pavucontrol
     pkg-config
     poppler
     prismlauncher
