@@ -30,7 +30,7 @@
       # this value ran cleanly for a full day+ earlier.
       # ZGC still kept: lower pause times are a reasonable default regardless
       # of DH.
-      jvmOpts = "-Xmx10G -Xms4G -XX:+UseZGC";
+      jvmOpts = "-Xmx10G -Xms4G -XX:+UseZGC -Dspark.disableResponseBroadcast=true";
 
       serverProperties = {
         server-port = 25565;
