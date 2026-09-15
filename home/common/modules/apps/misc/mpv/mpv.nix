@@ -9,6 +9,13 @@
     ];
     config = {
       osc = false;
+      hwdec = "auto-safe";
+      vo = "gpu-next";
+      scale="bilinear";
+      cscale="bilinear";
+      dscale="bilinear";
+      interpolation="no";
+      video-sync = "display-resample";
     };
     scriptOpts = {
       osc = {
