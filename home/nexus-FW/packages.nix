@@ -22,6 +22,7 @@
     # gnupg
     instaloader
     # jre_minimal
+    kdePackages.kdenlive
     keepassxc
     # kid3
     krita
