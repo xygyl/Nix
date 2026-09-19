@@ -38,7 +38,6 @@
     git
     git-filter-repo
     gitui
-    simple-mtpfs
     gping
     # hw-probe
     hyperfine
