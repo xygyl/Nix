@@ -1,8 +1,8 @@
 def project_dir [lang: string, name?: string] {
     if ($name == null) {
-        $"($env.HOME)/Ram/($lang)_misc"
+        $"($env.HOME)/Projects/($lang)_misc"
     } else {
-        $"($env.HOME)/Ram/($name)"
+        $"($env.HOME)/Projects/($name)"
     }
 }
 

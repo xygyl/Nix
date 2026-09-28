@@ -113,6 +113,7 @@
         { name = "nix"; text = "󱄅"; }
       	{ name = ".npm"; text = ""; }
       	{ name = "Pictures"; text = ""; }
+      	{ name = "Projects"; text = ""; }
       	{ name = "Public"; text = ""; }
       	{ name = "Ram"; text = ""; }
         { name = "Sync"; text = "󰴋"; }
