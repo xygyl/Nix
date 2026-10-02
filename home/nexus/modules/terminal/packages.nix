@@ -54,7 +54,7 @@
     pngcheck
     pngcrush
     protonup-rs
-    radicle-tui
+    # radicle-tui
     ripgrep
     rmpc
     # rqbit
