@@ -11,6 +11,8 @@
     { on = [ "," "s" ]; run = [ "sort size --reverse=yes" "linemode size" ]; }
     { on = [ "g" "c" ]; run = "plugin vcs-files"; desc = "Show git file changes"; }
     { on = [ "g" "p" ]; run = "cd ~/Ram"; desc = "Go to tmpfs"; }
+    { on = [ "g" "s" ]; run = "cd ~/Sync"; desc = "Go to ~/Sync"; }
+    { on = [ "g" "n" ]; run = "cd ~/Nix"; desc = "Go to ~/Nix"; }
     {
       on = [ "g" "r" ];
       run = ''shell -- ya emit cd "$(git rev-parse --show-toplevel)"'';

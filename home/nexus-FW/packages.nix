@@ -41,6 +41,7 @@
     prismlauncher
     pwvucontrol
     qbittorrent
+    rembg
     rhash
     sunsetr
     syncthing
